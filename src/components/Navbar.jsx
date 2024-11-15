@@ -29,13 +29,6 @@ const Navbar = () => {
           <i className="ri-menu-2-line" ref={nav__icon}></i>
           Menu
         </button>
-        <div className="nav__logo">
-          <img
-            className="header__logo--img"
-            src={iconSrc}
-            alt="logoUlerGacor"
-          />
-        </div>
         <div className="nav__wrapper--link">
           <div className="nav__item">
             <Link className="link__nav link__nav--head" to="/-H2O/">
@@ -57,9 +50,9 @@ const Navbar = () => {
             <Link className="link__nav--body">Login</Link>
           </div>
         </div>
-        {/* <div className="nav__balance">
+        <div className="nav__balance">
           <p className="nav__balance--text">100</p>
-        </div> */}
+        </div>
         <div className="nav__overlay hide" ref={nav__overlay}>
           <span className="nav__overlayContent">
             <div className="nav__item">
