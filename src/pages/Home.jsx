@@ -1,8 +1,10 @@
+import Banner from "../components/Banner";
 import { Container, Stack, Typography } from "@mui/material";
 
 const Home = () => {
   return (
     <>
+      <Banner/>
       <Container>
         <Typography variant={"h1"}>Home</Typography>
         <Stack>
