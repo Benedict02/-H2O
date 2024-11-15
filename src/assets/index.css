@@ -30,10 +30,10 @@ body {
   --header-height: 3.7rem;
 
   /* Color */
-  --first-color: #fefaf6;
-  --second-color: #eadbc8;
-  --third-color: #dac0a3;
-  --dark-color: #102c57;
+  --first-color: #f3f3e0;
+  --second-color: #cbdceb;
+  --third-color: #608bc1;
+  --dark-color: #133e87;
 
   /* Font */
   --body-font: "Outfit", sans-serif;
