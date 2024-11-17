@@ -8,7 +8,7 @@ const Banner = () => {
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                minHeight: '50vh',
+                height: '100vh',
                 backgroundImage: `url(hokusai.jpg)`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
