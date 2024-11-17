@@ -4,7 +4,7 @@ import { Container, Stack, Typography } from "@mui/material";
 const Home = () => {
   return (
     <>
-      <Banner/>
+      <Banner />
       <Container>
         <Typography variant={"h1"}>Home</Typography>
         <Stack>
