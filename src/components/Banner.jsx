@@ -23,16 +23,15 @@ const Banner = () => {
         <ParallaxBannerLayer>
           <Box
             sx={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                height: '100vh',
-                backgroundImage: `url(hokusai.jpg)`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                color: '#fff',
-                textAlign: 'center',
-                padding: 4,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              height: "100vh",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              color: "#fff",
+              textAlign: "center",
+              padding: 4,
             }}
           ></Box>
           <Container maxWidth="md">
