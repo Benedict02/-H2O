@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Button, Container } from "@mui/material";
+import { Box, Typography, Button, Container, Stack } from "@mui/material";
 import {
   ParallaxProvider,
   ParallaxBanner,
@@ -15,11 +15,6 @@ const Banner = () => {
         <ParallaxBannerLayer image="hokusai_wave_right.png" speed={18} />
         <ParallaxBannerLayer image="hokusai_wave_bottom.png" speed={10} />
         <ParallaxBannerLayer image="hokusai_wave_bottom_right.png" speed={10} />
-        {/* <ParallaxBannerLayer image="hokusai_mt_fuji.png" speed={10} />
-        <ParallaxBannerLayer image="hokusai_wave_top.png" speed={5} />
-        <ParallaxBannerLayer image="hokusai_wave_right.png" speed={8} />
-        <ParallaxBannerLayer image="hokusai_wave_bottom.png" speed={7} />
-        <ParallaxBannerLayer image="hokusai_wave_bottom_right.png" speed={5} /> */}
         <ParallaxBannerLayer>
           <Box
             sx={{
@@ -27,61 +22,50 @@ const Banner = () => {
                 alignItems: 'center',
                 justifyContent: 'center',
                 height: '100vh',
-                backgroundImage: `url(hokusai.jpg)`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 color: '#fff',
                 textAlign: 'center',
                 padding: 4,
             }}
-          ></Box>
-          <Container maxWidth="md">
-            <Typography
-              variant="h3"
-              component="h1"
-              gutterBottom
-              bgcolor={"black"}
-            >
-              Welcome to Our Platform
-            </Typography>
-            <Typography
-              variant="h6"
-              component="p"
-              gutterBottom
-              bgcolor={"black"}
-            >
-              Discover amazing features and improve your experience with us.
-            </Typography>
-            <Button
-              variant="contained"
-              color="primary"
-              size="large"
-              sx={{ mt: 3 }}
-            >
-              Get Started
-            </Button>
-          </Container>
+          >
+            <Container maxWidth="md">
+              <Stack alignItems={"center"} justifyContent={"center"} direction={"column"} flexWrap={'wrap'}>
+                <Typography
+                  variant="h2"
+                  component="h1"
+                  gutterBottom
+                  bgcolor={"black"}
+                  fontFamily={'Quintessential'}
+                  width={'fit-content'}
+                  textAlign={'center'}
+                  padding={'2% 1%'}
+                >
+                  -H<sub style={{fontFamily: 'inherit'}}>2</sub>O
+                </Typography>
+                <Typography
+                  variant="h6"
+                  component="p"
+                  gutterBottom
+                  bgcolor={"black"}
+                  width={'fit-content'}
+                  padding={'1%'}
+                >
+                  Discover the importance of water quality
+                </Typography>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  size="large"
+                  sx={{ mt: 3 }}
+                >
+                  Get Started
+                </Button>
+              </Stack>
+            </Container>
+          </Box>
         </ParallaxBannerLayer>
       </ParallaxBanner>
-
-      {/* <Box
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          minHeight: "100vh",
-          backgroundImage: `url(hokusai.jpg)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          color: "#fff",
-          textAlign: "center",
-          padding: 4,
-
-          backgroundAttachment: "fixed",
-        }}
-      >
-        
-      </Box> */}
     </ParallaxProvider>
   );
 };
