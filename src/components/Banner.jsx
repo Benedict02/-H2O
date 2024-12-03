@@ -36,7 +36,7 @@ const Banner = () => {
                   component="h1"
                   gutterBottom
                   bgcolor={"black"}
-                  fontFamily={'Quintessential'}
+                  fontFamily={'Stick'}
                   width={'fit-content'}
                   textAlign={'center'}
                   padding={'2% 1%'}
