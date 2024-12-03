@@ -2,6 +2,7 @@ import ColorPalette from "../components/ColorPalette";
 import Banner from "../components/Banner";
 import Tiles from "../components/Tiles";
 import { Box, Container, Stack, Typography, Divider } from "@mui/material";
+import CustomPieChart from "../components/CustomPieChart";
 
 const Home = () => {
   const hydrologySrc = "./hydrology.jpg";
@@ -40,17 +41,17 @@ const Home = () => {
           <Stack gap={2}>
             <Stack>
               <Typography
-                variant={"h4"}
+                variant={"h3"}
                 component={"h1"}
                 color="dark_ocean"
-                fontFamily={"Petit Formal Script"}
-                textAlign={"center"}
+                fontFamily={"Quintessential"}
+                textAlign={"start"}
               >
                 Did You Know?
               </Typography>
             </Stack>
             <Stack>
-              
+              <CustomPieChart />
             </Stack>
           </Stack>
           <Divider sx={{ margin: "1% 0" }} />
