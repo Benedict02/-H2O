@@ -28,7 +28,7 @@ const Navbar = () => {
       sx={{
         width: 250,
         height: "100%",
-        backgroundColor: "#1a1a2e",
+        backgroundColor: `rgba(0,0,0,.7)`,
         color: "#fff",
         display: "flex",
         flexDirection: "column",
@@ -39,7 +39,9 @@ const Navbar = () => {
       onKeyDown={handleDrawerToggle}
     >
       {/* Drawer Header */}
-      <Box sx={{ p: 2, textAlign: "center", borderBottom: "1px solid #2e2e3f" }}>
+      <Box
+        sx={{ p: 2, textAlign: "center", borderBottom: "1px solid #2e2e3f" }}
+      >
         <Typography variant="h6" sx={{ fontWeight: "bold" }}>
           MyApp
         </Typography>
@@ -54,7 +56,7 @@ const Navbar = () => {
             component={Link}
             to={`/${text.toLowerCase()}`}
             sx={{
-              color: 'white',
+              color: "white",
               textDecoration: "none",
               "&:hover": {
                 backgroundColor: "#2e2e3f",
@@ -87,7 +89,7 @@ const Navbar = () => {
       <AppBar
         position="fixed"
         sx={{
-          backgroundColor: "rgba(0, 0, 0, .4)",
+          backgroundColor: "rgba(0, 0, 0, .5)",
           boxShadow: "none",
         }}
       >
@@ -105,7 +107,7 @@ const Navbar = () => {
           </IconButton>
 
           {/* Logo/Title */}
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
             MyApp
           </Typography>
 
@@ -135,10 +137,12 @@ const Navbar = () => {
         ModalProps={{
           keepMounted: true, // Better performance on mobile
         }}
+        sx={{ backgroundColor: "transparent" }}
+        
       >
         {drawer}
       </Drawer>
-      <Outlet/>
+      <Outlet />
     </>
   );
 };

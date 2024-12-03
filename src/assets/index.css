@@ -114,3 +114,6 @@ a {
       padding-right: -.5vw;
   }
 }
+.css-cyqh1t-MuiPaper-root-MuiDrawer-paper{
+  background-color: rgba(0,0,0,0) !important;
+}
