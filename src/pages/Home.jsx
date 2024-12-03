@@ -17,10 +17,10 @@ const Home = () => {
             justifyContent={"center"}
           >
             <Typography
-              variant={"h2"}
+              variant={"h4"}
               component={"h1"}
               color="dark_ocean"
-              fontFamily={"Imperial Script"}
+              fontFamily={"Petit Formal Script"}
               textAlign={"center"}
             >
               "Water is the driving force of all nature."
@@ -34,6 +34,24 @@ const Home = () => {
             >
               — Leonardo da Vinci
             </Typography>
+          </Stack>
+          <Divider sx={{ margin: "1% 0" }} />
+
+          <Stack gap={2}>
+            <Stack>
+              <Typography
+                variant={"h4"}
+                component={"h1"}
+                color="dark_ocean"
+                fontFamily={"Petit Formal Script"}
+                textAlign={"center"}
+              >
+                Did You Know?
+              </Typography>
+            </Stack>
+            <Stack>
+              
+            </Stack>
           </Stack>
           <Divider sx={{ margin: "1% 0" }} />
           <Stack gap={2}>
