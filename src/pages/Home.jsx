@@ -59,7 +59,7 @@ const Home = () => {
                 fontFamily={"Quintessential"}
                 textAlign={"center"}
               >
-                The Water Gap
+                Access to improved water source
               </Typography>
             </Stack>
             <Stack>
