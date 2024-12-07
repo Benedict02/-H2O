@@ -1,10 +1,10 @@
 import { Container, Stack, Typography } from "@mui/material";
 import Banner from "../components/FixedBanner";
 const Solution = () => {
-    const painting = ""
+    const rain = "./rainy.gif"
     return (
         <>
-            <Banner title="lorem" src={painting} />
+            <Banner title="lorem" src={rain} />
             <Container fixed>
                 <Stack>
                     <Typography>abc</Typography>
