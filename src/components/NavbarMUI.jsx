@@ -22,7 +22,6 @@ const Navbar = () => {
     setMobileOpen(!mobileOpen);
   };
 
-  // Styled Drawer content
   const drawer = (
     <Box
       sx={{
@@ -38,7 +37,6 @@ const Navbar = () => {
       onClick={handleDrawerToggle}
       onKeyDown={handleDrawerToggle}
     >
-      {/* Drawer Header */}
       <Box
         sx={{ p: 2, textAlign: "center", borderBottom: "1px solid #2e2e3f" }}
       >
@@ -74,7 +72,6 @@ const Navbar = () => {
         ))}
       </List>
 
-      {/* Footer */}
       <Box sx={{ p: 2, borderTop: "1px solid #2e2e3f", textAlign: "center" }}>
         <Typography variant="body2" sx={{ color: "#aaa" }}>
           © 2024 MyApp. All rights reserved.
@@ -93,7 +90,6 @@ const Navbar = () => {
         }}
       >
         <Toolbar>
-          {/* Hamburger menu for mobile */}
           <IconButton
             size="large"
             edge="start"
@@ -105,12 +101,10 @@ const Navbar = () => {
             <MenuIcon />
           </IconButton>
 
-          {/* Logo/Title */}
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}>
             MyApp
           </Typography>
 
-          {/* Buttons for desktop */}
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <Button color="inherit" component={Link} to="/">
               Home
@@ -128,13 +122,12 @@ const Navbar = () => {
         </Toolbar>
       </AppBar>
 
-      {/* Drawer for mobile menu */}
       <Drawer
         anchor="left"
         open={mobileOpen}
         onClose={handleDrawerToggle}
         ModalProps={{
-          keepMounted: true, // Better performance on mobile
+          keepMounted: true,
         }}
         sx={{ backgroundColor: "transparent" }}
         
