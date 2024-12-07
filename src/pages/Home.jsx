@@ -53,33 +53,18 @@ const Home = () => {
                                 Did You Know?
                             </Typography>
                             <Typography>
-                                Access to Improved Water Source refers to the
-                                availability of water for drinking and other
-                                essential uses from sources that are more likely
-                                to be safe and free from contamination. Improved
-                                water sources typically include facilities or
-                                infrastructure designed to protect the water
-                                from outside contamination, particularly from
-                                fecal matter. Examples include piped water
-                                systems, boreholes or tube wells, protected dug
-                                wells, protected springs, and rainwater
-                                collection systems. Ensuring access to improved
-                                water sources is a critical component of global
-                                public health efforts, as it significantly
-                                reduces the risk of waterborne diseases such as
-                                cholera, diarrhea, and typhoid. It is also a key
-                                target of the United Nations’ Sustainable
-                                Development Goals (SDG 6), which aims to provide
-                                clean water and sanitation for all by 2030.
-                                Despite progress in recent decades, challenges
-                                persist in many regions, particularly in rural
-                                and low-income urban areas, where infrastructure
-                                and maintenance are inadequate. Addressing these
-                                challenges requires investment in sustainable
-                                water supply systems, education on water
-                                management, and policies that ensure equitable
-                                access to safe drinking water for all
-                                communities.
+                                Having access to improved water sources means
+                                having clean water for drinking and other
+                                necessities from sources like piped systems,
+                                protected wells, or rainwater collection that
+                                have been designed to minimize contamination. It
+                                is a major objective of the Sustainable
+                                Development Goals (SDG 6) of the UN and is
+                                essential for reducing waterborne illnesses like
+                                cholera. Despite advancements, dependable access
+                                is still lacking in many low-income and rural
+                                areas, necessitating investments in equitable
+                                policy and sustainable infrastructure.
                             </Typography>
                             <Typography
                                 variant={"h4"}
