@@ -51,7 +51,6 @@ const Navbar = () => {
       <List sx={{ flex: 1 }}>
         {["Home", "About", "Forum", "Login"].map((text) => (
           <ListItem
-            button
             key={text}
             component={Link}
             to={`/${text.toLowerCase()}`}
