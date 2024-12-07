@@ -1,4 +1,3 @@
-import ColorPalette from "../components/ColorPalette";
 import Banner from "../components/Banner";
 import Tiles from "../components/Tiles";
 import { Box, Container, Stack, Typography, Divider } from "@mui/material";
@@ -9,7 +8,7 @@ const Home = () => {
     const environmentalSrc = "./environmental.jpg";
     const energySrc = "./Energy.webp";
     return (
-        <ColorPalette>
+        <>
             <Banner />
             <div style={{ margin: "2% 0" }}>
                 <Container>
@@ -120,7 +119,7 @@ const Home = () => {
                     <Divider sx={{ margin: "1% 0" }} />
                 </Container>
             </div>
-        </ColorPalette>
+        </>
     );
 };
 
