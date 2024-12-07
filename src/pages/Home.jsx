@@ -56,16 +56,16 @@ const Home = () => {
           </Stack>
           <Divider sx={{ margin: "1% 0" }} />
           <Stack gap={2}>
-            <Stack
-              flexDirection={"row"}
-              justifyContent={"center"}
-              gap={1}
-              alignItems={"center"}
-              flexWrap={"wrap"}
-            >
-              <Tiles header="Hydrology" background={`url(${hydrologySrc})`} />
-              <Tiles header="Hydrology" />
-              <Tiles header="Hydrology" />
+            <Stack>
+              <Typography
+                variant={"h3"}
+                component={"h1"}
+                color="dark_ocean"
+                fontFamily={"Quintessential"}
+                textAlign={"start"}
+              >
+                Overview
+              </Typography>
             </Stack>
             <Stack
               flexDirection={"row"}
@@ -74,57 +74,9 @@ const Home = () => {
               alignItems={"center"}
               flexWrap={"wrap"}
             >
-              <Stack className="col">
-                <Stack
-                  bgcolor={"primary.main"}
-                  width={"100%"}
-                  height={"40vh"}
-                  justifyContent={"flex-end"}
-                >
-                  <Stack
-                    sx={{ backgroundColor: `rgba(0,0,0,0.4)` }}
-                    padding={"2% 3%"}
-                  >
-                    <Typography textAlign={"center"} color="white">
-                      lorem ipsum 4
-                    </Typography>
-                  </Stack>
-                </Stack>
-              </Stack>
-              <Stack className="col">
-                <Stack
-                  bgcolor={"primary.main"}
-                  width={"100%"}
-                  height={"40vh"}
-                  justifyContent={"flex-end"}
-                >
-                  <Stack
-                    sx={{ backgroundColor: `rgba(0,0,0,0.4)` }}
-                    padding={"2% 3%"}
-                  >
-                    <Typography textAlign={"center"} color="white">
-                      lorem ipsum 5
-                    </Typography>
-                  </Stack>
-                </Stack>
-              </Stack>
-              <Stack className="col">
-                <Stack
-                  bgcolor={"primary.main"}
-                  width={"100%"}
-                  height={"40vh"}
-                  justifyContent={"flex-end"}
-                >
-                  <Stack
-                    sx={{ backgroundColor: `rgba(0,0,0,0.4)` }}
-                    padding={"2% 3%"}
-                  >
-                    <Typography textAlign={"center"} color="white">
-                      lorem ipsum 6
-                    </Typography>
-                  </Stack>
-                </Stack>
-              </Stack>
+              <Tiles header="Hydrology" background={`url(${hydrologySrc})`} />
+              <Tiles header="Environmental Impact" />
+              <Tiles header="Energy Connection" />
             </Stack>
           </Stack>
           <Divider sx={{ margin: "1% 0" }} />
