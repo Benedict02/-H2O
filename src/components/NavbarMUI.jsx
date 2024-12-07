@@ -10,7 +10,6 @@ import {
     List,
     ListItem,
     ListItemText,
-    Divider,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link, Outlet } from "react-router-dom";
@@ -44,8 +43,6 @@ const Navbar = () => {
           MyApp
         </Typography>
       </Box>
-
-            {/* Navigation Links */}
             <List sx={{ flex: 1 }}>
                 {["Home", "About", "Forum", "Login"].map((text) => (
                     <ListItem

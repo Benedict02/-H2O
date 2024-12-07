@@ -25,7 +25,7 @@ const Tiles = (item) => {
             backgroundSize: "cover",
             backgroundPosition: "center",
             '&:hover':{
-              transform: 'translate(-.8%, -.8%)',
+              transform: {xs: "none", sm:'translate(-.8%, -.8%)'},
             },
           }}
           onMouseEnter={handleMouseEnter}
