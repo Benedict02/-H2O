@@ -19,6 +19,7 @@ const Tiles = (item) => {
       <Stack className="col">
         <Stack
           sx={{
+            transition:"all 0.3s ease-in-out",
             background: `${item.background}`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",

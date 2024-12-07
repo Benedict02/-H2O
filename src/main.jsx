@@ -1,7 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
-import About from "./pages/About.jsx";
+import Science from "./pages/Science.jsx";
+import Solution from "./pages/Solution.jsx";
 import "./assets/index.css";
 
 import Home from "./pages/Home.jsx";
@@ -9,21 +10,25 @@ import Home from "./pages/Home.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
-  {
-    path: "/-H2O/",
-    element: <App />,
-    children: [
-      { path: "", element: <Home /> },
-      {
-        path: "about",
-        element: <About />,
-      },
-    ],
-  },
+    {
+        path: "/-H2O/",
+        element: <App />,
+        children: [
+            { path: "", element: <Home /> },
+            {
+                path: "solution",
+                element: <Solution />,
+            },
+            {
+                path: "science",
+                element: <Science />,
+            },
+        ],
+    },
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
+    <StrictMode>
+        <RouterProvider router={router} />
+    </StrictMode>
 );

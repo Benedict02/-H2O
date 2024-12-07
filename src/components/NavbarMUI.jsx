@@ -1,26 +1,26 @@
 import React, { useState } from "react";
 import {
-  AppBar,
-  Toolbar,
-  Typography,
-  Button,
-  IconButton,
-  Drawer,
-  Box,
-  List,
-  ListItem,
-  ListItemText,
-  Divider,
+    AppBar,
+    Toolbar,
+    Typography,
+    Button,
+    IconButton,
+    Drawer,
+    Box,
+    List,
+    ListItem,
+    ListItemText,
+    Divider,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link, Outlet } from "react-router-dom";
 
 const Navbar = () => {
-  const [mobileOpen, setMobileOpen] = useState(false);
+    const [mobileOpen, setMobileOpen] = useState(false);
 
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
+    const handleDrawerToggle = () => {
+        setMobileOpen(!mobileOpen);
+    };
 
   const drawer = (
     <Box
@@ -45,32 +45,32 @@ const Navbar = () => {
         </Typography>
       </Box>
 
-      {/* Navigation Links */}
-      <List sx={{ flex: 1 }}>
-        {["Home", "About", "Forum", "Login"].map((text) => (
-          <ListItem
-            key={text}
-            component={Link}
-            to={`/${text.toLowerCase()}`}
-            sx={{
-              color: "white",
-              textDecoration: "none",
-              "&:hover": {
-                backgroundColor: "#2e2e3f",
-              },
-            }}
-          >
-            <ListItemText
-              primary={text}
-              primaryTypographyProps={{
-                fontSize: "16px",
-                fontWeight: "medium",
-                textAlign: "center",
-              }}
-            />
-          </ListItem>
-        ))}
-      </List>
+            {/* Navigation Links */}
+            <List sx={{ flex: 1 }}>
+                {["Home", "About", "Forum", "Login"].map((text) => (
+                    <ListItem
+                        key={text}
+                        component={Link}
+                        to={`/${text.toLowerCase()}`}
+                        sx={{
+                            color: "white",
+                            textDecoration: "none",
+                            "&:hover": {
+                                backgroundColor: "#2e2e3f",
+                            },
+                        }}
+                    >
+                        <ListItemText
+                            primary={text}
+                            primaryTypographyProps={{
+                                fontSize: "16px",
+                                fontWeight: "medium",
+                                textAlign: "center",
+                            }}
+                        />
+                    </ListItem>
+                ))}
+            </List>
 
       <Box sx={{ p: 2, borderTop: "1px solid #2e2e3f", textAlign: "center" }}>
         <Typography variant="body2" sx={{ color: "#aaa" }}>
