@@ -7,6 +7,14 @@ const Home = () => {
     const hydrologySrc = "./hydrology.jpg";
     const environmentalSrc = "./environmental.jpg";
     const energySrc = "./Energy.webp";
+
+    const fixtureSrc = "./water-efficient-fixture.jpg";
+    const greywaterSrc = "./greywater.jpg";
+    const rainwaterSrc = "./rainwater.jpeg";
+    const irigationSrc = "./irigation.png";
+    const leakSrc = "./water-leak.jpg";
+    const droughtSrc = "./drought.jpg"
+
     return (
         <>
             <Banner />
@@ -89,7 +97,7 @@ const Home = () => {
                                 fontFamily={"Quintessential"}
                                 textAlign={"start"}
                             >
-                                Overview
+                                Science Overview
                             </Typography>
                         </Stack>
                         <Stack
@@ -117,6 +125,60 @@ const Home = () => {
                         </Stack>
                     </Stack>
                     <Divider sx={{ margin: "1% 0" }} />
+
+                    <Stack gap={2} padding={"2% 0"}>
+                        <Stack>
+                            <Typography
+                                variant={"h3"}
+                                component={"h1"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                Solution Overview
+                            </Typography>
+                        </Stack>
+                        <Stack
+                            flexDirection={"row"}
+                            justifyContent={"center"}
+                            gap={1}
+                            alignItems={"center"}
+                            flexWrap={"wrap"}
+                        >
+                            <Tiles
+                                header="Water-Efficient Fixtures"
+                                background={`url(${fixtureSrc})`}
+                            />
+                            <Tiles
+                                header="Greywater Recycling"
+                                background={`url(${greywaterSrc})`}
+                            />
+                            <Tiles
+                                header="Rainwater Harvesting"
+                                background={`url(${rainwaterSrc})`}
+                            />
+                        </Stack>
+                        <Stack
+                            flexDirection={"row"}
+                            justifyContent={"center"}
+                            gap={1}
+                            alignItems={"center"}
+                            flexWrap={"wrap"}
+                        >
+                            <Tiles
+                                header="Smart Irigation Systems"
+                                background={`url(${irigationSrc})`}
+                            />
+                            <Tiles
+                                header="Leak Detection and Repair"
+                                background={`url(${leakSrc})`}
+                            />
+                            <Tiles
+                                header="Drought-Resistant Landscaping"
+                                background={`url(${droughtSrc})`}
+                            />
+                        </Stack>
+                    </Stack>
                 </Container>
             </div>
         </>
