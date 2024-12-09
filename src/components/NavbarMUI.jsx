@@ -113,10 +113,10 @@ const Navbar = () => {
 
           {/* Buttons for desktop */}
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            <Button color="inherit" component={Link} to="/">
+            <Button color="inherit" component={Link} to="/-H2O/">
               Home
             </Button>
-            <Button color="inherit" component={Link} to="/about">
+            <Button color="inherit" component={Link} to="about">
               About
             </Button>
             <Button color="inherit" component={Link} to="/forum">

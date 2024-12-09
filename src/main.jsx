@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import About from "./pages/About.jsx";
+import Hydrology from "./pages/Hydrology.jsx";
 import "./assets/index.css";
 
 import Home from "./pages/Home.jsx";
@@ -13,11 +14,18 @@ const router = createBrowserRouter([
     path: "/-H2O/",
     element: <App />,
     children: [
-      { path: "", element: <Home /> },
+      {
+        path: "",
+        element: <Home />
+      },
       {
         path: "about",
         element: <About />,
       },
+      {
+        path: "hydrology",
+        element: <Hydrology />,
+      }
     ],
   },
 ]);
