@@ -179,6 +179,46 @@ const Home = () => {
                             />
                         </Stack>
                     </Stack>
+                    <Divider sx={{ margin: "1% 0" }} />
+
+                    <Stack gap={2} padding={"2% 0"}>
+                        <Stack gap={4}>
+                            <Typography
+                                variant={"h3"}
+                                component={"h1"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                The Importance of Water Conservation
+                            </Typography>
+                            <Typography textAlign={'justify'}>
+                                Water is a fundamental resource for all living beings, 
+                                yet its availability is limited. 
+                                Freshwater makes up only <Typography color="primary.main" fontWeight="bold" display={'inline-block'}>2.5% of the Earth's total water</Typography>, 
+                                and most of it is locked in glaciers and ice caps, 
+                                leaving less than <Typography color="primary.main" fontWeight="bold" display={'inline-block'}>1% accessible for human use</Typography>. 
+                                Rapid population growth, climate change, 
+                                and pollution are straining this finite resource. 
+                                Conserving water not only ensures its availability for future generations 
+                                but also helps maintain healthy ecosystems, reduce energy consumption, 
+                                and mitigate the effects of droughts and water scarcity.
+                            </Typography>
+                            <Typography
+                                variant={"h4"}
+                                component={"h1"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"center"}
+                            >
+                                Access to improved water source
+                            </Typography>
+                        </Stack>
+                        <Stack>
+                            <CustomPieChart />
+                        </Stack>
+                    </Stack>
+
                 </Container>
             </div>
         </>

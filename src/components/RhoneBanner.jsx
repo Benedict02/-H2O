@@ -10,9 +10,9 @@ const Banner = () => {
     return (
         <ParallaxBanner style={{ height: "100vh", aspectRatio: "2/1" }}>
             <ParallaxBannerLayer image="The_Rhone_1.png" speed={20} />
-            <ParallaxBannerLayer image="The_Rhone_2.png" speed={15} />
-            <ParallaxBannerLayer image="The_Rhone_3.png" speed={18} />
-            <ParallaxBannerLayer image="The_Rhone_4.png" speed={10} />{" "}
+            <ParallaxBannerLayer image="The_Rhone_2.png" speed={-15} />
+            <ParallaxBannerLayer image="The_Rhone_3.png" speed={-18} />
+            <ParallaxBannerLayer image="The_Rhone_4.png" speed={10} />
             <ParallaxBannerLayer>
                 <Box
                     sx={{

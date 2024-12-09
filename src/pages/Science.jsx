@@ -8,6 +8,27 @@ const Science = () => {
                 <Stack>
                     <Typography variant="h1">Woi</Typography>
                 </Stack>
+                <Stack>
+                    <Typography variant="h1">Woi</Typography>
+                </Stack>
+                <Stack>
+                    <Typography variant="h1">Woi</Typography>
+                </Stack>
+                <Stack>
+                    <Typography variant="h1">Woi</Typography>
+                </Stack>
+                <Stack>
+                    <Typography variant="h1">Woi</Typography>
+                </Stack>
+                <Stack>
+                    <Typography variant="h1">Woi</Typography>
+                </Stack>
+                <Stack>
+                    <Typography variant="h1">Woi</Typography>
+                </Stack>
+                <Stack>
+                    <Typography variant="h1">Woi</Typography>
+                </Stack>
             </Container>
         </>
     );
