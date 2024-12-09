@@ -1,4 +1,4 @@
-import Banner from "../components/Banner";
+import Banner from "../components/HokusaiBanner";
 import Tiles from "../components/Tiles";
 import { Box, Container, Stack, Typography, Divider } from "@mui/material";
 import CustomPieChart from "../components/CustomPieChart";

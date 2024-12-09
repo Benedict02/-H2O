@@ -1,13 +1,12 @@
 import { Container, Stack, Typography } from "@mui/material";
-import Banner from "../components/FixedBanner";
+import Banner from "../components/RhoneBanner";
 const Science = () => {
-    const painting = "Starry_Night_Over_the_Rhone.jpg";
     return (
         <>
-            <Banner title="lorem" src={painting} />
+            <Banner />
             <Container fixed>
                 <Stack>
-                    <Typography>abc</Typography>
+                    <Typography variant="h1">Woi</Typography>
                 </Stack>
             </Container>
         </>

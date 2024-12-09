@@ -120,13 +120,13 @@ const Navbar = () => {
                     </Typography>
 
                     <Box sx={{ display: { xs: "none", sm: "block" } }}>
-                        <Button color="inherit" component={Link} to="/">
+                        <Button color="inherit" component={Link} to="./">
                             Home
                         </Button>
-                        <Button color="inherit" component={Link} to="/science">
+                        <Button color="inherit" component={Link} to="./science">
                             Science
                         </Button>
-                        <Button color="inherit" component={Link} to="/solution">
+                        <Button color="inherit" component={Link} to="./solution">
                             Solution
                         </Button>
                     </Box>
