@@ -1,46 +1,35 @@
 import * as React from "react";
-import { BarChart } from "@mui/x-charts/BarChart";
-import { desktopOS, valueFormatter } from "./WorldStats";
+import { PieChart } from "@mui/x-charts/PieChart";
 
-export default function CustomBarChart() {
+export default function CustomPieChart({data}) {
     const colors = [
-        "red",
-        "green",
         "blue",
-        "cyan",
-        "pink",
-        "yellow",
-        "purple",
-        "orange",
+        "#AAAAff",
         "brown",
-        "teal",
-        "grey",
+        "#00CEC8",
+        "DodgerBlue",
+        "DarkSlateGrey",
+        "DarkCyan",
+        "MediumSeaGreen",
     ];
+
     return (
-        <BarChart
-            xAxis={[
-                {
-                    data: desktopOS.map((os) => os.label),
-                    label: "Countries",
-                    scaleType: "band",
-                    tickPlacement: "middle",
-                },
-            ]}
-            yAxis={[
-                {
-                    label: "Percentage (%)",
-                    series: valueFormatter,
-                },
-            ]}
+        <PieChart
             series={[
                 {
-                    data: desktopOS.map((os) => os.value),
-                    label: "Population without access to clean water",
-                    color:"#608bc1"
+                    data: data.map((element, index) => ({
+                        id: element.index,
+                        value: element.value,
+                        label: element.label,
+                        color: colors[index % colors.length],
+                    })),
+                    innerRadius: 100,
+                    outerRadius: 150,
+                    paddingAngle: 2,
                 },
             ]}
-            sx={{ width: { xs: 400, lg: 1000 } }}
             height={400}
+            sx={{width: { xs: 400, lg: 1000 },}}
         />
     );
 }
