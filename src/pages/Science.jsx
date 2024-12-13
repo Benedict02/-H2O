@@ -4,6 +4,7 @@ import DynamicList from "../components/DynamicList";
 
 const Science = () => {
     const hydrologySrc = "./hydrology.gif"
+
     const waterCycleSteps = [
         {
             title: 'Evaporation',
@@ -96,6 +97,204 @@ const Science = () => {
         },
     ]
 
+    const humanImpact = [
+        {
+            title: 'Climate Change',
+            items: [
+                'Rising temperatures intensify evaporation, altering precipitation patterns and increasing the frequency of extreme events like droughts and floods.',
+            ],
+        },
+        {
+            title: 'Deforestation',
+            items: [
+                'Reduces transpiration, disrupts local rainfall, and increases surface runoff.',
+            ],
+        },
+        {
+            title: 'Overuse of Groundwater',
+            items: [
+                'Excessive extraction depletes aquifers, leading to land subsidence and reduced water availability.',
+            ],
+        },
+        {
+            title: 'Pollution',
+            items: [
+                'Contamination of rivers, lakes, and groundwater impacts ecosystems and water usability.',
+            ],
+        },
+    ];
+
+    const waterRole = [
+        {
+            title: 'Aquatic Ecosystems',
+            items: [
+                'Rivers, lakes, oceans, and wetlands are home to diverse plants, animals, and microorganisms.',
+                'These ecosystems regulate global temperatures, carbon cycles, and oxygen levels.',
+            ],
+        },
+        {
+            title: 'Terrestrial Ecosystems',
+            items: [
+                'Water availability determines the health of forests, grasslands, and agricultural landscapes.',
+                'Plants rely on soil moisture, and animals depend on natural water sources.',
+            ],
+        },
+    ];
+    
+    const waterMiss = [
+        {
+            title: 'Water Scarcity and Overuse',
+            items: [
+                'Depletion of Aquifers: Excessive groundwater extraction lowers water tables, leading to land subsidence and reduced water availability for ecosystems.',
+                'River Drying: Overuse for agriculture and industry can reduce river flow, harming aquatic species and dependent ecosystems.',
+                'Biodiversity Loss: Water scarcity forces species to migrate or face extinction, disrupting ecological balance.',
+            ],
+        },
+        {
+            title: 'Water Pollution',
+            items: [
+                'Agricultural Runoff: Pesticides, fertilizers, and animal waste pollute water, causing algal blooms and oxygen depletion (eutrophication).',
+                'Industrial Waste: Factories discharge toxic chemicals, heavy metals, and oils into water bodies.',
+                'Plastic Pollution: Oceans are inundated with plastic debris, which entangles marine species and enters the food chain as microplastics.',
+                'Sewage and Urban Runoff: Untreated sewage and pollutants from cities degrade water quality.',
+            ],
+        },
+    ];
+
+    const climate = [
+        {
+            title: 'Rising Temperatures',
+            items: [
+                'Increase evaporation rates, altering precipitation patterns and exacerbating droughts and floods.',
+            ],
+        },
+        {
+            title: 'Melting Glaciers',
+            items: [
+                'Glacial melt contributes to rising sea levels, threatening coastal ecosystems and freshwater supplies.',
+            ],
+        },
+        {
+            title: 'Extreme Weather Events',
+            items: [
+                'Climate change intensifies storms, hurricanes, and typhoons, leading to floods that devastate ecosystems and human communities.',
+            ],
+        },
+    ];
+    
+    const drought = [
+        {
+            title: 'Vegetation Loss',
+            items: [
+                'Plants die without water, increasing desertification risks in arid regions.',
+            ],
+        },
+        {
+            title: 'Wildlife Migration',
+            items: [
+                'Animals migrate in search of water, leading to ecosystem imbalances.',
+            ],
+        },
+        {
+            title: 'Reduced Carbon Sequestration',
+            items: [
+                'Loss of vegetation decreases the Earth\'s capacity to absorb atmospheric carbon, worsening climate change.',
+            ],
+        },
+    ];
+
+    const flood = [
+        {
+            title: 'Loss of Habitat',
+            items: [
+                'Floodwaters can displace terrestrial and aquatic species, disrupting ecosystems.',
+            ],
+        },
+        {
+            title: 'Soil Degradation',
+            items: [
+                'Flooding washes away fertile topsoil, reducing agricultural productivity.',
+            ],
+        },
+        {
+            title: 'Water Contamination',
+            items: [
+                'Floods often carry pollutants, debris, and pathogens into water bodies.',
+            ],
+        },
+    ];
+    
+    const waterToEnergy = [
+        {
+            title: 'Hydropower',
+            items: [
+                'Hydropower is the most direct and significant form of water-driven energy. It harnesses the energy of flowing or falling water to generate electricity. Large reservoirs and dams store water, and as it flows through turbines, it generates power.',
+                'Environmental Considerations: While hydropower is a renewable energy source, it can significantly impact ecosystems. The creation of reservoirs can flood large areas, disrupt aquatic habitats, and affect fish migration patterns.'
+            ],
+        },
+        {
+            title: 'Thermal Power Plants',
+            items: [
+                'Cooling: Thermal power plants (coal, gas, and nuclear) rely heavily on water for cooling. Large amounts of water are required to absorb and dissipate the heat produced during energy generation. This often leads to the thermal pollution of local water bodies.',
+                'Water Loss: In some plants, water is evaporated in cooling towers, resulting in significant water consumption and potentially affecting nearby ecosystems if the water source is not replenished.',
+            ],
+        },
+        {
+            title: 'Nuclear Power',
+            items: [
+                'Cooling Requirements: Like thermal plants, nuclear reactors also require large amounts of water to cool the reactors and maintain safe operating temperatures. Nuclear power stations often draw water from nearby lakes, rivers, or oceans.',
+                'Safety Concerns: In extreme cases, like a reactor malfunction, the cooling process can fail, potentially leading to catastrophic events.',
+            ],
+        },
+    ];
+    
+    const energyToWater = [
+        {
+            title: 'Water Extraction and Treatment',
+            items: [
+                'Pumping Water: To extract water from natural sources (rivers, lakes, or groundwater), energy is required to pump water. For deep groundwater sources, energy consumption can be significant.',
+                'Water Treatment: Modern water treatment plants, which purify water for drinking and industrial use, rely on electricity to operate filtration systems, pumps, and chemical treatments. The energy required can be substantial, particularly in large urban areas.',
+            ],
+        },
+        {
+            title: 'Water Distribution',
+            items: [
+                'Pipelines and Storage: Energy is needed to push water through pipelines to homes, farms, and industries. High-energy costs are often associated with distributing water to remote or elevated areas.',
+                'Desalination: One of the most energy-intensive methods of water treatment is desalination, where saltwater is converted into freshwater. This process requires large amounts of energy, mainly electricity, and is often powered by fossil fuels or renewable sources.',
+            ],
+        },
+        {
+            title: 'Irrigation Systems',
+            items: [
+                'Pumping and Delivery: In agriculture, water is essential for crop growth. Energy is used to pump water from rivers or groundwater into irrigation systems. In regions that rely on irrigated agriculture, this can result in high energy consumption.',
+                'Energy-Water Tradeoff: The energy required for irrigation systems directly affects the cost and sustainability of food production, especially in areas with limited water resources.',
+            ],
+        },
+    ];
+    
+    const waterNexus = [
+        {
+            title: 'Water Scarcity and Energy Production',
+            items: [
+                'Limited Water Availability: In regions where water resources are limited, the demand for water-intensive energy production (such as thermoelectric and nuclear plants) becomes problematic. This is particularly concerning in arid and semi-arid regions, where the availability of water for cooling power plants may decrease, leading to energy shortages.',
+                'Increased Competition: As water becomes scarcer, its competition between energy production, agriculture, and drinking water can create conflicts, particularly in densely populated or drought-prone areas.',
+            ],
+        },
+        {
+            title: 'Energy Consumption in Water Scarcity Areas',
+            items: [
+                'In water-scarce regions, alternative water sources like desalination plants are often the solution. However, the high energy demands of desalination (which can consume large amounts of electricity or fossil fuels) can make this a costly and unsustainable solution if not paired with clean or renewable energy sources.',
+            ],
+        },
+        {
+            title: 'Climate Change and Resource Availability',
+            items: [
+                'Changing Precipitation Patterns: Climate change is expected to cause shifts in rainfall patterns, increasing the frequency of floods and droughts. These changes can impact water availability for hydropower generation, which may reduce energy production or cause excessive flooding, impacting energy infrastructure.',
+                'Water Stress: Increased water stress due to rising temperatures and reduced precipitation exacerbates the challenges of energy production in water-scarce areas.',
+            ],
+        },
+    ];    
+    
     return (
         <>
             <Banner />
@@ -129,76 +328,352 @@ const Science = () => {
                     </Stack>
                     <Divider sx={{ margin: "1% 0" }} />
 
-                    <Stack gap={1} padding={"2% 0"}>
-                        <Typography
-                            variant={"h3"}
-                            component={"h1"}
-                            color="dark_ocean"
-                            fontFamily={"Quintessential"}
-                            textAlign={"start"}
-                            gutterBottom
-                        >
-                            Hydrology
-                        </Typography>
-                        <Typography textAlign={"justify"}>
-                            Hydrology is the scientific study of water, focusing on its occurrence, distribution, movement, and properties on Earth and other planets. 
-                            It examines the interaction between water and the environment, including its influence on ecosystems, weather, and human activities. 
-                            The hydrological cycle applies to all water on earth, which covers an area of ​​approximately 1.386 billion km³.
-                            Hydrology causes liquid water to be found in bodies of water, such as oceans, seas, lakes, rivers, streams, canals, ponds, or puddles. 
-                        </Typography>
-                    </Stack>
-                    <Divider sx={{ margin: "1% 0" }} />
-                    
-                    <Stack gap={1} padding={"2% 0"}>
-                        <Typography
-                            variant={"h4"}
-                            component={"p"}
-                            color="dark_ocean"
-                            fontFamily={"Quintessential"}
-                            textAlign={"start"}
-                            gutterBottom
-                        >
-                            Water Cycle
-                        </Typography>
-                        <Typography textAlign={"justify"}>
-                            The water cycle is a continuous process in which water moves through different phases and environments. 
-                            Here are the primary stages:
-                        </Typography>
-                        <DynamicList content={waterCycleSteps} />
-                        <img src={hydrologySrc} alt="Hydrology GIF" />
-                    </Stack>
-                    <Divider sx={{ margin: "1% 0" }} />
+                    <Stack id="hydrology">
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h2"}
+                                component={"h1"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                                gutterBottom
+                            >
+                                Hydrology
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                Hydrology is the scientific study of water, focusing on its occurrence, distribution, movement, and properties on Earth and other planets. 
+                                It examines the interaction between water and the environment, including its influence on ecosystems, weather, and human activities. 
+                                The hydrological cycle applies to all water on earth, which covers an area of ​​approximately 1.386 billion km³.
+                                Hydrology causes liquid water to be found in bodies of water, such as oceans, seas, lakes, rivers, streams, canals, ponds, or puddles. 
+                            </Typography>
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+                        
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                                gutterBottom
+                            >
+                                Water Cycle
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                The water cycle is a continuous process in which water moves through different phases and environments. 
+                                Here are the primary stages:
+                            </Typography>
+                            <DynamicList content={waterCycleSteps} />
+                            <img src={hydrologySrc} alt="Hydrology GIF" />
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
 
-                    <Stack gap={1} padding={"2% 0"}>
-                        <Typography
-                            variant={"h4"}
-                            component={"p"}
-                            color="dark_ocean"
-                            fontFamily={"Quintessential"}
-                            textAlign={"start"}
-                        >
-                            Factors Affecting Hydrology
-                        </Typography>
-                        <Typography textAlign={"justify"}>
-                            Several factors influence the hydrological processes, including:
-                        </Typography>
-                        <DynamicList content={factors} />
-                    </Stack>
-                    <Divider sx={{ margin: "1% 0" }} />
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                Factors Affecting Hydrology
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                Several factors influence the hydrological processes, including:
+                            </Typography>
+                            <DynamicList content={factors} />
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
 
-                    <Stack gap={1} padding={"2% 0"}>
-                        <Typography
-                            variant={"h4"}
-                            component={"p"}
-                            color="dark_ocean"
-                            fontFamily={"Quintessential"}
-                            textAlign={"start"}
-                        >
-                            The Importance of Hydrology
-                        </Typography>
-                        <DynamicList content={important} />
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                Human Impact on Hydrology
+                            </Typography>
+                            <DynamicList content={humanImpact} />
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                The Importance of Hydrology
+                            </Typography>
+                            <DynamicList content={important} />
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                Conclusion
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                Hydrology is fundamental to understanding how water supports life and ecosystems. 
+                                Its study provides insights into managing water resources, mitigating disasters, 
+                                and addressing global challenges like water scarcity and climate change. 
+                                By appreciating the complexity of the water cycle and the factors that affect it, 
+                                we can work toward a more sustainable and water-secure future.
+                            </Typography>
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0", borderWidth: '.5vh', borderColor: '#000' }} />
                     </Stack>
-                    <Divider sx={{ margin: "1% 0" }} />
+
+                    <Stack id="environmental">
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h2"}
+                                component={"h1"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                                gutterBottom
+                            >
+                                Environmental Impact
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                Water is fundamental to sustaining life, ecosystems, and the planet's overall balance. 
+                                However, human activities, pollution, 
+                                and mismanagement of water resources have caused significant environmental impacts. 
+                                Below is a deeper dive into how water interacts with and influences the environment, 
+                                both positively and negatively.
+                            </Typography>
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+                        
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                                gutterBottom
+                            >
+                                Water’s Role in Supporting Ecosystems
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                Water is the lifeblood of ecosystems, ensuring biodiversity and the survival of countless species.
+                            </Typography>
+                            <DynamicList content={waterRole} />
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                Water Mismanagement
+                            </Typography>
+                            <DynamicList content={waterMiss} />
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                Climate Change
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                The relationship between water and climate change is bidirectional: 
+                                water is both a driver and a victim of climate shifts.
+                            </Typography>
+                            <DynamicList content={climate} />
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                Drought and Desertification
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                Prolonged droughts have severe consequences for the environment:
+                            </Typography>
+                            <DynamicList content={drought} />
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                Flood
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                While floods are natural events, 
+                                their frequency and intensity have been aggravated by human activities:
+                            </Typography>
+                            <DynamicList content={flood} />
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                Conclusion
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                Water’s impact on the environment is profound, 
+                                influencing everything from local ecosystems to global climate patterns. 
+                                Mismanagement and pollution disrupt this delicate balance, 
+                                causing cascading effects on biodiversity, food security, and human health. 
+                                By adopting sustainable practices and acknowledging the interconnectedness of 
+                                water and the environment, we can ensure a thriving planet for future generations.
+                            </Typography>
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0", borderWidth: '.5vh', borderColor: '#000' }} />
+                    </Stack>
+
+                    <Stack id="energy">
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h2"}
+                                component={"h1"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                                gutterBottom
+                            >
+                                Energy
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                Water and energy are deeply interconnected resources that 
+                                are critical to the functioning of societies and ecosystems worldwide. 
+                                The relationship between the two is complex and multi-faceted, 
+                                influencing everything from power generation to water treatment, irrigation, 
+                                and the overall sustainability of resources. 
+                                Below is an exploration of how water and energy are linked and 
+                                the challenges and opportunities that arise from their interaction.
+                            </Typography>
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+                        
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                                gutterBottom
+                            >
+                                The Role of Water in Energy Production
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                Water plays an essential role in energy production across various sectors, 
+                                particularly in hydropower generation, fossil fuel-based energy production, 
+                                and nuclear energy.
+                            </Typography>
+                            <DynamicList content={waterToEnergy} />
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                The Role of Energy in Water Management
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                Energy is critical for all stages of the water cycle, 
+                                from the extraction and treatment of water to its distribution and use. 
+                                This creates a water-energy nexus, where the availability 
+                                and cost of one resource impact the other.
+                            </Typography>
+                            <DynamicList content={energyToWater} />
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                The Water-Energy Nexus
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                The interdependence of water and energy presents several challenges for 
+                                sustainable development and climate resilience. 
+                                Below are some key issues arising from this relationship:
+                            </Typography>
+                            <DynamicList content={waterNexus} />
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                Future of Water-Nergy Nexus
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                In the future, balancing the water-energy nexus will require 
+                                a combination of innovation, policy, and education to ensure 
+                                that both water and energy resources are managed in a sustainable way. 
+                                Solutions like integrating renewable energy sources, 
+                                advancing desalination technologies, water recycling, 
+                                and coordinating resource management will become increasingly essential 
+                                in a world facing both water scarcity and energy challenges.
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                By understanding and addressing the links between water and energy, 
+                                societies can pave the way toward more sustainable, resilient systems 
+                                that support both environmental health and human development.
+                            </Typography>
+                        </Stack>
+                    </Stack>
+
                 </Container>
             </div>
         </>
