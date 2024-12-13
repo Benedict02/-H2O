@@ -102,6 +102,7 @@ const Home = () => {
     const leakSrc = "./water-leak.jpg";
     const droughtSrc = "./drought.jpg";
     const rippleSrc = "./ripple.png";
+    const flagSrc = "./flag.png";
 
     const tips = [
         "Turning off the tap while brushing your teeth can save up to 200 gallons of water per month.",
@@ -146,6 +147,7 @@ const Home = () => {
                     </Stack>
                     <Divider sx={{ margin: "1% 0" }} />
                 </Container>
+
                 <Container>
                     <Stack gap={2} padding={"2% 0"}>
                         <Stack gap={4}>
@@ -302,17 +304,35 @@ const Home = () => {
                             >
                                 The Importance of Water Conservation
                             </Typography>
-                            <Typography textAlign={'justify'}>
-                                Water is a fundamental resource for all living beings, 
-                                yet its availability is limited. 
-                                Freshwater makes up only around <Typography component={'b'} color="primary.main" fontWeight="bold" display={'inline-block'}>2.5% of the Earth's total water</Typography>, 
-                                and most of it is locked in glaciers and ice caps, 
-                                leaving less than <Typography component={'b'} color="primary.main" fontWeight="bold" display={'inline-block'}>1% accessible for human use</Typography>. 
-                                Rapid population growth, climate change, 
-                                and pollution are straining this finite resource. 
-                                Conserving water not only ensures its availability for future generations 
-                                but also helps maintain healthy ecosystems, reduce energy consumption, 
-                                and mitigate the effects of droughts and water scarcity.
+                            <Typography textAlign={"justify"}>
+                                Water is a fundamental resource for all living
+                                beings, yet its availability is limited.
+                                Freshwater makes up only around{" "}
+                                <Typography
+                                    component={"b"}
+                                    color="primary.main"
+                                    fontWeight="bold"
+                                    display={"inline-block"}
+                                >
+                                    2.5% of the Earth's total water
+                                </Typography>
+                                , and most of it is locked in glaciers and ice
+                                caps, leaving less than{" "}
+                                <Typography
+                                    component={"b"}
+                                    color="primary.main"
+                                    fontWeight="bold"
+                                    display={"inline-block"}
+                                >
+                                    1% accessible for human use
+                                </Typography>
+                                . Rapid population growth, climate change, and
+                                pollution are straining this finite resource.
+                                Conserving water not only ensures its
+                                availability for future generations but also
+                                helps maintain healthy ecosystems, reduce energy
+                                consumption, and mitigate the effects of
+                                droughts and water scarcity.
                             </Typography>
                         </Stack>
                         <Stack>
@@ -347,12 +367,205 @@ const Home = () => {
                         </Stack>
                     </Stack>
                     <Divider sx={{ margin: "1% 0" }} />
-
-                    {/* Change Topic to Indonesian Water Sanitation */}
-                    <Stack gap={2} padding={'2% 0'}>
-                        <Typography></Typography>
-                    </Stack>
-
+                </Container>
+                <div>
+                    <Container>
+                        {/* Change Topic to Indonesian Water Sanitation */}
+                        <Stack gap={2} padding={"2% 0"}>
+                            <Typography
+                                variant={"h3"}
+                                component={"h1"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                Indonesian Water Sanitation
+                            </Typography>
+                            <Stack
+                                direction={{ xs: "column", lg: "row" }}
+                                gap={2}
+                            >
+                                <table
+                                    style={{
+                                        borderCollapse: "collapse",
+                                    }}
+                                    border="black"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <td
+                                                colspan="2"
+                                                style={{
+                                                    textAlign: "center",
+                                                    padding: "0.2em",
+                                                }}
+                                            >
+                                                <img
+                                                    src={flagSrc}
+                                                    alt=""
+                                                    width="100"
+                                                />
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th colspan="2">Data</th>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ padding: "0.2em" }}>
+                                                Access to an at least basic
+                                                water source
+                                            </td>
+                                            <td style={{ padding: "0.2em" }}>
+                                                94% (2022)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ padding: "0.2em" }}>
+                                                Access to at least basic
+                                                sanitation
+                                            </td>
+                                            <td style={{ padding: "0.2em" }}>
+                                                88% (2022)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ padding: "0.2em" }}>
+                                                Average urban water use
+                                                (L/person/day)
+                                            </td>
+                                            <td style={{ padding: "0.2em" }}>
+                                                130 (2004)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ padding: "0.2em" }}>
+                                                Average urban water and
+                                                sanitation tariff (US$/m3)
+                                            </td>
+                                            <td style={{ padding: "0.2em" }}>
+                                                0.77 (Jakarta, ca. 2008)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ padding: "0.2em" }}>
+                                                Annual investment in WSS
+                                            </td>
+                                            <td style={{ padding: "0.2em" }}>
+                                                US$2 per capita (2005 estimate)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="2">Institutions</th>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ padding: "0.2em" }}>
+                                                Decentralization to
+                                                municipalities
+                                            </td>
+                                            <td style={{ padding: "0.2em" }}>
+                                                Substantial
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ padding: "0.2em" }}>
+                                                National water and sanitation
+                                                company
+                                            </td>
+                                            <td style={{ padding: "0.2em" }}>
+                                                None
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ padding: "0.2em" }}>
+                                                Water and sanitation regulator
+                                            </td>
+                                            <td style={{ padding: "0.2em" }}>
+                                                None
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ padding: "0.2em" }}>
+                                                Responsibility for policy
+                                                setting
+                                            </td>
+                                            <td style={{ padding: "0.2em" }}>
+                                                Ministry of Health and Ministry
+                                                of Home Affairs
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ padding: "0.2em" }}>
+                                                Sector law
+                                            </td>
+                                            <td style={{ padding: "0.2em" }}>
+                                                No
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ padding: "0.2em" }}>
+                                                No. of urban service providers
+                                            </td>
+                                            <td style={{ padding: "0.2em" }}>
+                                                319
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ padding: "0.2em" }}>
+                                                No. of rural service providers
+                                            </td>
+                                            <td style={{ padding: "0.2em" }}>
+                                                n/a
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <Typography sx={{ maxWidth: { lg: "50%" } }}>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Corrupti veniam earum
+                                    officia tempore necessitatibus ex, commodi
+                                    odio asperiores beatae sunt unde aliquam,
+                                    aperiam nesciunt temporibus laboriosam quia
+                                    saepe expedita veritatis?
+                                </Typography>
+                            </Stack>
+                            <Stack>
+                                <Typography>
+                                    Source:
+                                    <ol style={{ listStylePosition: "inside" }}>
+                                        <li>
+                                            "JMP". washdata.org. Retrieved
+                                            2021-07-20.
+                                        </li>
+                                        <li>
+                                            International Benchmarking Network
+                                            for Water and Sanitation Utilities:
+                                            Latest IBNET country indicators -
+                                            Indonesia, retrieved on October 17,
+                                            2010
+                                        </li>
+                                        <li>
+                                            International Benchmarking Network
+                                            for Water and Sanitation Utilities:
+                                            World Tariffs Map:Jakarta, accessed
+                                            on October 17, 2010
+                                        </li>
+                                    </ol>
+                                </Typography>
+                            </Stack>
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+                    </Container>
+                </div>
+                <div
+                    style={{
+                        backgroundImage:
+                            "radial-gradient(#80808080 1.5px, transparent 0)",
+                        backgroundSize: "32px 32px",
+                    }}
+                >
+                    <Container>
                         <Stack gap={2} padding={"2% 0"}>
                             <Stack>
                                 <Typography
