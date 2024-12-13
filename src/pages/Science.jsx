@@ -261,7 +261,7 @@ const Science = () => {
                     <Stack id="hydrology">
                         <Stack gap={1} padding={"2% 0"}>
                             <Typography
-                                variant={"h3"}
+                                variant={"h2"}
                                 component={"h1"}
                                 color="dark_ocean"
                                 fontFamily={"Quintessential"}
@@ -342,13 +342,33 @@ const Science = () => {
                             </Typography>
                             <DynamicList content={important} />
                         </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                Conclusion
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                Hydrology is fundamental to understanding how water supports life and ecosystems. 
+                                Its study provides insights into managing water resources, mitigating disasters, 
+                                and addressing global challenges like water scarcity and climate change. 
+                                By appreciating the complexity of the water cycle and the factors that affect it, 
+                                we can work toward a more sustainable and water-secure future.
+                            </Typography>
+                        </Stack>
                         <Divider sx={{ margin: "1% 0", borderWidth: '.5vh', borderColor: '#000' }} />
                     </Stack>
 
                     <Stack id="environmental">
                         <Stack gap={1} padding={"2% 0"}>
                             <Typography
-                                variant={"h3"}
+                                variant={"h2"}
                                 component={"h1"}
                                 color="dark_ocean"
                                 fontFamily={"Quintessential"}
@@ -449,6 +469,27 @@ const Science = () => {
                                 their frequency and intensity have been aggravated by human activities:
                             </Typography>
                             <DynamicList content={flood} />
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                Conclusion
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                Water’s impact on the environment is profound, 
+                                influencing everything from local ecosystems to global climate patterns. 
+                                Mismanagement and pollution disrupt this delicate balance, 
+                                causing cascading effects on biodiversity, food security, and human health. 
+                                By adopting sustainable practices and acknowledging the interconnectedness of 
+                                water and the environment, we can ensure a thriving planet for future generations.
+                            </Typography>
                         </Stack>
                         <Divider sx={{ margin: "1% 0", borderWidth: '.5vh', borderColor: '#000' }} />
                     </Stack>
