@@ -48,13 +48,13 @@ const Navbar = () => {
                 </Typography>
             </Box>
             <List sx={{ flex: 1 }}>
-                {["Home", "About", "Forum", "Login"].map((text) => (
+                {["Home", "Science", "Solution"].map((text) => (
                     <ListItem
                         key={text}
                         component={Link}
-                        to={`/${text.toLowerCase()}`}
+                        to={`./${text.toLowerCase()}`}
                         sx={{
-                            color: "white",
+                            color: "white !important",
                             textDecoration: "none",
                             "&:hover": {
                                 backgroundColor: "#2e2e3f",
@@ -119,14 +119,25 @@ const Navbar = () => {
                         MyApp
                     </Typography>
 
-                    <Box sx={{ display: { xs: "none", sm: "block" } }}>
+                    <Box
+                        sx={{
+                            display: {
+                                xs: "none",
+                                sm: "block",
+                            },
+                        }}
+                    >
                         <Button color="inherit" component={Link} to="./">
                             Home
                         </Button>
                         <Button color="inherit" component={Link} to="./science">
                             Science
                         </Button>
-                        <Button color="inherit" component={Link} to="./solution">
+                        <Button
+                            color="inherit"
+                            component={Link}
+                            to="./solution"
+                        >
                             Solution
                         </Button>
                     </Box>
