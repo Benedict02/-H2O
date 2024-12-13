@@ -61,14 +61,6 @@ const Banner = () => {
                             >
                                 Discover the importance of water quality
                             </Typography>
-                            <Button
-                                variant="contained"
-                                color="primary"
-                                size="large"
-                                sx={{ mt: 3 }}
-                            >
-                                Get Started
-                            </Button>
                         </Stack>
                     </Container>
                 </Box>

@@ -44,8 +44,7 @@ const Banner = () => {
                                 textAlign={"center"}
                                 padding={"2% 1%"}
                             >
-                                -H<sub style={{ fontFamily: "inherit" }}>2</sub>
-                                O
+                                Water Science
                             </Typography>
                             <Typography
                                 variant="h6"
@@ -55,16 +54,8 @@ const Banner = () => {
                                 width={"fit-content"}
                                 padding={"1%"}
                             >
-                                Discover the importance of water quality
+                                Science Concept Behind Water
                             </Typography>
-                            <Button
-                                variant="contained"
-                                color="primary"
-                                size="large"
-                                sx={{ mt: 3 }}
-                            >
-                                Get Started
-                            </Button>
                         </Stack>
                     </Container>
                 </Box>
