@@ -35,6 +35,33 @@ const Science = () => {
         },
     ];
 
+    const important = [
+        {
+            title: 'Water Resource Management',
+            items: [
+                'Hydrology helps predict water availability and manage supplies for agriculture, industry, and households.',
+            ],
+        },
+        {
+            title: 'Flood and Drought Mitigation',
+            items: [
+                'Understanding hydrological patterns aids in designing flood defenses and preparing for droughts.',
+            ],
+        },
+        {
+            title: 'Environmental Conservation',
+            items: [
+                'Protecting wetlands, rivers, and groundwater systems requires knowledge of hydrological processes.',
+            ],
+        },
+        {
+            title: 'Sustainable Development',
+            items: [
+                'Proper hydrological analysis ensures that development projects like dams, irrigation systems, and urban planning do not disrupt the water cycle.',
+            ],
+        },
+    ]
+
     const factors = [
         {
             title: 'Climatic Factors',
@@ -167,12 +194,9 @@ const Science = () => {
                             fontFamily={"Quintessential"}
                             textAlign={"start"}
                         >
-                            Factors Affecting Hydrology
+                            The Importance of Hydrology
                         </Typography>
-                        <Typography textAlign={"justify"}>
-                            Several factors influence the hydrological processes, including:
-                        </Typography>
-                        <DynamicList content={factors} />
+                        <DynamicList content={important} />
                     </Stack>
                     <Divider sx={{ margin: "1% 0" }} />
                 </Container>
