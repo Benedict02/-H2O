@@ -297,7 +297,6 @@ const Home = () => {
                     </Stack>
                     <Divider sx={{ margin: "1% 0" }} />
 
-                    {/* Change Topic to Indonesian Water Sanitation */}
                     <Stack gap={2} padding={'2% 0'}>
                         <Typography
                             variant={"h3"}
@@ -318,6 +317,7 @@ const Home = () => {
                             The provision of clean drinking water has unfortunately not yet been taken up as a development priority, particularly at the provincial government level.[5] The lack of access to clean water and sanitation remains a serious challenge, especially in slums and rural areas. This is a major concern because lack of clean water reduces the level of hygiene in the communities and it also raises the probability of people contracting skin diseases or other waterborne diseases. A failure to aggressively promote behaviour change, particularly among low-income families and slum dwellers, has further worsened the health impact of Indonesia's water and sanitation situation.[5]
                         </Typography>
                     </Stack>
+                    <Divider sx={{ margin: "1% 0" }} />
 
                     <Stack gap={2} padding={"2% 0"}>
                         <Stack>
