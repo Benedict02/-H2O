@@ -27,7 +27,8 @@ export default function CustomBarChart(props) {
                 },
             ]}
             sx={{ width: { xs: 400, lg: 1000 } }}
-            height={400}
+            height={500}
+            padding={{top: 10, bottom: 10, left: 40, right: 40}}
         />
     );
 }

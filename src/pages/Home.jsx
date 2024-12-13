@@ -4,121 +4,93 @@ import { List, ListItem, ListItemText } from "@mui/material";
 import Banner from "../components/HokusaiBanner";
 import Tiles from "../components/Tiles";
 
-import CustomBarChart from "../components/CustomBarChart";
-import CustomPieChart from "../components/CustomPieChart";
+import CustomBar from "../components/CustomBarChartTest";
 
 const Home = () => {
     const waterScarcity = [
         {
-            label: "Angola",
-            value: 33.0,
+            Country: "Angola",
+            Population: 33.0,
         },
         {
-            label: "CAR",
-            value: 37.1,
+            Country: "CAR",
+            Population: 37.1,
         },
         {
-            label: "Chad",
-            value: 35.5,
+            Country: "Chad",
+            Population: 35.5,
         },
         {
-            label: "DRC",
-            value: 40.9,
+            Country: "DRC",
+            Population: 40.9,
         },
         {
-            label: "Equatorial Guinea",
-            value: 32.38,
+            Country: "Equatorial Guinea",
+            Population: 32.38,
         },
         {
-            label: "Eritrea",
-            value: 30.55,
+            Country: "Eritrea",
+            Population: 30.55,
         },
         {
-            label: "Madagascar",
-            value: 42.0,
+            Country: "Madagascar",
+            Population: 42.0,
         },
         {
-            label: "Niger",
-            value: 31.5,
+            Country: "Niger",
+            Population: 31.5,
         },
         {
-            label: "Kenya",
-            value: 28.5,
+            Country: "Kenya",
+            Population: 28.5,
         },
         {
-            label: "Papua New Guinea",
-            value: 47.4,
+            Country: "Papua New Guinea",
+            Population: 47.4,
         },
     ];
     const worldWater = [
         {
-            label: "Oceans",
-            value: 1_338_000_000,
+            Source: "Oceans",
+            Volume: 1_338_000_000,
+            Fresh: 0.01,
         },
         {
-            label: "Ice and Snow",
-            value: 24_364_000,
+            Source: "Ice and Snow",
+            Volume: 24_364_000,
+            Fresh: 16_957_344,
         },
         {
-            label: "Groundwater",
-            value: 23_400_000,
+            Source: "Groundwater",
+            Volume: 23_400_000,
+            Fresh: 3_169_530 + 7.755,
         },
         {
-            label: "Lakes",
-            value: 176_400,
+            Source: "Lakes",
+            Volume: 176_400,
+            Fresh: 236.6,
         },
         {
-            label: "Atmosphere",
-            value: 12_900,
+            Source: "Atmosphere",
+            Volume: 12_900,
+            Fresh: 4.773,
         },
         {
-            label: "Swamps",
-            value: 11_470,
+            Source: "Swamps",
+            Volume: 11_470,
+            Fresh: 3.7851,
         },
         {
-            label: "Rivers",
-            value: 2_120,
+            Source: "Rivers",
+            Volume: 2_120,
+            Fresh: 0.12932,
         },
         {
-            label: "Biological Water",
-            value: 1_120,
+            Source: "Biological Water",
+            Volume: 1_120,
+            Fresh: 0.03584,
         },
     ];
-
-    const freshWater = [
-        {
-            label: 'Ice and Snow',
-            value: 16_957_344,
-        },
-        {
-            label: 'Fresh Groundwater',
-            value: 3_169_530,
-        },
-        {
-            label: 'Fresh Water Lakes',
-            value: 236.6,
-        },
-        {
-            label: 'Soil Moisture',
-            value: 7.755,
-        },
-        {
-            label: 'Atmosphere',
-            value: 4.773,
-        },
-        {
-            label: 'Swamps',
-            value: 3.7851,
-        },
-        {
-            label: 'Rivers',
-            value: 0.12932,
-        },
-        {
-            label: 'Biological Water',
-            value: 1.448384,
-        },
-    ]
 
     const hydrologySrc = "./hydrology.jpg";
     const environmentalSrc = "./environmental.jpg";
@@ -216,11 +188,10 @@ const Home = () => {
                             </Typography>
                         </Stack>
                         <Stack>
-                            <CustomBarChart 
+                            <CustomBar 
                                 data={waterScarcity} 
-                                label={"Population without access to clean water"}
-                                xLabel={"Countries"}
-                                yLabel={"Population (%)"}
+                                x={"Country"}
+                                y={["Population"]}
                             />
                         </Stack>
                         <Stack>
@@ -234,6 +205,7 @@ const Home = () => {
                     </Stack>
                     <Divider sx={{ margin: "1% 0" }} />
 
+                    {/* Change Topic to Indonesian Water Sanitation */}
                     <Stack gap={3} padding={"2% 0"}>
                         <Typography
                             variant={"h3"}
@@ -279,9 +251,9 @@ const Home = () => {
                             <Typography textAlign={'justify'}>
                                 Water is a fundamental resource for all living beings, 
                                 yet its availability is limited. 
-                                Freshwater makes up only <Typography color="primary.main" fontWeight="bold" display={'inline-block'}>2.5% of the Earth's total water</Typography>, 
+                                Freshwater makes up only <Typography component={'b'} color="primary.main" fontWeight="bold" display={'inline-block'}>2.5% of the Earth's total water</Typography>, 
                                 and most of it is locked in glaciers and ice caps, 
-                                leaving less than <Typography color="primary.main" fontWeight="bold" display={'inline-block'}>1% accessible for human use</Typography>. 
+                                leaving less than <Typography component={'b'} color="primary.main" fontWeight="bold" display={'inline-block'}>1% accessible for human use</Typography>. 
                                 Rapid population growth, climate change, 
                                 and pollution are straining this finite resource. 
                                 Conserving water not only ensures its availability for future generations 
@@ -290,15 +262,24 @@ const Home = () => {
                             </Typography>
                         </Stack>
                         <Stack>
-                            <CustomBarChart 
+                            <Typography
+                                variant={"h4"}
+                                component={"h1"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"center"}
+                            >
+                                Water Distribution
+                            </Typography>
+                            <CustomBar 
                                 data={worldWater} 
-                                label={"Volume of Water"}
-                                xLabel={"Sources"}
-                                yLabel={"Amount (%)"}
+                                x={'Source'} 
+                                y={["Volume", "Fresh"]} 
+                                unit={"km³"} 
                                 log
                             />
                             <Typography variant="caption">
-                                Total: 1,386,000,000 km^3
+                                Total: 1,386,000,000 km³
                             </Typography>
                         </Stack>
                     </Stack>
@@ -351,7 +332,7 @@ const Home = () => {
                                 fontFamily={"Quintessential"}
                                 textAlign={"start"}
                             >
-                                Solution Overview
+                                Solution 
                             </Typography>
                         </Stack>
                         <Stack
