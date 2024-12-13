@@ -1,4 +1,4 @@
-import Navbar from "./components/NavbarMUI";
+import Navbar from "./components/Navbar";
 import ColorPalette from "./components/ColorPalette";
 import { ParallaxProvider } from "react-scroll-parallax";
 import "./App.css";

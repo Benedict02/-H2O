@@ -3,8 +3,7 @@ import { List, ListItem, ListItemText } from "@mui/material";
 
 import Banner from "../components/HokusaiBanner";
 import Tiles from "../components/Tiles";
-
-import CustomBar from "../components/CustomBarChartTest";
+import CustomBarChart from "../components/CustomBarChart";
 
 const Home = () => {
     const waterScarcity = [
@@ -53,7 +52,7 @@ const Home = () => {
         {
             Source: "Oceans",
             Volume: 1_338_000_000,
-            Fresh: 0.01,
+            Fresh: 16_056_000,
         },
         {
             Source: "Ice and Snow",
@@ -188,10 +187,11 @@ const Home = () => {
                             </Typography>
                         </Stack>
                         <Stack>
-                            <CustomBar 
+                            <CustomBarChart 
                                 data={waterScarcity} 
                                 x={"Country"}
                                 y={["Population"]}
+                                unit={"%"}
                             />
                         </Stack>
                         <Stack>
@@ -201,11 +201,13 @@ const Home = () => {
                             <Typography variant="caption">
                                 Last Updated: 2022
                             </Typography>
+                            <Typography variant="caption">
+                                Scale: Linear
+                            </Typography>
                         </Stack>
                     </Stack>
                     <Divider sx={{ margin: "1% 0" }} />
 
-                    {/* Change Topic to Indonesian Water Sanitation */}
                     <Stack gap={3} padding={"2% 0"}>
                         <Typography
                             variant={"h3"}
@@ -251,7 +253,7 @@ const Home = () => {
                             <Typography textAlign={'justify'}>
                                 Water is a fundamental resource for all living beings, 
                                 yet its availability is limited. 
-                                Freshwater makes up only <Typography component={'b'} color="primary.main" fontWeight="bold" display={'inline-block'}>2.5% of the Earth's total water</Typography>, 
+                                Freshwater makes up only around <Typography component={'b'} color="primary.main" fontWeight="bold" display={'inline-block'}>2.5% of the Earth's total water</Typography>, 
                                 and most of it is locked in glaciers and ice caps, 
                                 leaving less than <Typography component={'b'} color="primary.main" fontWeight="bold" display={'inline-block'}>1% accessible for human use</Typography>. 
                                 Rapid population growth, climate change, 
@@ -271,7 +273,7 @@ const Home = () => {
                             >
                                 Water Distribution
                             </Typography>
-                            <CustomBar 
+                            <CustomBarChart 
                                 data={worldWater} 
                                 x={'Source'} 
                                 y={["Volume", "Fresh"]} 
@@ -279,11 +281,25 @@ const Home = () => {
                                 log
                             />
                             <Typography variant="caption">
-                                Total: 1,386,000,000 km³
+                                Total Water: 1,386,000,000 km³
+                            </Typography>
+                            <Typography variant="caption">
+                                Total Fresh Water: 36,183,127 km³
+                            </Typography>
+                            <Typography variant="caption">
+                                Source: United States Geological Survey
+                            </Typography>
+                            <Typography variant="caption">
+                                Scale: Logarithmic
                             </Typography>
                         </Stack>
                     </Stack>
                     <Divider sx={{ margin: "1% 0" }} />
+
+                    {/* Change Topic to Indonesian Water Sanitation */}
+                    <Stack gap={2} padding={'2% 0'}>
+                        <Typography></Typography>
+                    </Stack>
 
                     <Stack gap={2} padding={"2% 0"}>
                         <Stack>
