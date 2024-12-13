@@ -253,7 +253,8 @@ const Home = () => {
                             <Typography textAlign={'justify'}>
                                 Water is a fundamental resource for all living beings, 
                                 yet its availability is limited. 
-                                Freshwater makes up only around <Typography component={'b'} color="primary.main" fontWeight="bold" display={'inline-block'}>2.5% of the Earth's total water</Typography>, 
+                                Freshwater makes up only around 
+                                <Typography component={'b'} color="primary.main" fontWeight="bold" display={'inline-block'}>2.5% of the Earth's total water</Typography>, 
                                 and most of it is locked in glaciers and ice caps, 
                                 leaving less than <Typography component={'b'} color="primary.main" fontWeight="bold" display={'inline-block'}>1% accessible for human use</Typography>. 
                                 Rapid population growth, climate change, 
@@ -298,7 +299,24 @@ const Home = () => {
 
                     {/* Change Topic to Indonesian Water Sanitation */}
                     <Stack gap={2} padding={'2% 0'}>
-                        <Typography></Typography>
+                        <Typography
+                            variant={"h3"}
+                            component={"h1"}
+                            color="dark_ocean"
+                            fontFamily={"Quintessential"}
+                            textAlign={"start"}
+                        >
+                            Water supply and sanitation in Indonesia
+                        </Typography>
+                        <Typography textAlign={'justify'} variant={'p'}>
+                            Water supply and sanitation in Indonesia is characterized by poor levels of access and service quality. More than 16 million people lack access to an at least basic water source and almost 33 million of the country's 275 million population has no access to at least basic sanitation.[4] Only about 2% of people have access to sewerage in urban areas; this is one of the lowest in the world among middle-income countries. Water pollution is widespread on Bali and Java. Women in Jakarta report spending US$11 per month on boiling water, implying a significant burden for the poor.
+                        </Typography>
+                        <Typography textAlign={'justify'} variant={'p'}>
+                            The estimated level of public investment of only US$2 per capita a year in 2005 was insufficient to expand services significantly and to properly maintain assets. Furthermore, policy responsibilities are fragmented between different Ministries. Since decentralization was introduced in Indonesia in 2001 local governments (districts) have gained responsibility for water supply and sanitation. However, this has so far not translated into an improvement of access or service quality, mainly because devolution of responsibilities has not been followed by adequate fund channeling mechanisms to carry out this responsibility. Local utilities remain weak.
+                        </Typography>
+                        <Typography textAlign={'justify'} variant={'p'}>
+                            The provision of clean drinking water has unfortunately not yet been taken up as a development priority, particularly at the provincial government level.[5] The lack of access to clean water and sanitation remains a serious challenge, especially in slums and rural areas. This is a major concern because lack of clean water reduces the level of hygiene in the communities and it also raises the probability of people contracting skin diseases or other waterborne diseases. A failure to aggressively promote behaviour change, particularly among low-income families and slum dwellers, has further worsened the health impact of Indonesia's water and sanitation situation.[5]
+                        </Typography>
                     </Stack>
 
                     <Stack gap={2} padding={"2% 0"}>

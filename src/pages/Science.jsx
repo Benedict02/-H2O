@@ -494,6 +494,135 @@ const Science = () => {
                         <Divider sx={{ margin: "1% 0", borderWidth: '.5vh', borderColor: '#000' }} />
                     </Stack>
 
+                    <Stack id="environmental">
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h2"}
+                                component={"h1"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                                gutterBottom
+                            >
+                                Energy
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                Water is fundamental to sustaining life, ecosystems, and the planet's overall balance. 
+                                However, human activities, pollution, 
+                                and mismanagement of water resources have caused significant environmental impacts. 
+                                Below is a deeper dive into how water interacts with and influences the environment, 
+                                both positively and negatively.
+                            </Typography>
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+                        
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                                gutterBottom
+                            >
+                                Water’s Role in Supporting Ecosystems
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                Water is the lifeblood of ecosystems, ensuring biodiversity and the survival of countless species.
+                            </Typography>
+                            <DynamicList content={waterRole} />
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                Water Mismanagement
+                            </Typography>
+                            <DynamicList content={waterMiss} />
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                Climate Change
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                The relationship between water and climate change is bidirectional: 
+                                water is both a driver and a victim of climate shifts.
+                            </Typography>
+                            <DynamicList content={climate} />
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                Drought and Desertification
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                Prolonged droughts have severe consequences for the environment:
+                            </Typography>
+                            <DynamicList content={drought} />
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                Flood
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                While floods are natural events, 
+                                their frequency and intensity have been aggravated by human activities:
+                            </Typography>
+                            <DynamicList content={flood} />
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0" }} />
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Typography
+                                variant={"h4"}
+                                component={"p"}
+                                color="dark_ocean"
+                                fontFamily={"Quintessential"}
+                                textAlign={"start"}
+                            >
+                                Conclusion
+                            </Typography>
+                            <Typography textAlign={"justify"}>
+                                Water’s impact on the environment is profound, 
+                                influencing everything from local ecosystems to global climate patterns. 
+                                Mismanagement and pollution disrupt this delicate balance, 
+                                causing cascading effects on biodiversity, food security, and human health. 
+                                By adopting sustainable practices and acknowledging the interconnectedness of 
+                                water and the environment, we can ensure a thriving planet for future generations.
+                            </Typography>
+                        </Stack>
+                        <Divider sx={{ margin: "1% 0", borderWidth: '.5vh', borderColor: '#000' }} />
+                    </Stack>
+
                 </Container>
             </div>
         </>
