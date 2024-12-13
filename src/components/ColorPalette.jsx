@@ -19,32 +19,32 @@ export default function ColorPalette(props) {
                 color: {
                     main: black_primary,
                 },
-                    name: "black_ocean",
+                name: "black_ocean",
             }),
             dark_ocean: theme.palette.augmentColor({
                 color: {
                     main: dark_primary,
                 },
-                    name: "dark_ocean",
+                name: "dark_ocean",
             }),
             primary: theme.palette.augmentColor({
                 color: {
                     main: primary,
                 },
-                    name: "primary",
+                name: "primary",
             }),
             secondary: theme.palette.augmentColor({
                 color: {
                     main: secondary,
                     contrastText: white,
                 },
-                    name: "secondary",
+                name: "secondary",
             }),
             white: theme.palette.augmentColor({
                 color: {
                     main: white,
                 },
-                    name: "white",
+                name: "white",
             }),
         },
     });

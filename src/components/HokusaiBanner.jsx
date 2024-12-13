@@ -43,10 +43,11 @@ const Banner = () => {
                                 component="h1"
                                 gutterBottom
                                 bgcolor={"black"}
-                                fontFamily={"Stick"}
+                                fontFamily={"Montserrat !important"}
                                 width={"fit-content"}
                                 textAlign={"center"}
                                 padding={"2% 1%"}
+                                sx={{ fontWeight: "700" }}
                             >
                                 -H<sub style={{ fontFamily: "inherit" }}>2</sub>
                                 O
@@ -58,6 +59,7 @@ const Banner = () => {
                                 bgcolor={"black"}
                                 width={"fit-content"}
                                 padding={"1%"}
+                                fontFamily={"Montserrat !important"}
                             >
                                 Discover the importance of water quality
                             </Typography>

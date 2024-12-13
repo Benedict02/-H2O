@@ -101,7 +101,7 @@ const Home = () => {
     const irigationSrc = "./irigation.png";
     const leakSrc = "./water-leak.jpg";
     const droughtSrc = "./drought.jpg";
-    const rippleSrc = "./ripple.png";
+    const rippleSrc = "./hokusai_mt_fuji.png";
     const flagSrc = "./flag.png";
 
     const tips = [
@@ -130,10 +130,10 @@ const Home = () => {
                             variant={"h4"}
                             component={"h1"}
                             color="dark_ocean"
-                            fontFamily={"Petit Formal Script"}
+                            fontFamily={"Public Sans"}
                             textAlign={"center"}
                         >
-                            “Water is the driving force of all nature.”
+                            "Water is the driving force of all nature."
                         </Typography>
                         <Typography
                             variant={"h5"}
@@ -155,7 +155,8 @@ const Home = () => {
                                 variant={"h3"}
                                 component={"h1"}
                                 color="dark_ocean"
-                                fontFamily={"Quintessential"}
+                                fontFamily={"Montserrat !important"}
+                                fontWeight={500}
                                 textAlign={"start"}
                             >
                                 Did You Know?
@@ -204,7 +205,8 @@ const Home = () => {
                                 variant={"h4"}
                                 component={"h1"}
                                 color="dark_ocean"
-                                fontFamily={"Quintessential"}
+                                fontFamily={"Montserrat !important"}
+                                fontWeight={500}
                                 textAlign={"center"}
                             >
                                 Access to Improved Water Source
@@ -245,7 +247,8 @@ const Home = () => {
                                 variant={"h3"}
                                 component={"h1"}
                                 color="dark_ocean"
-                                fontFamily={"Quintessential"}
+                                fontFamily={"Montserrat !important"}
+                                fontWeight={500}
                                 textAlign={"start"}
                             >
                                 The Ripple Effect of Individual Actions
@@ -299,7 +302,8 @@ const Home = () => {
                                 variant={"h3"}
                                 component={"h1"}
                                 color="dark_ocean"
-                                fontFamily={"Quintessential"}
+                                fontFamily={"Montserrat !important"}
+                                fontWeight={500}
                                 textAlign={"start"}
                             >
                                 The Importance of Water Conservation
@@ -340,7 +344,8 @@ const Home = () => {
                                 variant={"h4"}
                                 component={"h1"}
                                 color="dark_ocean"
-                                fontFamily={"Quintessential"}
+                                fontFamily={"Montserrat !important"}
+                                fontWeight={500}
                                 textAlign={"center"}
                             >
                                 Water Distribution
@@ -368,167 +373,161 @@ const Home = () => {
                     </Stack>
                     <Divider sx={{ margin: "1% 0" }} />
                 </Container>
-                <div>
+                <div
+                    style={{
+                        background: `url(${rippleSrc})`,
+                        backgroundAttachment: "fixed",
+                        backgroundSize: "cover",
+                    }}
+                >
                     <Container>
                         <Stack gap={2} padding={"2% 0"}>
                             <Typography
                                 variant={"h3"}
                                 component={"h1"}
                                 color="dark_ocean"
-                                fontFamily={"Quintessential"}
+                                fontFamily={"Montserrat !important"}
+                                fontWeight={500}
                                 textAlign={"start"}
                             >
                                 Indonesian Water Sanitation
                             </Typography>
-                            <Stack
-                                direction={{ xs: "column", lg: "row" }}
-                                gap={2}
+
+                            <table
+                                style={{
+                                    borderCollapse: "collapse",
+                                    width: "80%",
+                                    margin: "auto",
+                                    backgroundColor: "white",
+                                }}
+                                border="black"
                             >
-                                <table
-                                    style={{
-                                        borderCollapse: "collapse",
-                                    }}
-                                    border="black"
-                                >
-                                    <thead>
-                                        <tr>
-                                            <td
-                                                colspan="2"
-                                                style={{
-                                                    textAlign: "center",
-                                                    padding: "0.2em",
-                                                }}
-                                            >
-                                                <img
-                                                    src={flagSrc}
-                                                    alt=""
-                                                    width="100"
-                                                />
-                                            </td>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th colspan="2">Data</th>
-                                        </tr>
-                                        <tr>
-                                            <td style={{ padding: "0.2em" }}>
-                                                Access to an at least basic
-                                                water source
-                                            </td>
-                                            <td style={{ padding: "0.2em" }}>
-                                                94% (2022)
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style={{ padding: "0.2em" }}>
-                                                Access to at least basic
-                                                sanitation
-                                            </td>
-                                            <td style={{ padding: "0.2em" }}>
-                                                88% (2022)
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style={{ padding: "0.2em" }}>
-                                                Average urban water use
-                                                (L/person/day)
-                                            </td>
-                                            <td style={{ padding: "0.2em" }}>
-                                                130 (2004)
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style={{ padding: "0.2em" }}>
-                                                Average urban water and
-                                                sanitation tariff (US$/m3)
-                                            </td>
-                                            <td style={{ padding: "0.2em" }}>
-                                                0.77 (Jakarta, ca. 2008)
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style={{ padding: "0.2em" }}>
-                                                Annual investment in WSS
-                                            </td>
-                                            <td style={{ padding: "0.2em" }}>
-                                                US$2 per capita (2005 estimate)
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th colspan="2">Institutions</th>
-                                        </tr>
-                                        <tr>
-                                            <td style={{ padding: "0.2em" }}>
-                                                Decentralization to
-                                                municipalities
-                                            </td>
-                                            <td style={{ padding: "0.2em" }}>
-                                                Substantial
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style={{ padding: "0.2em" }}>
-                                                National water and sanitation
-                                                company
-                                            </td>
-                                            <td style={{ padding: "0.2em" }}>
-                                                None
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style={{ padding: "0.2em" }}>
-                                                Water and sanitation regulator
-                                            </td>
-                                            <td style={{ padding: "0.2em" }}>
-                                                None
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style={{ padding: "0.2em" }}>
-                                                Responsibility for policy
-                                                setting
-                                            </td>
-                                            <td style={{ padding: "0.2em" }}>
-                                                Ministry of Health and Ministry
-                                                of Home Affairs
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style={{ padding: "0.2em" }}>
-                                                Sector law
-                                            </td>
-                                            <td style={{ padding: "0.2em" }}>
-                                                No
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style={{ padding: "0.2em" }}>
-                                                No. of urban service providers
-                                            </td>
-                                            <td style={{ padding: "0.2em" }}>
-                                                319
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td style={{ padding: "0.2em" }}>
-                                                No. of rural service providers
-                                            </td>
-                                            <td style={{ padding: "0.2em" }}>
-                                                n/a
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <Typography sx={{ maxWidth: { lg: "50%" } }}>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Corrupti veniam earum
-                                    officia tempore necessitatibus ex, commodi
-                                    odio asperiores beatae sunt unde aliquam,
-                                    aperiam nesciunt temporibus laboriosam quia
-                                    saepe expedita veritatis?
-                                </Typography>
-                            </Stack>
+                                <thead>
+                                    <tr>
+                                        <td
+                                            colspan="2"
+                                            style={{
+                                                textAlign: "center",
+                                                padding: "0.2em",
+                                            }}
+                                        >
+                                            <img
+                                                src={flagSrc}
+                                                alt=""
+                                                width="100"
+                                            />
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th colspan="2">Data</th>
+                                    </tr>
+                                    <tr>
+                                        <td style={{ padding: "0.2em" }}>
+                                            Access to an at least basic water
+                                            source
+                                        </td>
+                                        <td style={{ padding: "0.2em" }}>
+                                            94% (2022)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style={{ padding: "0.2em" }}>
+                                            Access to at least basic sanitation
+                                        </td>
+                                        <td style={{ padding: "0.2em" }}>
+                                            88% (2022)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style={{ padding: "0.2em" }}>
+                                            Average urban water use
+                                            (L/person/day)
+                                        </td>
+                                        <td style={{ padding: "0.2em" }}>
+                                            130 (2004)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style={{ padding: "0.2em" }}>
+                                            Average urban water and sanitation
+                                            tariff (US$/m3)
+                                        </td>
+                                        <td style={{ padding: "0.2em" }}>
+                                            0.77 (Jakarta, ca. 2008)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style={{ padding: "0.2em" }}>
+                                            Annual investment in WSS
+                                        </td>
+                                        <td style={{ padding: "0.2em" }}>
+                                            US$2 per capita (2005 estimate)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">Institutions</th>
+                                    </tr>
+                                    <tr>
+                                        <td style={{ padding: "0.2em" }}>
+                                            Decentralization to municipalities
+                                        </td>
+                                        <td style={{ padding: "0.2em" }}>
+                                            Substantial
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style={{ padding: "0.2em" }}>
+                                            National water and sanitation
+                                            company
+                                        </td>
+                                        <td style={{ padding: "0.2em" }}>
+                                            None
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style={{ padding: "0.2em" }}>
+                                            Water and sanitation regulator
+                                        </td>
+                                        <td style={{ padding: "0.2em" }}>
+                                            None
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style={{ padding: "0.2em" }}>
+                                            Responsibility for policy setting
+                                        </td>
+                                        <td style={{ padding: "0.2em" }}>
+                                            Ministry of Health and Ministry of
+                                            Home Affairs
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style={{ padding: "0.2em" }}>
+                                            Sector law
+                                        </td>
+                                        <td style={{ padding: "0.2em" }}>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td style={{ padding: "0.2em" }}>
+                                            No. of urban service providers
+                                        </td>
+                                        <td style={{ padding: "0.2em" }}>
+                                            319
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style={{ padding: "0.2em" }}>
+                                            No. of rural service providers
+                                        </td>
+                                        <td style={{ padding: "0.2em" }}>
+                                            n/a
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
                             <Stack>
                                 <Typography>
                                     Source:
@@ -558,11 +557,11 @@ const Home = () => {
                     </Container>
                 </div>
                 <div
-                    // style={{
-                    //     backgroundImage:
-                    //         "radial-gradient(#80808080 1.5px, transparent 0)",
-                    //     backgroundSize: "32px 32px",
-                    // }}
+                // style={{
+                //     backgroundImage:
+                //         "radial-gradient(#80808080 1.5px, transparent 0)",
+                //     backgroundSize: "32px 32px",
+                // }}
                 >
                     <Container>
                         <Stack gap={2} padding={"2% 0"}>
@@ -571,7 +570,8 @@ const Home = () => {
                                     variant={"h3"}
                                     component={"h1"}
                                     color="dark_ocean"
-                                    fontFamily={"Quintessential"}
+                                    fontFamily={"Montserrat !important"}
+                                    fontWeight={500}
                                     textAlign={"start"}
                                 >
                                     Science Concept
@@ -610,7 +610,8 @@ const Home = () => {
                                     variant={"h3"}
                                     component={"h1"}
                                     color="dark_ocean"
-                                    fontFamily={"Quintessential"}
+                                    fontFamily={"Montserrat !important"}
+                                    fontWeight={500}
                                     textAlign={"start"}
                                 >
                                     Solution

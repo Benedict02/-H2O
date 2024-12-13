@@ -16,6 +16,7 @@ import { Link, Outlet } from "react-router-dom";
 
 const Navbar = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
+    const logoSrc = "./icon.png";
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
@@ -44,7 +45,7 @@ const Navbar = () => {
                 }}
             >
                 <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-                    MyApp
+                    -H2O
                 </Typography>
             </Box>
             <List sx={{ flex: 1 }}>
@@ -81,7 +82,7 @@ const Navbar = () => {
                 }}
             >
                 <Typography variant="body2" sx={{ color: "#aaa" }}>
-                    © 2024 MyApp. All rights reserved.
+                    © 2024 -H2O. All rights reserved.
                 </Typography>
             </Box>
         </Box>
@@ -116,7 +117,7 @@ const Navbar = () => {
                             display: { xs: "none", sm: "block" },
                         }}
                     >
-                        MyApp
+                        <img src={logoSrc} width="3.5%" alt="" />
                     </Typography>
 
                     <Box
