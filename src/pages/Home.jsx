@@ -133,7 +133,7 @@ const Home = () => {
                             fontFamily={"Petit Formal Script"}
                             textAlign={"center"}
                         >
-                            "Water is the driving force of all nature."
+                            “Water is the driving force of all nature.”
                         </Typography>
                         <Typography
                             variant={"h5"}
@@ -370,7 +370,6 @@ const Home = () => {
                 </Container>
                 <div>
                     <Container>
-                        {/* Change Topic to Indonesian Water Sanitation */}
                         <Stack gap={2} padding={"2% 0"}>
                             <Typography
                                 variant={"h3"}
@@ -559,11 +558,11 @@ const Home = () => {
                     </Container>
                 </div>
                 <div
-                    style={{
-                        backgroundImage:
-                            "radial-gradient(#80808080 1.5px, transparent 0)",
-                        backgroundSize: "32px 32px",
-                    }}
+                    // style={{
+                    //     backgroundImage:
+                    //         "radial-gradient(#80808080 1.5px, transparent 0)",
+                    //     backgroundSize: "32px 32px",
+                    // }}
                 >
                     <Container>
                         <Stack gap={2} padding={"2% 0"}>
@@ -645,7 +644,7 @@ const Home = () => {
                                 flexWrap={"wrap"}
                             >
                                 <Tiles
-                                    header="Smart Irigation Systems"
+                                    header="Smart Irrigation Systems"
                                     background={`url(${irigationSrc})`}
                                 />
                                 <Tiles

@@ -314,7 +314,7 @@ const Science = () => {
                             fontFamily={"Petit Formal Script"}
                             textAlign={"center"}
                         >
-                            "If there is magic on this planet, it is contained in water"
+                            “If there is magic on this planet, it is contained in water”
                         </Typography>
                         <Typography
                             variant={"h5"}
