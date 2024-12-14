@@ -5,7 +5,6 @@ export default function Model() {
                 {" "}
                 <iframe
                     title="Rain Water Collector Idea model"
-                    frameBorder="0"
                     allowFullScreen
                     mozallowfullscreen="true"
                     webkitallowfullscreen="true"
