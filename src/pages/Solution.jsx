@@ -152,7 +152,7 @@ const Solution = () => {
 
     return (
         <>
-            <Banner title="lorem" src={rain} />
+            <Banner title="Solution" src={rain} />
             <div margin={'2% 0'}>
                 <Container fixed>
                     <Stack
@@ -398,7 +398,6 @@ const Solution = () => {
                                 aging infrastructure, lack of awareness, and resistance to adopting new technologies. Tackling these issues with the solutions you've outlined will address both individual and systemic inefficiencies in water use, contributing to sustainable living and resource conservation.
                             </Typography>
                         </Stack>
-                        <Divider sx={{ margin: "1% 0", borderWidth: '.5vh', borderColor: '#000' }} />
                     </Stack>
                 </Container>
             </div>
