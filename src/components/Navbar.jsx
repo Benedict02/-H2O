@@ -50,10 +50,11 @@ const Navbar = () => {
             </Box>
             <List sx={{ flex: 1 }}>
                 {["Home", "Science", "Solution", "3D"].map((text) => (
+                {["Home", "Science", "Solution", "3D"].map((text) => (
                     <ListItem
                         key={text}
                         component={Link}
-                        to={`./${text != "Home" ? text.toLowerCase() : ""}`}
+                        to={`./${text=="Home"?"":text.toLowerCase()}`}
                         sx={{
                             color: "white !important",
                             textDecoration: "none",
@@ -128,10 +129,18 @@ const Navbar = () => {
                             },
                         }}
                     >
-                        <Button color="inherit" component={Link} to="./">
+                        <Button 
+                            color="inherit" 
+                            component={Link} 
+                            to="./"
+                        >
                             Home
                         </Button>
-                        <Button color="inherit" component={Link} to="./science">
+                        <Button 
+                            color="inherit" 
+                            component={Link} 
+                            to="./science"
+                        >
                             Science
                         </Button>
                         <Button
@@ -141,7 +150,11 @@ const Navbar = () => {
                         >
                             Solution
                         </Button>
-                        <Button color="inherit" component={Link} to="./3d">
+                        <Button
+                            color="inherit"
+                            component={Link}
+                            to="./3D"
+                        >
                             3D Model
                         </Button>
                     </Box>

@@ -1,19 +1,14 @@
 export default function Model() {
     return (
         <>
-            <div class="sketchfab-embed-wrapper">
+            <div className="sketchfab-embed-wrapper">
                 {" "}
                 <iframe
                     title="Rain Water Collector Idea model"
-                    frameborder="0"
-                    allowfullscreen
+                    allowFullScreen
                     mozallowfullscreen="true"
                     webkitallowfullscreen="true"
                     allow="autoplay, fullscreen, xr-spatial-tracking"
-                    xr-spatial-tracking
-                    execution-while-out-of-viewport
-                    execution-while-not-rendered
-                    web-share
                     src="https://sketchfab.com/models/02e6bb4187324e32bbb641ff14748f57/embed"
                     style={{ width: "100%", height: "100vh" }}
                 >
