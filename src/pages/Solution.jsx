@@ -3,157 +3,157 @@ import DynamicList from "../components/DynamicList";
 import Banner from "../components/FixedBanner";
 
 const Solution = () => {
-    const rain = "./rainy.gif"
+    const rain = "./rainy.gif";
 
     const prolog = [
-        'Rainfall doesn’t just wash away but is collected and reused.',
-        'Water that drains from your sink irrigates your garden.',
-        'Irrigation systems learn when and how much water your plants need, preventing overuse.',
+        "Rainfall doesn’t just wash away but is collected and reused.",
+        "Water that drains from your sink irrigates your garden.",
+        "Irrigation systems learn when and how much water your plants need, preventing overuse.",
     ];
 
     const fixture = [
         {
-            title: 'Overview',
+            title: "Overview",
             items: [
-                'Conventional faucets, showerheads, and toilets often use more water than necessary due to outdated designs or a lack of flow regulation.',
+                "Conventional faucets, showerheads, and toilets often use more water than necessary due to outdated designs or a lack of flow regulation.",
             ],
         },
         {
-            title: 'Impact',
+            title: "Impact",
             items: [
-                'Leads to high water wastage in homes, offices, and public facilities.',
-                'Increases the demand on municipal water supplies and energy used for water treatment and distribution.',
+                "Leads to high water wastage in homes, offices, and public facilities.",
+                "Increases the demand on municipal water supplies and energy used for water treatment and distribution.",
             ],
         },
         {
-            title: 'Problem Drivers',
+            title: "Problem Drivers",
             items: [
-                'Lack of awareness about water-efficient technology.',
-                'Resistance to replacing older fixtures due to cost or inconvenience.',
+                "Lack of awareness about water-efficient technology.",
+                "Resistance to replacing older fixtures due to cost or inconvenience.",
             ],
         },
     ];
 
     const grey = [
         {
-            title: 'Overview',
+            title: "Overview",
             items: [
-                'Water used in sinks, washing machines, and showers (greywater) is often discarded as waste instead of being repurposed.',
+                "Water used in sinks, washing machines, and showers (greywater) is often discarded as waste instead of being repurposed.",
             ],
         },
         {
-            title: 'Impact',
+            title: "Impact",
             items: [
-                'Lost potential to reuse water for non-drinking purposes, such as irrigation or toilet flushing.',
-                'Increased load on wastewater treatment plants, leading to higher energy consumption.',
+                "Lost potential to reuse water for non-drinking purposes, such as irrigation or toilet flushing.",
+                "Increased load on wastewater treatment plants, leading to higher energy consumption.",
             ],
         },
         {
-            title: 'Problem Drivers',
+            title: "Problem Drivers",
             items: [
-                'Limited infrastructure for greywater separation and reuse.',
-                'Perceived health risks or contamination fears, even though greywater recycling is safe when managed properly.',
+                "Limited infrastructure for greywater separation and reuse.",
+                "Perceived health risks or contamination fears, even though greywater recycling is safe when managed properly.",
             ],
         },
     ];
-    
+
     const rainHarvest = [
         {
-            title: 'Overview',
+            title: "Overview",
             items: [
-                'In many regions, rainwater is allowed to runoff unused, flowing into storm drains or contributing to flooding.',
+                "In many regions, rainwater is allowed to runoff unused, flowing into storm drains or contributing to flooding.",
             ],
         },
         {
-            title: 'Impact',
+            title: "Impact",
             items: [
-                'Missed opportunities to supplement water supplies, especially in areas with irregular rainfall.',
-                'Decreased groundwater recharge, leading to water table depletion.',
+                "Missed opportunities to supplement water supplies, especially in areas with irregular rainfall.",
+                "Decreased groundwater recharge, leading to water table depletion.",
             ],
         },
         {
-            title: 'Problem Drivers',
+            title: "Problem Drivers",
             items: [
-                'Lack of awareness or investment in rainwater harvesting systems.',
-                'Poor urban planning and infrastructure that prioritize rapid runoff over water capture.',
+                "Lack of awareness or investment in rainwater harvesting systems.",
+                "Poor urban planning and infrastructure that prioritize rapid runoff over water capture.",
             ],
         },
     ];
-    
+
     const irrigation = [
         {
-            title: 'Overview',
+            title: "Overview",
             items: [
-                'Traditional irrigation systems often apply excessive water to crops, regardless of actual soil moisture or weather conditions.',
+                "Traditional irrigation systems often apply excessive water to crops, regardless of actual soil moisture or weather conditions.",
             ],
         },
         {
-            title: 'Impact',
+            title: "Impact",
             items: [
-                'Wastage of water in agriculture, the largest consumer of freshwater worldwide.',
-                'Runoff from overwatering can lead to soil erosion and contamination of nearby water bodies with fertilizers or pesticides.',
+                "Wastage of water in agriculture, the largest consumer of freshwater worldwide.",
+                "Runoff from overwatering can lead to soil erosion and contamination of nearby water bodies with fertilizers or pesticides.",
             ],
         },
         {
-            title: 'Problem Drivers',
+            title: "Problem Drivers",
             items: [
-                'High cost of advanced irrigation technologies.',
-                'Limited access to data and tools for precision agriculture, especially in developing regions.',
+                "High cost of advanced irrigation technologies.",
+                "Limited access to data and tools for precision agriculture, especially in developing regions.",
             ],
         },
     ];
 
     const leak = [
         {
-            title: 'Overview',
+            title: "Overview",
             items: [
-                'Leaks in plumbing systems, both at the municipal and household levels, often go undetected for long periods.',
+                "Leaks in plumbing systems, both at the municipal and household levels, often go undetected for long periods.",
             ],
         },
         {
-            title: 'Impact',
+            title: "Impact",
             items: [
-                'Significant water loss (estimated to be 20-30% of urban water globally).',
-                'Increased costs for households and utilities due to wasted water.',
-                'Environmental strain from over-extraction of water to meet supply demands.',
+                "Significant water loss (estimated to be 20-30% of urban water globally).",
+                "Increased costs for households and utilities due to wasted water.",
+                "Environmental strain from over-extraction of water to meet supply demands.",
             ],
         },
         {
-            title: 'Problem Drivers',
+            title: "Problem Drivers",
             items: [
-                'Aging infrastructure and delayed maintenance in water distribution networks.',
-                'Lack of affordable leak detection tools for residential use.',
+                "Aging infrastructure and delayed maintenance in water distribution networks.",
+                "Lack of affordable leak detection tools for residential use.",
             ],
         },
     ];
-    
+
     const drought = [
         {
-            title: 'Overview',
+            title: "Overview",
             items: [
-                'Traditional landscaping practices often rely on water-intensive plants and irrigation systems, particularly in arid or semi-arid regions.',
+                "Traditional landscaping practices often rely on water-intensive plants and irrigation systems, particularly in arid or semi-arid regions.",
             ],
         },
         {
-            title: 'Impact',
+            title: "Impact",
             items: [
-                'Excessive water consumption for maintaining lawns and ornamental plants.',
-                'Increased vulnerability to drought conditions due to a lack of adaptable landscaping practices.',
+                "Excessive water consumption for maintaining lawns and ornamental plants.",
+                "Increased vulnerability to drought conditions due to a lack of adaptable landscaping practices.",
             ],
         },
         {
-            title: 'Problem Drivers',
+            title: "Problem Drivers",
             items: [
-                'Aesthetic preferences for water-demanding grass and plants.',
-                'Lack of awareness about native, drought-resistant plants or xeriscaping techniques.',
+                "Aesthetic preferences for water-demanding grass and plants.",
+                "Lack of awareness about native, drought-resistant plants or xeriscaping techniques.",
             ],
         },
-    ];    
+    ];
 
     return (
         <>
-            <Banner title="lorem" src={rain} />
-            <div margin={'2% 0'}>
+            <Banner title="Solution" src={rain} />
+            <div style={{ margin: "2% 0" }}>
                 <Container fixed>
                     <Stack
                         direction={"row"}
@@ -169,7 +169,8 @@ const Solution = () => {
                             fontFamily={"Petit Formal Script"}
                             textAlign={"center"}
                         >
-                            “Everything is theoretically impossible, until it is done.”
+                            “Everything is theoretically impossible, until it is
+                            done.”
                         </Typography>
                         <Typography
                             variant={"h5"}
@@ -196,23 +197,33 @@ const Solution = () => {
                                 How Humanity Manage Water
                             </Typography>
                             <Typography textAlign={"justify"}>
-                                Water is the essence of life, covering 71% of the Earth’s surface and flowing 
-                                through every living organism. Yet, have you ever wondered why, despite its abundance, 
-                                water scarcity is one of the most pressing global challenges of our time?
+                                Water is the essence of life, covering 71% of
+                                the Earth’s surface and flowing through every
+                                living organism. Yet, have you ever wondered
+                                why, despite its abundance, water scarcity is
+                                one of the most pressing global challenges of
+                                our time?
                             </Typography>
                             <Typography textAlign={"justify"}>
-                                Every drop counts, but how often do we let it slip through our fingers—literally and metaphorically? 
-                                Consider this: the average household wastes nearly 10,000 gallons of water annually due to leaks alone. 
-                                Meanwhile, in many parts of the world, communities walk miles daily just to fetch a fraction of that amount.
+                                Every drop counts, but how often do we let it
+                                slip through our fingers—literally and
+                                metaphorically? Consider this: the average
+                                household wastes nearly 10,000 gallons of water
+                                annually due to leaks alone. Meanwhile, in many
+                                parts of the world, communities walk miles daily
+                                just to fetch a fraction of that amount.
                             </Typography>
                             <Typography textAlign={"justify"}>
-                                Why does this happen? It’s not just about limited resources—it’s about how we manage what we have. 
-                                Outdated systems, inefficient practices, and a lack of awareness create a perfect storm 
-                                where water waste becomes routine, and conservation feels like an afterthought.
+                                Why does this happen? It’s not just about
+                                limited resources—it’s about how we manage what
+                                we have. Outdated systems, inefficient
+                                practices, and a lack of awareness create a
+                                perfect storm where water waste becomes routine,
+                                and conservation feels like an afterthought.
                             </Typography>
                         </Stack>
                         <Divider sx={{ margin: "1% 0" }} />
-                        
+
                         <Stack gap={1} padding={"2% 0"}>
                             <Typography
                                 variant={"h5"}
@@ -228,7 +239,8 @@ const Solution = () => {
                                 But here’s the paradox:
                             </Typography>
                             <Typography textAlign={"justify"}>
-                                Solving these issues doesn’t require massive sacrifices—it only demands smarter choices. 
+                                Solving these issues doesn’t require massive
+                                sacrifices—it only demands smarter choices.
                                 Imagine a world where:
                             </Typography>
                             <Stack component="ul" spacing={1} paddingLeft={2}>
@@ -244,20 +256,28 @@ const Solution = () => {
                                 ))}
                             </Stack>
                             <Typography textAlign={"justify"}>
-                                These aren’t dreams; they’re achievable realities. 
-                                The question is, are we ready to act? 
-                                This page is your gateway to understanding the key challenges 
-                                we face with water usage and the innovative solutions 
-                                that can help us change the narrative—from wasting to conserving, 
-                                from scarcity to sustainability.
+                                These aren’t dreams; they’re achievable
+                                realities. The question is, are we ready to act?
+                                This page is your gateway to understanding the
+                                key challenges we face with water usage and the
+                                innovative solutions that can help us change the
+                                narrative—from wasting to conserving, from
+                                scarcity to sustainability.
                             </Typography>
                             <Typography textAlign={"justify"}>
-                                Let’s dive deeper into the issues, uncover the facts, and explore the solutions 
-                                that can lead us toward a water-secure future. 
-                                Are you ready to take the first step?
+                                Let’s dive deeper into the issues, uncover the
+                                facts, and explore the solutions that can lead
+                                us toward a water-secure future. Are you ready
+                                to take the first step?
                             </Typography>
                         </Stack>
-                        <Divider sx={{ margin: "1% 0", borderWidth: '.5vh', borderColor: '#000' }} />
+                        <Divider
+                            sx={{
+                                margin: "1% 0",
+                                borderWidth: ".5vh",
+                                borderColor: "#000",
+                            }}
+                        />
                     </Stack>
 
                     <Stack id="Solution">
@@ -272,8 +292,9 @@ const Solution = () => {
                                 Solution
                             </Typography>
                             <Typography textAlign={"justify"}>
-                                Here're the smart solution that we can have 
-                                for the better earth's water distribution and management in the future
+                                Here&apos;re the smart solution that we can have
+                                for the better earth&apos;s water distribution
+                                and management in the future
                             </Typography>
                         </Stack>
                         <Divider sx={{ margin: "1% 0" }} />
@@ -288,8 +309,13 @@ const Solution = () => {
                             >
                                 Water-Efficient Fixtures
                             </Typography>
-                            <Typography variant="p" component={'b'} textAlign={'justify'}>
-                                Key Problem: Excessive Water Use in Daily Activities
+                            <Typography
+                                variant="p"
+                                component={"b"}
+                                textAlign={"justify"}
+                            >
+                                Key Problem: Excessive Water Use in Daily
+                                Activities
                             </Typography>
                             <DynamicList content={fixture} />
                         </Stack>
@@ -306,13 +332,17 @@ const Solution = () => {
                             >
                                 Greywater Recycling
                             </Typography>
-                            <Typography variant="p" component={'b'} textAlign={"justify"}>
+                            <Typography
+                                variant="p"
+                                component={"b"}
+                                textAlign={"justify"}
+                            >
                                 Key Problem: Wastewater Mismanagement
                             </Typography>
                             <DynamicList content={grey} />
                         </Stack>
                         <Divider sx={{ margin: "1% 0" }} />
-                        
+
                         <Stack gap={1} padding={"2% 0"}>
                             <Typography
                                 variant={"h4"}
@@ -324,7 +354,11 @@ const Solution = () => {
                             >
                                 Rainwater Harvesting
                             </Typography>
-                            <Typography variant="p" component={'b'} textAlign={"justify"}>
+                            <Typography
+                                variant="p"
+                                component={"b"}
+                                textAlign={"justify"}
+                            >
                                 Key Problem: Underutilized Rainwater Resources
                             </Typography>
                             <DynamicList content={rainHarvest} />
@@ -341,7 +375,11 @@ const Solution = () => {
                             >
                                 Smart Irrigation Systems
                             </Typography>
-                            <Typography variant="p" component={'b'} textAlign={"justify"}>
+                            <Typography
+                                variant="p"
+                                component={"b"}
+                                textAlign={"justify"}
+                            >
                                 Key Problem: Inefficient Agricultural Water Use
                             </Typography>
                             <DynamicList content={irrigation} />
@@ -358,8 +396,13 @@ const Solution = () => {
                             >
                                 Leak Detection and Repair
                             </Typography>
-                            <Typography variant="p" component={'b'} textAlign={"justify"}>
-                                Key Problem: Unnoticed and Unaddressed Water Leaks
+                            <Typography
+                                variant="p"
+                                component={"b"}
+                                textAlign={"justify"}
+                            >
+                                Key Problem: Unnoticed and Unaddressed Water
+                                Leaks
                             </Typography>
                             <DynamicList content={leak} />
                         </Stack>
@@ -375,7 +418,11 @@ const Solution = () => {
                             >
                                 Drought-Resistant Landscaping
                             </Typography>
-                            <Typography variant="p" component={'b'} textAlign={"justify"}>
+                            <Typography
+                                variant="p"
+                                component={"b"}
+                                textAlign={"justify"}
+                            >
                                 Key Problem: High Water Demand for Landscaping
                             </Typography>
                             <DynamicList content={drought} />
@@ -393,12 +440,25 @@ const Solution = () => {
                                 Conclusion
                             </Typography>
                             <Typography textAlign={"justify"}>
-                                The recurring themes across these issues are water wastage, inefficient use, 
-                                and inadequate reuse of resources. These problems are compounded by 
-                                aging infrastructure, lack of awareness, and resistance to adopting new technologies. Tackling these issues with the solutions you've outlined will address both individual and systemic inefficiencies in water use, contributing to sustainable living and resource conservation.
+                                The recurring themes across these issues are
+                                water wastage, inefficient use, and inadequate
+                                reuse of resources. These problems are
+                                compounded by aging infrastructure, lack of
+                                awareness, and resistance to adopting new
+                                technologies. Tackling these issues with the
+                                solutions you&apos;ve outlined will address both
+                                individual and systemic inefficiencies in water
+                                use, contributing to sustainable living and
+                                resource conservation.
                             </Typography>
                         </Stack>
-                        <Divider sx={{ margin: "1% 0", borderWidth: '.5vh', borderColor: '#000' }} />
+                        <Divider
+                            sx={{
+                                margin: "1% 0",
+                                borderWidth: ".5vh",
+                                borderColor: "#000",
+                            }}
+                        />
                     </Stack>
                 </Container>
             </div>

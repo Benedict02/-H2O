@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
     AppBar,
     Toolbar,
@@ -49,11 +49,11 @@ const Navbar = () => {
                 </Typography>
             </Box>
             <List sx={{ flex: 1 }}>
-                {["Home", "Science", "Solution"].map((text) => (
+                {["Home", "Science", "Solution", "3D"].map((text) => (
                     <ListItem
                         key={text}
                         component={Link}
-                        to={`./${text.toLowerCase()}`}
+                        to={`./${text != "Home" ? text.toLowerCase() : ""}`}
                         sx={{
                             color: "white !important",
                             textDecoration: "none",
@@ -140,6 +140,9 @@ const Navbar = () => {
                             to="./solution"
                         >
                             Solution
+                        </Button>
+                        <Button color="inherit" component={Link} to="./3d">
+                            3D Model
                         </Button>
                     </Box>
                 </Toolbar>
