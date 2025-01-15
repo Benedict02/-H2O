@@ -50,7 +50,6 @@ const Navbar = () => {
             </Box>
             <List sx={{ flex: 1 }}>
                 {["Home", "Science", "Solution", "3D"].map((text) => (
-                {["Home", "Science", "Solution", "3D"].map((text) => (
                     <ListItem
                         key={text}
                         component={Link}
