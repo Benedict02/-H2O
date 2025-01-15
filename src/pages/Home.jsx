@@ -1,4 +1,4 @@
-import { Box, Container, Stack, Typography, Divider } from "@mui/material";
+import { Container, Stack, Typography, Divider } from "@mui/material";
 import { List, ListItem, ListItemText } from "@mui/material";
 
 import Banner from "../components/HokusaiBanner";
@@ -133,7 +133,8 @@ const Home = () => {
                             fontFamily={"Public Sans"}
                             textAlign={"center"}
                         >
-                            "Water is the driving force of all nature."
+                            &quot;Water is the driving force of all
+                            nature.&quot;
                         </Typography>
                         <Typography
                             variant={"h5"}
@@ -318,7 +319,7 @@ const Home = () => {
                                     fontWeight="bold"
                                     display={"inline-block"}
                                 >
-                                    2.5% of the Earth's total water
+                                    2.5% of the Earth&apos;s total water
                                 </Typography>
                                 , and most of it is locked in glaciers and ice
                                 caps, leaving less than{" "}
@@ -405,7 +406,7 @@ const Home = () => {
                                 <thead>
                                     <tr>
                                         <td
-                                            colspan="2"
+                                            colSpan="2"
                                             style={{
                                                 textAlign: "center",
                                                 padding: "0.2em",
@@ -421,7 +422,7 @@ const Home = () => {
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <th colspan="2">Data</th>
+                                        <th colSpan="2">Data</th>
                                     </tr>
                                     <tr>
                                         <td style={{ padding: "0.2em" }}>
@@ -467,7 +468,7 @@ const Home = () => {
                                         </td>
                                     </tr>
                                     <tr>
-                                        <th colspan="2">Institutions</th>
+                                        <th colSpan="2">Institutions</th>
                                     </tr>
                                     <tr>
                                         <td style={{ padding: "0.2em" }}>
@@ -533,8 +534,8 @@ const Home = () => {
                                     Source:
                                     <ol style={{ listStylePosition: "inside" }}>
                                         <li>
-                                            "JMP". washdata.org. Retrieved
-                                            2021-07-20.
+                                            &apos;JMP&apos;. washdata.org.
+                                            Retrieved 2021-07-20.
                                         </li>
                                         <li>
                                             International Benchmarking Network
