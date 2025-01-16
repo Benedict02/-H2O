@@ -1,7 +1,5 @@
-import React from "react";
-import { Box, Typography, Button, Container, Stack } from "@mui/material";
+import { Box, Typography, Container, Stack } from "@mui/material";
 import {
-    ParallaxProvider,
     ParallaxBanner,
     ParallaxBannerLayer,
 } from "react-scroll-parallax";

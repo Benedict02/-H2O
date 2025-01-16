@@ -1,5 +1,12 @@
-import { Typography, Stack, Box } from '@mui/material';
+import { useState, useEffect } from "react";
+import { Typography, Stack, Box } from "@mui/material";
 const DynamicList = (props) => {
+    const [fontColor, setFontColor] = useState("");
+    useEffect(() => {
+        if (props.color == "") {
+            setFontColor();
+        }
+    }, []);
     return (
         <Box padding={2}>
             <Stack spacing={2}>
@@ -8,7 +15,7 @@ const DynamicList = (props) => {
                         <Typography
                             variant="h5"
                             color="primary"
-                            sx={{ fontWeight: 'bold', marginBottom: 1 }}
+                            sx={{ fontWeight: "bold", marginBottom: 1 }}
                         >
                             {entry.title}
                         </Typography>

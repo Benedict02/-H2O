@@ -1,9 +1,4 @@
-import {
-    createTheme,
-    ThemeProvider,
-    alpha,
-    getContrastRatio,
-} from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material";
 
 export default function ColorPalette(props) {
     let black_primary = "#0E2E65";

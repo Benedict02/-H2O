@@ -101,7 +101,7 @@ const Home = () => {
     const irigationSrc = "./irigation.png";
     const leakSrc = "./water-leak.jpg";
     const droughtSrc = "./drought.jpg";
-    const rippleSrc = "./hokusai_mt_fuji.png";
+    const rippleSrc = "./weathering.jpg";
     const flagSrc = "./flag.png";
 
     const tips = [
@@ -240,10 +240,16 @@ const Home = () => {
                         background: `url(${rippleSrc})`,
                         backgroundAttachment: "fixed",
                         backgroundSize: "cover",
+                        backgroundRepeat: "no-repeat",
+                        padding: "5% 0",
                     }}
                 >
                     <Container>
-                        <Stack gap={3} padding={"2% 0"}>
+                        <Stack
+                            gap={3}
+                            padding={"2% 3%"}
+                            sx={{ backgroundColor: "white !important" }}
+                        >
                             <Typography
                                 variant={"h3"}
                                 component={"h1"}
@@ -293,7 +299,7 @@ const Home = () => {
                                 </Typography>
                             </Stack>
                         </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
+                        <Divider />
                     </Container>
                 </div>
                 <Container>
