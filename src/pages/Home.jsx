@@ -4,6 +4,7 @@ import { List, ListItem, ListItemText } from "@mui/material";
 import Banner from "../components/HokusaiBanner";
 import Tiles from "../components/Tiles";
 import CustomBarChart from "../components/CustomBarChart";
+import WaterDropIcon from "@mui/icons-material/WaterDrop";
 
 const Home = () => {
     const waterScarcity = [
@@ -162,46 +163,76 @@ const Home = () => {
                             >
                                 Did You Know?
                             </Typography>
-                            <Typography>
-                                Having access to improved water sources means{" "}
-                                <Typography
-                                    component={"mark"}
-                                    sx={{
-                                        backgroundColor: "secondary.main",
-                                    }}
-                                >
-                                    having clean water for drinking and other
-                                    necessities from sources like piped systems,
-                                    protected wells, or rainwater collection
-                                    that have been designed to minimize
-                                    contamination.
-                                </Typography>{" "}
-                                It is a major objective of the Sustainable
-                                Development Goals (SDG 6) of the UN and is
-                                essential for reducing waterborne illnesses like
-                                cholera. Despite advancements, dependable access
-                                is still lacking in many low-income and rural
-                                areas, necessitating investments in equitable
-                                policy and sustainable infrastructure.
-                            </Typography>
-                            <Typography>
-                                An improved water source, as defined by the
-                                World Health Organization (WHO), refers to a{" "}
-                                <Typography
-                                    component={"mark"}
-                                    sx={{
-                                        backgroundColor: "secondary.main",
-                                    }}
-                                >
-                                    drinking water source that provides adequate
-                                    and safe water for human consumption.
-                                </Typography>{" "}
-                                Examples of improved water sources include piped
-                                water connections, protected wells, boreholes
-                                with hand pumps, packaged or delivered water and
-                                rainwater collection systems with appropriate
-                                treatment.
-                            </Typography>
+                            <Stack direction="row" gap={3}>
+                                <Stack>
+                                    <Stack>
+                                        <WaterDropIcon
+                                            sx={{
+                                                position: "relative",
+                                                zIndex: "2",
+                                                bgcolor: "white",
+                                            }}
+                                        />
+                                    </Stack>
+                                    <Stack
+                                        sx={{ mt: -2, p: 2, bgcolor: "red" }}
+                                    >
+                                        <Typography>
+                                            Having access to improved water
+                                            sources means{" "}
+                                            <Typography
+                                                component={"mark"}
+                                                sx={{
+                                                    backgroundColor:
+                                                        "secondary.main",
+                                                }}
+                                            >
+                                                having clean water for drinking
+                                                and other necessities from
+                                                sources like piped systems,
+                                                protected wells, or rainwater
+                                                collection that have been
+                                                designed to minimize
+                                                contamination.
+                                            </Typography>{" "}
+                                            It is a major objective of the
+                                            Sustainable Development Goals (SDG
+                                            6) of the UN and is essential for
+                                            reducing waterborne illnesses like
+                                            cholera. Despite advancements,
+                                            dependable access is still lacking
+                                            in many low-income and rural areas,
+                                            necessitating investments in
+                                            equitable policy and sustainable
+                                            infrastructure.
+                                        </Typography>
+                                    </Stack>
+                                </Stack>
+                                <Stack sx={{ backgroundColor: "blue", p: 2 }}>
+                                    <Typography>
+                                        An improved water source, as defined by
+                                        the World Health Organization (WHO),
+                                        refers to a{" "}
+                                        <Typography
+                                            component={"mark"}
+                                            sx={{
+                                                backgroundColor:
+                                                    "secondary.main",
+                                            }}
+                                        >
+                                            drinking water source that provides
+                                            adequate and safe water for human
+                                            consumption.
+                                        </Typography>{" "}
+                                        Examples of improved water sources
+                                        include piped water connections,
+                                        protected wells, boreholes with hand
+                                        pumps, packaged or delivered water and
+                                        rainwater collection systems with
+                                        appropriate treatment.
+                                    </Typography>
+                                </Stack>
+                            </Stack>
                             <Typography
                                 variant={"h4"}
                                 component={"h1"}
@@ -385,10 +416,15 @@ const Home = () => {
                         background: `url(${rippleSrc})`,
                         backgroundAttachment: "fixed",
                         backgroundSize: "cover",
+                        padding: "5% 0",
                     }}
                 >
                     <Container>
-                        <Stack gap={2} padding={"2% 0"}>
+                        <Stack
+                            gap={2}
+                            padding={"2% 3%"}
+                            sx={{ backgroundColor: "white !important" }}
+                        >
                             <Typography
                                 variant={"h3"}
                                 component={"h1"}
@@ -422,6 +458,9 @@ const Home = () => {
                                                 src={flagSrc}
                                                 alt=""
                                                 width="100"
+                                                style={{
+                                                    border: "1px solid black",
+                                                }}
                                             />
                                         </td>
                                     </tr>

@@ -1,10 +1,5 @@
-import React from "react";
-import { Box, Typography, Button, Container, Stack } from "@mui/material";
-import {
-    ParallaxProvider,
-    ParallaxBanner,
-    ParallaxBannerLayer,
-} from "react-scroll-parallax";
+import { Box, Typography, Container, Stack } from "@mui/material";
+import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
 
 const Banner = () => {
     return (
@@ -12,8 +7,7 @@ const Banner = () => {
             <ParallaxBannerLayer image="The_Rhone_1.png" speed={20} />
             <ParallaxBannerLayer image="The_Rhone_2.png" speed={-15} />
             <ParallaxBannerLayer image="The_Rhone_3.png" speed={-18} />
-            <ParallaxBannerLayer image="The_Rhone_4.png" speed={10} />
-            <ParallaxBannerLayer>
+            <ParallaxBannerLayer translateY={-50}>
                 <Box
                     sx={{
                         display: "flex",
@@ -60,6 +54,7 @@ const Banner = () => {
                     </Container>
                 </Box>
             </ParallaxBannerLayer>
+            <ParallaxBannerLayer image="The_Rhone_4.png" speed={27} />
         </ParallaxBanner>
     );
 };

@@ -1,9 +1,8 @@
 import { Container, Divider, Stack, Typography } from "@mui/material";
 import DynamicList from "../components/DynamicList";
-import Banner from "../components/FixedBanner";
+import Banner from "../components/RoughBanner";
 
 const Solution = () => {
-    const rain = "./rainy.gif";
 
     const prolog = [
         "Rainfall doesn’t just wash away but is collected and reused.",
@@ -152,7 +151,7 @@ const Solution = () => {
 
     return (
         <>
-            <Banner title="Solution" src={rain} />
+            <Banner />
             <div style={{ margin: "2% 0" }}>
                 <Container fixed>
                     <Stack
