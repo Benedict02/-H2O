@@ -1,31 +1,19 @@
-import React from "react";
-import { Box, Typography, Button, Container, Stack } from "@mui/material";
-import {
-    ParallaxProvider,
-    ParallaxBanner,
-    ParallaxBannerLayer,
-} from "react-scroll-parallax";
+import { Box, Typography, Container, Stack } from "@mui/material";
+import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
 
 const Banner = () => {
     return (
         <ParallaxBanner style={{ height: "100vh", aspectRatio: "2/1" }}>
             <ParallaxBannerLayer image="hokusai_mt_fuji.png" speed={20} />
-            <ParallaxBannerLayer image="hokusai_wave_top.png" speed={15} />
+            <ParallaxBannerLayer image="hokusai_wave_top.png" speed={-15} />
             <ParallaxBannerLayer image="hokusai_wave_right.png" speed={18} />
-            <ParallaxBannerLayer image="hokusai_wave_bottom.png" speed={10} />
-            <ParallaxBannerLayer
-                image="hokusai_wave_bottom_right.png"
-                speed={10}
-            />
-            <ParallaxBannerLayer>
+            <ParallaxBannerLayer translateY={-50}>
                 <Box
                     sx={{
                         display: "flex",
                         alignItems: "center",
                         justifyContent: "center",
                         height: "100vh",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
                         color: "#fff",
                         textAlign: "center",
                         padding: 4,
@@ -42,7 +30,7 @@ const Banner = () => {
                                 variant="h2"
                                 component="h1"
                                 gutterBottom
-                                bgcolor={"black"}
+                                bgcolor={`rgba(0, 0, 0, 0.75)`}
                                 fontFamily={"Montserrat !important"}
                                 width={"fit-content"}
                                 textAlign={"center"}
@@ -56,7 +44,7 @@ const Banner = () => {
                                 variant="h6"
                                 component="p"
                                 gutterBottom
-                                bgcolor={"black"}
+                                bgcolor={`rgba(0, 0, 0, 0.75)`}
                                 width={"fit-content"}
                                 padding={"1%"}
                                 fontFamily={"Montserrat !important"}
@@ -67,6 +55,11 @@ const Banner = () => {
                     </Container>
                 </Box>
             </ParallaxBannerLayer>
+            <ParallaxBannerLayer image="hokusai_wave_bottom.png" speed={18} />
+            <ParallaxBannerLayer
+                image="hokusai_wave_bottom_right.png"
+                speed={-10}
+            />
         </ParallaxBanner>
     );
 };
