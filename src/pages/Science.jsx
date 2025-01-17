@@ -1,7 +1,9 @@
 import { Container, Divider, Stack, Typography } from "@mui/material";
 import Banner from "../components/RhoneBanner";
 import DynamicList from "../components/DynamicList";
-const rippleSrc = "./The_Rhone_1.png";
+import Accordion from "../components/Accordion";
+
+const rippleSrc = "./cloud.jpg";
 
 const Science = () => {
     const hydrologySrc = "./hydrology.gif";
@@ -346,20 +348,9 @@ const Science = () => {
                 </Container>
 
                 <Stack id="hydrology">
-                    <Container fixed>
-                        <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h2"}
-                                component={"h1"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                                gutterBottom
-                            >
-                                Hydrology
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                Hydrology is the scientific study of water,
+                    <Accordion
+                        title="Hydrology"
+                        description="Hydrology is the scientific study of water,
                                 focusing on its occurrence, distribution,
                                 movement, and properties on Earth and other
                                 planets. It examines the interaction between
@@ -370,308 +361,315 @@ const Science = () => {
                                 approximately 1.386 billion km³. Hydrology
                                 causes liquid water to be found in bodies of
                                 water, such as oceans, seas, lakes, rivers,
-                                streams, canals, ponds, or puddles.
-                            </Typography>
-                        </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
-                    </Container>
-
-                    <Container fixed>
-                        <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                                gutterBottom
-                            >
-                                Water Cycle
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                The water cycle is a continuous process in which
-                                water moves through different phases and
-                                environments. Here are the primary stages:
-                            </Typography>
-                            <DynamicList content={waterCycleSteps} />
-                            <img src={hydrologySrc} alt="Hydrology GIF" />
-                        </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
-                    </Container>
-
-                    <div
-                        style={{
-                            background: `url(${rippleSrc})`,
-                            backgroundAttachment: "fixed",
-                            backgroundSize: "cover",
-                            backgroundRepeat: "no-repeat",
-                        }}
+                                streams, canals, ponds, or puddles."
                     >
                         <Container fixed>
                             <Stack gap={1} padding={"2% 0"}>
                                 <Typography
                                     variant={"h4"}
                                     component={"p"}
-                                    color="secondary"
+                                    color="dark_ocean"
+                                    fontFamily={"Quintessential"}
+                                    textAlign={"start"}
+                                    gutterBottom
+                                >
+                                    Water Cycle
+                                </Typography>
+                                <Typography textAlign={"justify"}>
+                                    The water cycle is a continuous process in
+                                    which water moves through different phases
+                                    and environments. Here are the primary
+                                    stages:
+                                </Typography>
+                                <DynamicList content={waterCycleSteps} />
+                                <img src={hydrologySrc} alt="Hydrology GIF" />
+                            </Stack>
+                        </Container>
+                        <Container fixed>
+                            <Divider sx={{ margin: "1% 0" }} />
+                        </Container>
+
+                        <div
+                            style={{
+                                background: `url(${rippleSrc})`,
+                                backgroundAttachment: "fixed",
+                                backgroundSize: "cover",
+                                backgroundRepeat: "no-repeat",
+                                padding: "2% 0",
+                                margin: "2% 0",
+                            }}
+                        >
+                            <Container fixed>
+                                <Stack
+                                    gap={1}
+                                    padding={"2%"}
+                                    sx={{
+                                        backgroundColor:
+                                            "rgba(240, 240, 240, 0.7)",
+                                    }}
+                                >
+                                    <Typography
+                                        variant={"h4"}
+                                        component={"p"}
+                                        color="dark_ocean"
+                                        fontFamily={"Quintessential"}
+                                        textAlign={"start"}
+                                    >
+                                        Factors Affecting Hydrology
+                                    </Typography>
+                                    <Typography textAlign={"justify"}>
+                                        Several factors influence the
+                                        hydrological processes, including:
+                                    </Typography>
+                                    <DynamicList content={factors} />
+                                </Stack>
+                            </Container>
+                        </div>
+                        <Container fixed>
+                            <Divider sx={{ margin: "1% 0" }} />
+                        </Container>
+
+                        <Stack gap={1} sx={{ pt: 2 }}>
+                            <Container fixed>
+                                <Typography
+                                    variant={"h4"}
+                                    component={"p"}
+                                    color="dark_ocean"
                                     fontFamily={"Quintessential"}
                                     textAlign={"start"}
                                 >
-                                    Factors Affecting Hydrology
+                                    Human Impact on Hydrology
+                                </Typography>
+                                <DynamicList content={humanImpact} />
+                            </Container>
+                        </Stack>
+                        <Container fixed>
+                            <Divider sx={{ margin: "1% 0" }} />
+                        </Container>
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Container fixed>
+                                <Typography
+                                    variant={"h4"}
+                                    component={"p"}
+                                    color="dark_ocean"
+                                    fontFamily={"Quintessential"}
+                                    textAlign={"start"}
+                                >
+                                    The Importance of Hydrology
+                                </Typography>
+                                <DynamicList content={important} />
+                            </Container>
+                        </Stack>
+
+                        <Container fixed>
+                            <Divider sx={{ margin: "1% 0" }} />
+                        </Container>
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Container fixed>
+                                <Typography
+                                    variant={"h4"}
+                                    component={"p"}
+                                    color="dark_ocean"
+                                    fontFamily={"Quintessential"}
+                                    textAlign={"start"}
+                                >
+                                    Conclusion
                                 </Typography>
                                 <Typography textAlign={"justify"}>
-                                    Several factors influence the hydrological
-                                    processes, including:
+                                    Hydrology is fundamental to understanding
+                                    how water supports life and ecosystems. Its
+                                    study provides insights into managing water
+                                    resources, mitigating disasters, and
+                                    addressing global challenges like water
+                                    scarcity and climate change. By appreciating
+                                    the complexity of the water cycle and the
+                                    factors that affect it, we can work toward a
+                                    more sustainable and water-secure future.
                                 </Typography>
-                                <DynamicList content={factors} />
-                            </Stack>
-                            <Divider />
-                        </Container>
-                    </div>
-
-                    <Stack gap={1} padding={"2% 0"}>
+                            </Container>
+                        </Stack>
                         <Container fixed>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                            >
-                                Human Impact on Hydrology
-                            </Typography>
-                            <DynamicList content={humanImpact} />
-                            <Divider sx={{ margin: "1% 0" }} />
+                            <Divider
+                                sx={{
+                                    margin: "1% 0",
+                                    borderWidth: ".5vh",
+                                    borderColor: "#000",
+                                }}
+                            />
                         </Container>
-                    </Stack>
-
-                    <Stack gap={1} padding={"2% 0"}>
-                        <Container fixed>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                            >
-                                The Importance of Hydrology
-                            </Typography>
-                            <DynamicList content={important} />
-                            <Divider sx={{ margin: "1% 0" }} />
-                        </Container>
-                    </Stack>
-
-                    <Stack gap={1} padding={"2% 0"}>
-                        <Container fixed>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                            >
-                                Conclusion
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                Hydrology is fundamental to understanding how
-                                water supports life and ecosystems. Its study
-                                provides insights into managing water resources,
-                                mitigating disasters, and addressing global
-                                challenges like water scarcity and climate
-                                change. By appreciating the complexity of the
-                                water cycle and the factors that affect it, we
-                                can work toward a more sustainable and
-                                water-secure future.
-                            </Typography>
-                        </Container>
-                    </Stack>
+                    </Accordion>
                 </Stack>
 
-                <Container fixed>
-                    <Divider
-                        sx={{
-                            margin: "1% 0",
-                            borderWidth: ".5vh",
-                            borderColor: "#000",
-                        }}
-                    />
-                </Container>
-
                 <Stack id="environmental">
-                    <Container fixed>
-                        <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h2"}
-                                component={"h1"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                                gutterBottom
-                            >
-                                Environmental Impact
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                Water is fundamental to sustaining life,
-                                ecosystems, and the planet&apos;s overall
+                    <Accordion
+                        title="Environmental Impact"
+                        description="Water is fundamental to sustaining life,
+                                ecosystems, and the planet's overall
                                 balance. However, human activities, pollution,
                                 and mismanagement of water resources have caused
                                 significant environmental impacts. Below is a
                                 deeper dive into how water interacts with and
                                 influences the environment, both positively and
-                                negatively.
-                            </Typography>
-                        </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
-                    </Container>
-
-                    <Container fixed>
+                                negatively."
+                    >
                         <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                                gutterBottom
-                            >
-                                Water’s Role in Supporting Ecosystems
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                Water is the lifeblood of ecosystems, ensuring
-                                biodiversity and the survival of countless
-                                species.
-                            </Typography>
-                            <DynamicList content={waterRole} />
+                            <Container fixed>
+                                <Typography
+                                    variant={"h4"}
+                                    component={"p"}
+                                    color="dark_ocean"
+                                    fontFamily={"Quintessential"}
+                                    textAlign={"start"}
+                                    gutterBottom
+                                >
+                                    Water’s Role in Supporting Ecosystems
+                                </Typography>
+                                <Typography textAlign={"justify"}>
+                                    Water is the lifeblood of ecosystems,
+                                    ensuring biodiversity and the survival of
+                                    countless species.
+                                </Typography>
+                                <DynamicList content={waterRole} />
+                            </Container>
                         </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
-                    </Container>
 
-                    <Container fixed>
-                        <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                            >
-                                Water Mismanagement
-                            </Typography>
-                            <DynamicList content={waterMiss} />
-                        </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
-                    </Container>
+                        <Container fixed>
+                            <Divider sx={{ margin: "1% 0" }} />
+                        </Container>
 
-                    <Container fixed>
                         <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                            >
-                                Climate Change
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                The relationship between water and climate
-                                change is bidirectional: water is both a driver
-                                and a victim of climate shifts.
-                            </Typography>
-                            <DynamicList content={climate} />
+                            <Container fixed>
+                                <Typography
+                                    variant={"h4"}
+                                    component={"p"}
+                                    color="dark_ocean"
+                                    fontFamily={"Quintessential"}
+                                    textAlign={"start"}
+                                >
+                                    Water Mismanagement
+                                </Typography>
+                                <DynamicList content={waterMiss} />
+                            </Container>
                         </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
-                    </Container>
 
-                    <Container fixed>
-                        <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                            >
-                                Drought and Desertification
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                Prolonged droughts have severe consequences for
-                                the environment:
-                            </Typography>
-                            <DynamicList content={drought} />
-                        </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
-                    </Container>
+                        <Container fixed>
+                            <Divider sx={{ margin: "1% 0" }} />
+                        </Container>
 
-                    <Container fixed>
                         <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                            >
-                                Flood
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                While floods are natural events, their frequency
-                                and intensity have been aggravated by human
-                                activities:
-                            </Typography>
-                            <DynamicList content={flood} />
+                            <Container fixed>
+                                <Typography
+                                    variant={"h4"}
+                                    component={"p"}
+                                    color="dark_ocean"
+                                    fontFamily={"Quintessential"}
+                                    textAlign={"start"}
+                                >
+                                    Climate Change
+                                </Typography>
+                                <Typography textAlign={"justify"}>
+                                    The relationship between water and climate
+                                    change is bidirectional: water is both a
+                                    driver and a victim of climate shifts.
+                                </Typography>
+                                <DynamicList content={climate} />
+                            </Container>
                         </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
-                    </Container>
 
-                    <Container fixed>
+                        <Container fixed>
+                            <Divider sx={{ margin: "1% 0" }} />
+                        </Container>
+
                         <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                            >
-                                Conclusion
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                Water’s impact on the environment is profound,
-                                influencing everything from local ecosystems to
-                                global climate patterns. Mismanagement and
-                                pollution disrupt this delicate balance, causing
-                                cascading effects on biodiversity, food
-                                security, and human health. By adopting
-                                sustainable practices and acknowledging the
-                                interconnectedness of water and the environment,
-                                we can ensure a thriving planet for future
-                                generations.
-                            </Typography>
+                            <Container fixed>
+                                <Typography
+                                    variant={"h4"}
+                                    component={"p"}
+                                    color="dark_ocean"
+                                    fontFamily={"Quintessential"}
+                                    textAlign={"start"}
+                                >
+                                    Drought and Desertification
+                                </Typography>
+                                <Typography textAlign={"justify"}>
+                                    Prolonged droughts have severe consequences
+                                    for the environment:
+                                </Typography>
+                                <DynamicList content={drought} />
+                            </Container>
                         </Stack>
-                        <Divider
-                            sx={{
-                                margin: "1% 0",
-                                borderWidth: ".5vh",
-                                borderColor: "#000",
-                            }}
-                        />
-                    </Container>
+
+                        <Container fixed>
+                            <Divider sx={{ margin: "1% 0" }} />
+                        </Container>
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Container fixed>
+                                <Typography
+                                    variant={"h4"}
+                                    component={"p"}
+                                    color="dark_ocean"
+                                    fontFamily={"Quintessential"}
+                                    textAlign={"start"}
+                                >
+                                    Flood
+                                </Typography>
+                                <Typography textAlign={"justify"}>
+                                    While floods are natural events, their
+                                    frequency and intensity have been aggravated
+                                    by human activities:
+                                </Typography>
+                                <DynamicList content={flood} />
+                            </Container>
+                        </Stack>
+
+                        <Container fixed>
+                            <Divider sx={{ margin: "1% 0" }} />
+                        </Container>
+
+                        <Stack gap={1} padding={"2% 0"}>
+                            <Container fixed>
+                                <Typography
+                                    variant={"h4"}
+                                    component={"p"}
+                                    color="dark_ocean"
+                                    fontFamily={"Quintessential"}
+                                    textAlign={"start"}
+                                >
+                                    Conclusion
+                                </Typography>
+                                <Typography textAlign={"justify"}>
+                                    Water’s impact on the environment is
+                                    profound, influencing everything from local
+                                    ecosystems to global climate patterns.
+                                    Mismanagement and pollution disrupt this
+                                    delicate balance, causing cascading effects
+                                    on biodiversity, food security, and human
+                                    health. By adopting sustainable practices
+                                    and acknowledging the interconnectedness of
+                                    water and the environment, we can ensure a
+                                    thriving planet for future generations.
+                                </Typography>
+                            </Container>
+                        </Stack>
+                        <Container fixed>
+                            <Divider
+                                sx={{
+                                    margin: "1% 0",
+                                    borderWidth: ".5vh",
+                                    borderColor: "#000",
+                                }}
+                            />
+                        </Container>
+                    </Accordion>
                 </Stack>
 
                 <Stack id="energy">
-                    <Container fixed>
-                        <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h2"}
-                                component={"h1"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                                gutterBottom
-                            >
-                                Energy
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                Water and energy are deeply interconnected
+                    <Accordion
+                        title="Energy"
+                        description="Water and energy are deeply interconnected
                                 resources that are critical to the functioning
                                 of societies and ecosystems worldwide. The
                                 relationship between the two is complex and
@@ -680,112 +678,119 @@ const Science = () => {
                                 the overall sustainability of resources. Below
                                 is an exploration of how water and energy are
                                 linked and the challenges and opportunities that
-                                arise from their interaction.
-                            </Typography>
-                        </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
-                    </Container>
+                                arise from their interaction."
+                    >
+                        <Container fixed>
+                            <Stack gap={1} padding={"2% 0"}>
+                                <Typography
+                                    variant={"h4"}
+                                    component={"p"}
+                                    color="dark_ocean"
+                                    fontFamily={"Quintessential"}
+                                    textAlign={"start"}
+                                    gutterBottom
+                                >
+                                    The Role of Water in Energy Production
+                                </Typography>
+                                <Typography textAlign={"justify"}>
+                                    Water plays an essential role in energy
+                                    production across various sectors,
+                                    particularly in hydropower generation,
+                                    fossil fuel-based energy production, and
+                                    nuclear energy.
+                                </Typography>
+                                <DynamicList content={waterToEnergy} />
+                            </Stack>
+                            <Divider sx={{ margin: "1% 0" }} />
+                        </Container>
 
-                    <Container fixed>
                         <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                                gutterBottom
-                            >
-                                The Role of Water in Energy Production
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                Water plays an essential role in energy
-                                production across various sectors, particularly
-                                in hydropower generation, fossil fuel-based
-                                energy production, and nuclear energy.
-                            </Typography>
-                            <DynamicList content={waterToEnergy} />
+                            <Container fixed>
+                                <Typography
+                                    variant={"h4"}
+                                    component={"p"}
+                                    color="dark_ocean"
+                                    fontFamily={"Quintessential"}
+                                    textAlign={"start"}
+                                >
+                                    The Role of Energy in Water Management
+                                </Typography>
+                                <Typography textAlign={"justify"}>
+                                    Energy is critical for all stages of the
+                                    water cycle, from the extraction and
+                                    treatment of water to its distribution and
+                                    use. This creates a water-energy nexus,
+                                    where the availability and cost of one
+                                    resource impact the other.
+                                </Typography>
+                                <DynamicList content={energyToWater} />
+                            </Container>
                         </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
-                    </Container>
 
-                    <Container fixed>
-                        <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                            >
-                                The Role of Energy in Water Management
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                Energy is critical for all stages of the water
-                                cycle, from the extraction and treatment of
-                                water to its distribution and use. This creates
-                                a water-energy nexus, where the availability and
-                                cost of one resource impact the other.
-                            </Typography>
-                            <DynamicList content={energyToWater} />
-                        </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
-                    </Container>
+                        <Container fixed>
+                            <Divider sx={{ margin: "1% 0" }} />
+                        </Container>
 
-                    <Container fixed>
                         <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                            >
-                                The Water-Energy Nexus
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                The interdependence of water and energy presents
-                                several challenges for sustainable development
-                                and climate resilience. Below are some key
-                                issues arising from this relationship:
-                            </Typography>
-                            <DynamicList content={waterNexus} />
+                            <Container fixed>
+                                <Typography
+                                    variant={"h4"}
+                                    component={"p"}
+                                    color="dark_ocean"
+                                    fontFamily={"Quintessential"}
+                                    textAlign={"start"}
+                                >
+                                    The Water-Energy Nexus
+                                </Typography>
+                                <Typography textAlign={"justify"}>
+                                    The interdependence of water and energy
+                                    presents several challenges for sustainable
+                                    development and climate resilience. Below
+                                    are some key issues arising from this
+                                    relationship:
+                                </Typography>
+                                <DynamicList content={waterNexus} />
+                            </Container>
                         </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
-                    </Container>
 
-                    <Container fixed>
+                        <Container fixed>
+                            <Divider sx={{ margin: "1% 0" }} />
+                        </Container>
+
                         <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                            >
-                                Future of Water-Nergy Nexus
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                In the future, balancing the water-energy nexus
-                                will require a combination of innovation,
-                                policy, and education to ensure that both water
-                                and energy resources are managed in a
-                                sustainable way. Solutions like integrating
-                                renewable energy sources, advancing desalination
-                                technologies, water recycling, and coordinating
-                                resource management will become increasingly
-                                essential in a world facing both water scarcity
-                                and energy challenges.
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                By understanding and addressing the links
-                                between water and energy, societies can pave the
-                                way toward more sustainable, resilient systems
-                                that support both environmental health and human
-                                development.
-                            </Typography>
+                            <Container fixed>
+                                <Typography
+                                    variant={"h4"}
+                                    component={"p"}
+                                    color="dark_ocean"
+                                    fontFamily={"Quintessential"}
+                                    textAlign={"start"}
+                                >
+                                    Future of Water-Nergy Nexus
+                                </Typography>
+                                <Typography textAlign={"justify"}>
+                                    In the future, balancing the water-energy
+                                    nexus will require a combination of
+                                    innovation, policy, and education to ensure
+                                    that both water and energy resources are
+                                    managed in a sustainable way. Solutions like
+                                    integrating renewable energy sources,
+                                    advancing desalination technologies, water
+                                    recycling, and coordinating resource
+                                    management will become increasingly
+                                    essential in a world facing both water
+                                    scarcity and energy challenges.
+                                </Typography>
+                                <Typography textAlign={"justify"}>
+                                    By understanding and addressing the links
+                                    between water and energy, societies can pave
+                                    the way toward more sustainable, resilient
+                                    systems that support both environmental
+                                    health and human development.
+                                </Typography>
+                            </Container>
                         </Stack>
-                    </Container>
+                    </Accordion>
                 </Stack>
             </div>
         </>
