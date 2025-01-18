@@ -31,6 +31,7 @@ const DynamicList = (props) => {
                                         component="li"
                                         variant="body1"
                                         color="black"
+                                        fontSize={"1rem"}
                                     >
                                         {item}
                                     </Typography>
