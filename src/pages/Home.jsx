@@ -599,13 +599,7 @@ const Home = () => {
                         <Divider sx={{ margin: "1% 0" }} />
                     </Container>
                 </div>
-                <div
-                // style={{
-                //     backgroundImage:
-                //         "radial-gradient(#80808080 1.5px, transparent 0)",
-                //     backgroundSize: "32px 32px",
-                // }}
-                >
+                <div>
                     <Container>
                         <Stack gap={2} padding={"2% 0"}>
                             <Stack>
