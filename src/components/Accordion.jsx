@@ -42,7 +42,7 @@ const Accordion = (props) => {
                             )}
                         </Button>
                     </Stack>
-                    <Typography textAlign={"justify"}>
+                    <Typography textAlign={"justify"} fontSize="1rem">
                         {props.description}
                     </Typography>
 
