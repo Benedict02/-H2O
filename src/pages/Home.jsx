@@ -126,6 +126,7 @@ const Home = () => {
                         alignItems={"baseline"}
                         justifyContent={"center"}
                         padding={"2% 0"}
+                        data-aos="zoom-in"
                     >
                         <Typography
                             variant={"h4"}
@@ -160,12 +161,16 @@ const Home = () => {
                                 fontFamily={"Montserrat !important"}
                                 fontWeight={500}
                                 textAlign={"start"}
+                                data-aos="fade-up"
                             >
                                 Did You Know?
                             </Typography>
                             <Stack direction="row" gap={3}>
                                 <Stack>
-                                    <Stack sx={{ p: 2, bgcolor: "#f0f0f0" }}>
+                                    <Stack
+                                        sx={{ p: 2, bgcolor: "#f0f0f0" }}
+                                        data-aos="fade-up-right"
+                                    >
                                         <Typography>
                                             Having access to improved water
                                             sources means{" "}
@@ -199,6 +204,7 @@ const Home = () => {
                                 </Stack>
                                 <Stack
                                     sx={{ backgroundColor: "#f0f0f0", p: 2 }}
+                                    data-aos="fade-up-left"
                                 >
                                     <Typography>
                                         An improved water source, as defined by
@@ -231,11 +237,12 @@ const Home = () => {
                                 fontFamily={"Montserrat !important"}
                                 fontWeight={500}
                                 textAlign={"center"}
+                                data-aos="fade-up"
                             >
                                 Access to Improved Water Source
                             </Typography>
                         </Stack>
-                        <Stack>
+                        <Stack data-aos="fade-up">
                             <CustomBarChart
                                 data={waterScarcity}
                                 x={"Country"}
@@ -274,6 +281,7 @@ const Home = () => {
                                 backgroundColor:
                                     "rgba(240, 240, 240, 0.6) !important",
                             }}
+                            data-aos="fade-up"
                         >
                             <Typography
                                 variant={"h3"}
@@ -329,7 +337,7 @@ const Home = () => {
                 </div>
                 <Container>
                     <Stack gap={2} padding={"2% 0"}>
-                        <Stack gap={4}>
+                        <Stack gap={4} data-aos="fade-up">
                             <Typography
                                 variant={"h3"}
                                 component={"h1"}
@@ -371,7 +379,7 @@ const Home = () => {
                                 droughts and water scarcity.
                             </Typography>
                         </Stack>
-                        <Stack>
+                        <Stack data-aos="fade-up">
                             <Typography
                                 variant={"h4"}
                                 component={"h1"}
@@ -421,6 +429,7 @@ const Home = () => {
                                 backgroundColor:
                                     "rgba(19, 62, 135, 0.925) !important",
                             }}
+                            data-aos="fade-up"
                         >
                             <Typography
                                 variant={"h3"}
@@ -610,6 +619,7 @@ const Home = () => {
                                     fontFamily={"Montserrat !important"}
                                     fontWeight={500}
                                     textAlign={"start"}
+                                    data-aos="fade-up"
                                 >
                                     Science Concept
                                 </Typography>
@@ -620,6 +630,8 @@ const Home = () => {
                                 gap={1}
                                 alignItems={"center"}
                                 flexWrap={"wrap"}
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
                             >
                                 <Tiles
                                     header="Hydrology"
@@ -650,6 +662,7 @@ const Home = () => {
                                     fontFamily={"Montserrat !important"}
                                     fontWeight={500}
                                     textAlign={"start"}
+                                    data-aos="fade-up"
                                 >
                                     Solution
                                 </Typography>
@@ -660,6 +673,8 @@ const Home = () => {
                                 gap={1}
                                 alignItems={"center"}
                                 flexWrap={"wrap"}
+                                data-aos="fade-up"
+                                data-aos-duration="1000"
                             >
                                 <Tiles
                                     header="Water-Efficient Fixtures"
@@ -680,6 +695,8 @@ const Home = () => {
                                 gap={1}
                                 alignItems={"center"}
                                 flexWrap={"wrap"}
+                                data-aos="fade-up"
+                                data-aos-duration="1500"
                             >
                                 <Tiles
                                     header="Smart Irrigation Systems"
