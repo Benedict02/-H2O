@@ -45,7 +45,6 @@ const Accordion = (props) => {
                     <Typography textAlign={"justify"} fontSize="1rem">
                         {props.description}
                     </Typography>
-
                     {isOpen ? (
                         <Stack data-aos="fade-up">{props.children}</Stack>
                     ) : (
