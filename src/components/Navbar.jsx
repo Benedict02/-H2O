@@ -12,7 +12,6 @@ import {
     ListItemText,
     Menu,
     MenuItem,
-    Stack,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
@@ -143,37 +142,37 @@ const Navbar = () => {
     );
 
     return (
-        <Stack maxWidth={'100%'}>
+        <>
             <AppBar
                 position="fixed"
                 sx={{
                     backgroundColor: "rgba(0, 0, 0, .5)",
                     boxShadow: "none",
+                    maxWidth: "100%",
+                    overflowX: "hidden",
                 }}
             >
-                <Toolbar component={Stack} flexDirection={"row"} justifyContent={"space-between"} maxWidth={'100vw'}>
-                    <Stack>
-                        <IconButton
-                            size="large"
-                            edge="start"
-                            color="inherit"
-                            aria-label="menu"
-                            sx={{ display: { xs: "block", sm: "none" } }}
-                            onClick={handleDrawerToggle}
-                        >
-                            <MenuIcon />
-                        </IconButton>
+                <Toolbar component={Stack} justifyContent={"space-between"}>
+                    <IconButton
+                        size="large"
+                        edge="start"
+                        color="inherit"
+                        aria-label="menu"
+                        sx={{ display: { xs: "block", sm: "none" } }}
+                        onClick={handleDrawerToggle}
+                    >
+                        <MenuIcon />
+                    </IconButton>
 
-                        <Typography
-                            variant="h6"
-                            component="div"
-                            sx={{
-                                display: { xs: "none", sm: "block" },
-                            }}
-                        >
-                            <img src={logoSrc} width="3.5%" alt="" />
-                        </Typography>
-                    </Stack>
+                    <Typography
+                        variant="h6"
+                        component="div"
+                        sx={{
+                            display: { xs: "none", sm: "block" },
+                        }}
+                    >
+                        <img src={logoSrc} width="3.5%" alt="" />
+                    </Typography>
 
                     <Box
                         sx={{
@@ -259,7 +258,7 @@ const Navbar = () => {
                 {drawer}
             </Drawer>
             <Outlet />
-        </Stack>
+        </>
     );
 };
 
