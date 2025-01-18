@@ -148,11 +148,9 @@ const Navbar = () => {
                 sx={{
                     backgroundColor: "rgba(0, 0, 0, .5)",
                     boxShadow: "none",
-                    maxWidth: "100%",
-                    overflowX: "hidden",
                 }}
             >
-                <Toolbar component={Stack} justifyContent={"space-between"}>
+                <Toolbar>
                     <IconButton
                         size="large"
                         edge="start"
@@ -168,6 +166,7 @@ const Navbar = () => {
                         variant="h6"
                         component="div"
                         sx={{
+                            flexGrow: 1,
                             display: { xs: "none", sm: "block" },
                         }}
                     >
@@ -180,10 +179,6 @@ const Navbar = () => {
                                 xs: "none",
                                 sm: "block",
                             },
-                            fontSize:{
-                                xs:'1.2rem',
-                                sm:'2rem',
-                            }
                         }}
                     >
                         <Button color="inherit" component={Link} to="./">
@@ -247,13 +242,6 @@ const Navbar = () => {
                     keepMounted: true,
                 }}
                 sx={{ backgroundColor: "transparent" }}
-                PaperProps={{
-                    sx: {
-                        width: '250px',
-                        maxWidth: '100%',
-                        overflowX: 'hidden',
-                    },
-                }}
             >
                 {drawer}
             </Drawer>

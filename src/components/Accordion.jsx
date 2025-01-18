@@ -20,7 +20,7 @@ const Accordion = (props) => {
                         <Button
                             onClick={handleClick}
                             sx={{
-                                width: "100%",
+                                maxWidth: "100%",
                                 textTransform: "none",
                                 justifyContent: "space-between",
                                 px: 0,
