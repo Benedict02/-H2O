@@ -108,7 +108,7 @@ const Navbar = () => {
                 </ListItem>
                 <ListItem
                     component={Link}
-                    to={`./game/rainwater`}
+                    to={`./game`}
                     sx={{
                         color: "white !important",
                         textDecoration: "none",
