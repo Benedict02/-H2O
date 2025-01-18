@@ -239,7 +239,7 @@ const Solution = () => {
                         title="
                             What can be done?
                         "
-                        p="2% 0"
+                        p="0% 0"
                     >
                         <Typography textAlign={"justify"}>
                             Solving these issues doesn’t require massive

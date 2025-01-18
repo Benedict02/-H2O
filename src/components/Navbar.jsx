@@ -156,6 +156,13 @@ const Navbar = () => {
                         >
                             3D Model
                         </Button>
+                        <Button
+                            color="inherit"
+                            component={Link}
+                            to="./game"
+                        >
+                            Rainwater Collection
+                        </Button>
                     </Box>
                 </Toolbar>
             </AppBar>
