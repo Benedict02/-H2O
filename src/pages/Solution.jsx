@@ -152,7 +152,7 @@ const Solution = () => {
     return (
         <>
             <Banner />
-            <div style={{ margin: "2% 0" }}>
+            <div style={{ margin: "2% 0", padding: "0 4%" }}>
                 <Stack
                     direction={"row"}
                     flexWrap={"wrap"}

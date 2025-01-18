@@ -4,7 +4,9 @@ import App from "./App.jsx";
 import Science from "./pages/Science.jsx";
 import Solution from "./pages/Solution.jsx";
 import Model from "./pages/3D.jsx";
+import WaterCatch from "./pages/WaterCatch.jsx"
 import GameQuiz from "./pages/GameQuiz.jsx";
+
 import "./assets/index.css";
 
 import Home from "./pages/Home.jsx";
@@ -28,6 +30,10 @@ const router = createBrowserRouter([
             {
                 path: "3d",
                 element: <Model />,
+            },
+            {
+                path: "game",
+                element: <WaterCatch />,
             },
             {
                 path: "quiz",

@@ -119,3 +119,25 @@ a {
 .css-cyqh1t-MuiPaper-root-MuiDrawer-paper {
     background-color: rgba(0, 0, 0, 0) !important;
 }
+
+.game-over {
+    top: 0 !important;
+}
+
+.a-hover:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width : 450px) {
+    .player {
+        width: 15% !important;
+        bottom: 12.5% !important;
+    }
+    .raindrop {
+        width: 2% !important;
+    }
+    .ground {
+        bottom: -7.5% !important;
+    }
+}
