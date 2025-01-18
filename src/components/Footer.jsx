@@ -1,5 +1,5 @@
-import React from 'react';
-import { Box, Typography, Link, Grid2, Divider, Stack } from '@mui/material';
+import React from "react";
+import { Box, Typography, Link, Grid2, Divider, Stack } from "@mui/material";
 
 const Footer = () => {
     return (
@@ -12,11 +12,24 @@ const Footer = () => {
                 borderTop: "1px solid #ddd",
             }}
         >
-            <Grid2 container spacing={10} justifyContent="space-evenly" alignItems={'center'}>
+            <Grid2
+                container
+                spacing={10}
+                justifyContent="space-evenly"
+                alignItems={"center"}
+            >
                 <Grid2 xs={12} sm={4} textAlign="center">
-                    <Stack direction={'row'} alignItems={'baseline'} gap={1}>
-                        <i className="ri-discord-fill" style={{ fontSize: 30 }} />
-                        <Typography variant="h6" gutterBottom fontSize={25}>
+                    <Stack direction={"row"} alignItems={"baseline"} gap={1}>
+                        <i
+                            className="ri-discord-fill"
+                            style={{ fontSize: 30, color: "#f3f3e0" }}
+                        />
+                        <Typography
+                            variant="h6"
+                            gutterBottom
+                            fontSize={25}
+                            color="#f3f3e0"
+                        >
                             Discord
                         </Typography>
                     </Stack>
@@ -50,9 +63,21 @@ const Footer = () => {
                 </Grid2>
 
                 <Grid2 xs={12} sm={4} textAlign="center">
-                    <Stack direction={'row'} alignItems={'baseline'} gap={1}>
-                        <i className="ri-github-fill" style={{ verticalAlign: 'middle', fontSize: 30 }} />
-                        <Typography variant="h6" gutterBottom fontSize={25}>
+                    <Stack direction={"row"} alignItems={"baseline"} gap={1}>
+                        <i
+                            className="ri-github-fill"
+                            style={{
+                                verticalAlign: "middle",
+                                fontSize: 30,
+                                color: "#f3f3e0",
+                            }}
+                        />
+                        <Typography
+                            variant="h6"
+                            gutterBottom
+                            fontSize={25}
+                            color="#f3f3e0"
+                        >
                             GitHub Profiles
                         </Typography>
                     </Stack>
@@ -89,9 +114,26 @@ const Footer = () => {
                 </Grid2>
 
                 <Grid2 xs={12} sm={4} textAlign="center">
-                    <Stack direction={'row'} alignItems={'baseline'} justifyContent={'center'} gap={1}>
-                        <i className="ri-mail-fill" style={{ verticalAlign: 'middle', fontSize: 30 }}/>
-                        <Typography variant="h6" gutterBottom fontSize={25}>
+                    <Stack
+                        direction={"row"}
+                        alignItems={"baseline"}
+                        justifyContent={"center"}
+                        gap={1}
+                    >
+                        <i
+                            className="ri-mail-fill"
+                            style={{
+                                verticalAlign: "middle",
+                                fontSize: 30,
+                                color: "#f3f3e0",
+                            }}
+                        />
+                        <Typography
+                            variant="h6"
+                            gutterBottom
+                            fontSize={25}
+                            color="#f3f3e0"
+                        >
                             Emails
                         </Typography>
                     </Stack>
