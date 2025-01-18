@@ -93,7 +93,7 @@ const Footer = () => {
 
             <Box textAlign="center">
                 <Typography variant="body2" color="textSecondary">
-                    &copy; {new Date().getFullYear()} Canisius College. All rights reserved.
+                    &copy; {new Date().getFullYear()} Node at 25:00. All rights reserved.
                 </Typography>
             </Box>
         </Stack>
