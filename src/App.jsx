@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import ColorPalette from "./components/ColorPalette";
 import { ParallaxProvider } from "react-scroll-parallax";
+import Footer from "./components/Footer";
 import { useEffect } from "react";
 import "./App.css";
 
@@ -16,6 +17,7 @@ function App() {
         <ParallaxProvider scrollAxis="vertical">
             <ColorPalette>
                 <Navbar />
+                <Footer />
             </ColorPalette>
         </ParallaxProvider>
     );
