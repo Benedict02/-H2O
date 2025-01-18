@@ -6,10 +6,10 @@ const Footer = () => {
         <Stack
             component="footer"
             sx={{
-                backgroundColor: '#f5f5f5',
-                padding: '20px 0',
-                marginTop: 'auto',
-                borderTop: '1px solid #ddd',
+                backgroundColor: "black_ocean.main",
+                padding: "20px 0",
+                marginTop: "auto",
+                borderTop: "1px solid #ddd",
             }}
         >
             <Grid2 container spacing={10} justifyContent="space-evenly" alignItems={'center'}>
@@ -21,17 +21,29 @@ const Footer = () => {
                         </Typography>
                     </Stack>
                     <Box>
-                        <Link href="https://discordapp.com/users/793773283451469844" target="_blank" rel="noopener noreferrer">
+                        <Link
+                            href="https://discordapp.com/users/793773283451469844"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             renhartoz
                         </Link>
                     </Box>
                     <Box>
-                        <Link href="https://discordapp.com/users/718705815917297674" target="_blank" rel="noopener noreferrer">
+                        <Link
+                            href="https://discordapp.com/users/718705815917297674"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             benhal_25
                         </Link>
                     </Box>
                     <Box>
-                        <Link href="https://discordapp.com/users/1269331850799742997" target="_blank" rel="noopener noreferrer">
+                        <Link
+                            href="https://discordapp.com/users/1269331850799742997"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             natalius_g
                         </Link>
                     </Box>
@@ -45,17 +57,32 @@ const Footer = () => {
                         </Typography>
                     </Stack>
                     <Typography>
-                        <Link href="https://github.com/44120N" target="_blank" rel="noopener" underline="hover">
+                        <Link
+                            href="https://github.com/44120N"
+                            target="_blank"
+                            rel="noopener"
+                            underline="hover"
+                        >
                             @44120N
                         </Link>
                     </Typography>
                     <Typography>
-                        <Link href="https://github.com/Benedict02" target="_blank" rel="noopener" underline="hover">
+                        <Link
+                            href="https://github.com/Benedict02"
+                            target="_blank"
+                            rel="noopener"
+                            underline="hover"
+                        >
                             @Benedict02
                         </Link>
                     </Typography>
                     <Typography>
-                        <Link href="https://github.com/natalius-g" target="_blank" rel="noopener" underline="hover">
+                        <Link
+                            href="https://github.com/natalius-g"
+                            target="_blank"
+                            rel="noopener"
+                            underline="hover"
+                        >
                             @natalius-g
                         </Link>
                     </Typography>
@@ -69,28 +96,40 @@ const Footer = () => {
                         </Typography>
                     </Stack>
                     <Typography>
-                        <Link href="mailto:aaronhartono28@gmail.com" underline="hover">
+                        <Link
+                            href="mailto:aaronhartono28@gmail.com"
+                            underline="hover"
+                        >
                             aaronhartono28@gmail.com
                         </Link>
                     </Typography>
                     <Typography>
-                        <Link href="mailto:benedicthalim1@gmail.com" underline="hover">
+                        <Link
+                            href="mailto:benedicthalim1@gmail.com"
+                            underline="hover"
+                        >
                             benedicthalim1@gmail.com
                         </Link>
                     </Typography>
                     <Typography>
-                        <Link href="mailto:nataliusgabriel@gmail.com" underline="hover">
+                        <Link
+                            href="mailto:nataliusgabriel@gmail.com"
+                            underline="hover"
+                        >
                             nataliusgabriel@gmail.com
                         </Link>
                     </Typography>
                 </Grid2>
             </Grid2>
 
-            <Divider sx={{ margin: '20px 0' }} />
+            <Divider
+                sx={{ margin: "20px 0", borderColor: "dark_ocean.main" }}
+            />
 
             <Box textAlign="center">
-                <Typography variant="body2" color="textSecondary">
-                    &copy; {new Date().getFullYear()} Node at 25:00. All rights reserved.
+                <Typography variant="body2" color="white.main">
+                    &copy; {new Date().getFullYear()} Node at 25:00. All rights
+                    reserved.
                 </Typography>
             </Box>
         </Stack>
