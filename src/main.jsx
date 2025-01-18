@@ -36,7 +36,7 @@ const router = createBrowserRouter([
                 element: <WaterCatch />,
             },
             {
-                path: "game/quiz",
+                path: "quiz",
                 element: <GameQuiz />,
             },
         ],

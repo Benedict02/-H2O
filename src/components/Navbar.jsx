@@ -88,7 +88,7 @@ const Navbar = () => {
                 ))}
                 <ListItem
                     component={Link}
-                    to={`./game/quiz`}
+                    to={`./quiz`}
                     sx={{
                         color: "white !important",
                         textDecoration: "none",
@@ -218,7 +218,7 @@ const Navbar = () => {
                             <MenuItem
                                 onClick={handleGameMenuClose}
                                 component={Link}
-                                to="./game/quiz"
+                                to="./quiz"
                             >
                                 Quiz
                             </MenuItem>
