@@ -165,46 +165,42 @@ const Home = () => {
                             >
                                 Did You Know?
                             </Typography>
-                            <Stack direction="row" gap={3}>
-                                <Stack>
-                                    <Stack
-                                        sx={{ p: 2, bgcolor: "#f0f0f0" }}
-                                        data-aos="fade-up-right"
-                                    >
-                                        <Typography>
-                                            Having access to improved water
-                                            sources means{" "}
-                                            <Typography
-                                                component={"mark"}
-                                                sx={{
-                                                    backgroundColor:
-                                                        "secondary.main",
-                                                }}
-                                            >
-                                                having clean water for drinking
-                                                and other necessities from
-                                                sources like piped systems,
-                                                protected wells, or rainwater
-                                                collection that have been
-                                                designed to minimize
-                                                contamination.
-                                            </Typography>{" "}
-                                            It is a major objective of the
-                                            Sustainable Development Goals (SDG
-                                            6) of the UN and is essential for
-                                            reducing waterborne illnesses like
-                                            cholera. Despite advancements,
-                                            dependable access is still lacking
-                                            in many low-income and rural areas,
-                                            necessitating investments in
-                                            equitable policy and sustainable
-                                            infrastructure.
-                                        </Typography>
-                                    </Stack>
+                            <Stack direction={{xs:"column", sm:"row"}} gap={3}>
+                                <Stack
+                                    sx={{ p: 2, bgcolor: "#f0f0f0" }}
+                                >
+                                    <Typography>
+                                        Having access to improved water
+                                        sources means{" "}
+                                        <Typography
+                                            component={"mark"}
+                                            sx={{
+                                                backgroundColor:
+                                                    "secondary.main",
+                                            }}
+                                        >
+                                            having clean water for drinking
+                                            and other necessities from
+                                            sources like piped systems,
+                                            protected wells, or rainwater
+                                            collection that have been
+                                            designed to minimize
+                                            contamination.
+                                        </Typography>{" "}
+                                        It is a major objective of the
+                                        Sustainable Development Goals (SDG
+                                        6) of the UN and is essential for
+                                        reducing waterborne illnesses like
+                                        cholera. Despite advancements,
+                                        dependable access is still lacking
+                                        in many low-income and rural areas,
+                                        necessitating investments in
+                                        equitable policy and sustainable
+                                        infrastructure.
+                                    </Typography>
                                 </Stack>
                                 <Stack
                                     sx={{ backgroundColor: "#f0f0f0", p: 2 }}
-                                    data-aos="fade-up-left"
                                 >
                                     <Typography>
                                         An improved water source, as defined by
