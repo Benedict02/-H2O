@@ -114,7 +114,7 @@ const WaterCatch = () => {
     }, [position, speed, time])
 
     return (
-        <div style={{overflow: "hidden", width: "100vw", height: "100vh", position: "relative"}}>
+        <div style={{overflow: "hidden", width: "100%", height: "100vh", position: "relative"}}>
             <div id="game-window" style={{backgroundColor: "#eeeeff", height: "100%"}}>
                 <h1 style={{position: "absolute", top: "2.5em", left: "0.75em", zIndex: "10", color: "white"}}>Score: {score}</h1>
                 <h1 style={{position: "absolute", top: "4em", left: "0.75em", zIndex: "10", color: "white"}}>Time: {time > 0 ? Math.round(time/1000) : 0}</h1>

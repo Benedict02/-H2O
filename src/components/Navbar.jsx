@@ -225,7 +225,7 @@ const Navbar = () => {
                             <MenuItem
                                 onClick={handleGameMenuClose}
                                 component={Link}
-                                to="./game/rainwater"
+                                to="./game"
                             >
                                 Rainwater Collection
                             </MenuItem>

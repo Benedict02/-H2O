@@ -32,7 +32,7 @@ const router = createBrowserRouter([
                 element: <Model />,
             },
             {
-                path: "game/rainwater",
+                path: "game",
                 element: <WaterCatch />,
             },
             {
