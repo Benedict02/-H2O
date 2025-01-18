@@ -4,7 +4,6 @@ import { List, ListItem, ListItemText } from "@mui/material";
 import Banner from "../components/HokusaiBanner";
 import Tiles from "../components/Tiles";
 import CustomBarChart from "../components/CustomBarChart";
-import WaterDropIcon from "@mui/icons-material/WaterDrop";
 
 const Home = () => {
     const waterScarcity = [
@@ -104,6 +103,7 @@ const Home = () => {
     const droughtSrc = "./drought.jpg";
     const rippleSrc = "./weathering.jpg";
     const flagSrc = "./flag.png";
+    const rainWindowSrc = "./rain_window.jpg";
 
     const tips = [
         "Turning off the tap while brushing your teeth can save up to 200 gallons of water per month.",
@@ -165,18 +165,7 @@ const Home = () => {
                             </Typography>
                             <Stack direction="row" gap={3}>
                                 <Stack>
-                                    <Stack>
-                                        <WaterDropIcon
-                                            sx={{
-                                                position: "relative",
-                                                zIndex: "2",
-                                                bgcolor: "white",
-                                            }}
-                                        />
-                                    </Stack>
-                                    <Stack
-                                        sx={{ mt: -2, p: 2, bgcolor: "red" }}
-                                    >
+                                    <Stack sx={{ p: 2, bgcolor: "#f0f0f0" }}>
                                         <Typography>
                                             Having access to improved water
                                             sources means{" "}
@@ -208,7 +197,9 @@ const Home = () => {
                                         </Typography>
                                     </Stack>
                                 </Stack>
-                                <Stack sx={{ backgroundColor: "blue", p: 2 }}>
+                                <Stack
+                                    sx={{ backgroundColor: "#f0f0f0", p: 2 }}
+                                >
                                     <Typography>
                                         An improved water source, as defined by
                                         the World Health Organization (WHO),
@@ -279,7 +270,10 @@ const Home = () => {
                         <Stack
                             gap={3}
                             padding={"2% 3%"}
-                            sx={{ backgroundColor: "white !important" }}
+                            sx={{
+                                backgroundColor:
+                                    "rgba(240, 240, 240, 0.6) !important",
+                            }}
                         >
                             <Typography
                                 variant={"h3"}
@@ -413,7 +407,7 @@ const Home = () => {
                 </Container>
                 <div
                     style={{
-                        background: `url(${rippleSrc})`,
+                        background: `url(${rainWindowSrc})`,
                         backgroundAttachment: "fixed",
                         backgroundSize: "cover",
                         padding: "5% 0",
@@ -423,12 +417,15 @@ const Home = () => {
                         <Stack
                             gap={2}
                             padding={"2% 3%"}
-                            sx={{ backgroundColor: "white !important" }}
+                            sx={{
+                                backgroundColor:
+                                    "rgba(19, 62, 135, 0.925) !important",
+                            }}
                         >
                             <Typography
                                 variant={"h3"}
                                 component={"h1"}
-                                color="dark_ocean"
+                                color="rgba(240, 240, 240)"
                                 fontFamily={"Montserrat !important"}
                                 fontWeight={500}
                                 textAlign={"start"}
@@ -575,7 +572,7 @@ const Home = () => {
                             </table>
 
                             <Stack>
-                                <Typography>
+                                <Typography color="rgba(240, 240, 240)">
                                     Source:
                                     <ol style={{ listStylePosition: "inside" }}>
                                         <li>
