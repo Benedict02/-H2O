@@ -10,17 +10,31 @@ import {
     List,
     ListItem,
     ListItemText,
+    Menu,
+    MenuItem,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Link, Outlet } from "react-router-dom";
 
 const Navbar = () => {
     const [mobileOpen, setMobileOpen] = useState(false);
+    const [gameMenuAnchor, setGameMenuAnchor] = useState(null);
     const logoSrc = "./icon.png";
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
+
+    const handleGameMenuOpen = (event) => {
+        setGameMenuAnchor(event.currentTarget);
+    };
+
+    const handleGameMenuClose = () => {
+        setGameMenuAnchor(null);
+    };
+
+    const isGameMenuOpen = Boolean(gameMenuAnchor);
 
     const drawer = (
         <Box
@@ -53,7 +67,7 @@ const Navbar = () => {
                     <ListItem
                         key={text}
                         component={Link}
-                        to={`./${text=="Home"?"":text.toLowerCase()}`}
+                        to={`./${text === "Home" ? "" : text.toLowerCase()}`}
                         sx={{
                             color: "white !important",
                             textDecoration: "none",
@@ -72,8 +86,47 @@ const Navbar = () => {
                         />
                     </ListItem>
                 ))}
+                <ListItem
+                    component={Link}
+                    to={`./game/quiz`}
+                    sx={{
+                        color: "white !important",
+                        textDecoration: "none",
+                        "&:hover": {
+                            backgroundColor: "#2e2e3f",
+                        },
+                    }}
+                >
+                    <ListItemText
+                        primary="Quiz"
+                        primaryTypographyProps={{
+                            fontSize: "16px",
+                            fontWeight: "medium",
+                            textAlign: "center",
+                        }}
+                    />
+                </ListItem>
+                <ListItem
+                    component={Link}
+                    to={`./game/rainwater`}
+                    sx={{
+                        color: "white !important",
+                        textDecoration: "none",
+                        "&:hover": {
+                            backgroundColor: "#2e2e3f",
+                        },
+                    }}
+                >
+                    <ListItemText
+                        primary="Rainwater Collection"
+                        primaryTypographyProps={{
+                            fontSize: "16px",
+                            fontWeight: "medium",
+                            textAlign: "center",
+                        }}
+                    />
+                </ListItem>
             </List>
-
             <Box
                 sx={{
                     p: 2,
@@ -82,7 +135,7 @@ const Navbar = () => {
                 }}
             >
                 <Typography variant="body2" sx={{ color: "#aaa" }}>
-                    © 2024 -H2O. All rights reserved.
+                    &copy; {new Date().getFullYear()} Node at 25:00. All rights reserved.
                 </Typography>
             </Box>
         </Box>
@@ -128,41 +181,55 @@ const Navbar = () => {
                             },
                         }}
                     >
-                        <Button 
-                            color="inherit" 
-                            component={Link} 
-                            to="./"
-                        >
+                        <Button color="inherit" component={Link} to="./">
                             Home
                         </Button>
-                        <Button 
-                            color="inherit" 
-                            component={Link} 
-                            to="./science"
-                        >
+                        <Button color="inherit" component={Link} to="./science">
                             Science
                         </Button>
-                        <Button
-                            color="inherit"
-                            component={Link}
-                            to="./solution"
-                        >
+                        <Button color="inherit" component={Link} to="./solution">
                             Solution
                         </Button>
-                        <Button
-                            color="inherit"
-                            component={Link}
-                            to="./3D"
-                        >
+                        <Button color="inherit" component={Link} to="./3D">
                             3D Model
                         </Button>
                         <Button
                             color="inherit"
-                            component={Link}
-                            to="./game"
+                            onClick={handleGameMenuOpen}
+                            endIcon={
+                                <KeyboardArrowDownIcon
+                                    sx={{
+                                        transform: isGameMenuOpen ? "rotate(180deg)" : "rotate(0deg)",
+                                        transition: "transform 0.3s ease",
+                                    }}
+                                />
+                            }
                         >
-                            Rainwater Collection
+                            Game
                         </Button>
+                        <Menu
+                            anchorEl={gameMenuAnchor}
+                            open={isGameMenuOpen}
+                            onClose={handleGameMenuClose}
+                            MenuListProps={{
+                                "aria-labelledby": "game-button",
+                            }}
+                        >
+                            <MenuItem
+                                onClick={handleGameMenuClose}
+                                component={Link}
+                                to="./game/quiz"
+                            >
+                                Quiz
+                            </MenuItem>
+                            <MenuItem
+                                onClick={handleGameMenuClose}
+                                component={Link}
+                                to="./game/rainwater"
+                            >
+                                Rainwater Collection
+                            </MenuItem>
+                        </Menu>
                     </Box>
                 </Toolbar>
             </AppBar>

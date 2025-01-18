@@ -32,11 +32,11 @@ const router = createBrowserRouter([
                 element: <Model />,
             },
             {
-                path: "game",
+                path: "game/rainwater",
                 element: <WaterCatch />,
             },
             {
-                path: "quiz",
+                path: "game/quiz",
                 element: <GameQuiz />,
             },
         ],

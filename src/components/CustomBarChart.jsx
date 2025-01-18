@@ -107,9 +107,6 @@ const CustomXAxisTick = (props) => {
 }
 
 const CustomBarChart = (props) => {
-    useEffect(()=>{
-        console.log(props.data)
-    }, [])
     return (
         <ResponsiveContainer width="100%" height="100%" minHeight={'500px'}>
             <BarChart
