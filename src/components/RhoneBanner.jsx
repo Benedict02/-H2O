@@ -32,7 +32,7 @@ const Banner = () => {
                                 variant="h2"
                                 component="h1"
                                 gutterBottom
-                                bgcolor={"black"}
+                                bgcolor={`rgba(0, 0, 0, 0.75)`}
                                 fontFamily={"Stick"}
                                 width={"fit-content"}
                                 textAlign={"center"}
@@ -44,7 +44,7 @@ const Banner = () => {
                                 variant="h6"
                                 component="p"
                                 gutterBottom
-                                bgcolor={"black"}
+                                bgcolor={`rgba(0, 0, 0, 0.75)`}
                                 width={"fit-content"}
                                 padding={"1%"}
                             >
@@ -54,7 +54,7 @@ const Banner = () => {
                     </Container>
                 </Box>
             </ParallaxBannerLayer>
-            <ParallaxBannerLayer image="The_Rhone_4.png" speed={27} />
+            <ParallaxBannerLayer image="The_Rhone_4.png" speed={15.5} />
         </ParallaxBanner>
     );
 };

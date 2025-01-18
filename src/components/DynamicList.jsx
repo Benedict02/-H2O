@@ -20,7 +20,7 @@ const DynamicList = (props) => {
                             {entry.title}
                         </Typography>
                         {entry.items.length === 1 ? (
-                            <Typography variant="body1" color="textSecondary">
+                            <Typography variant="body1" color="black">
                                 {entry.items[0]}
                             </Typography>
                         ) : (
@@ -30,7 +30,8 @@ const DynamicList = (props) => {
                                         key={subIndex}
                                         component="li"
                                         variant="body1"
-                                        color="textSecondary"
+                                        color="black"
+                                        fontSize={"1rem"}
                                     >
                                         {item}
                                     </Typography>

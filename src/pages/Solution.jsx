@@ -1,9 +1,9 @@
 import { Container, Divider, Stack, Typography } from "@mui/material";
 import DynamicList from "../components/DynamicList";
 import Banner from "../components/RoughBanner";
+import Accordion from "../components/Accordion";
 
 const Solution = () => {
-
     const prolog = [
         "Rainfall doesn’t just wash away but is collected and reused.",
         "Water that drains from your sink irrigates your garden.",
@@ -153,313 +153,299 @@ const Solution = () => {
         <>
             <Banner />
             <div style={{ margin: "2% 0" }}>
-                <Container fixed>
-                    <Stack
-                        direction={"row"}
-                        flexWrap={"wrap"}
-                        alignItems={"baseline"}
-                        justifyContent={"center"}
-                        padding={"2% 0"}
+                <Stack
+                    direction={"row"}
+                    flexWrap={"wrap"}
+                    alignItems={"baseline"}
+                    justifyContent={"center"}
+                    padding={"2% 0"}
+                >
+                    <Typography
+                        variant={"h4"}
+                        component={"h1"}
+                        color="dark_ocean"
+                        fontFamily={"Petit Formal Script"}
+                        textAlign={"center"}
                     >
+                        “Everything is theoretically impossible, until it is
+                        done.”
+                    </Typography>
+                    <Typography
+                        variant={"h5"}
+                        component={"p"}
+                        color="primary"
+                        fontFamily={"Roboto"}
+                        textAlign={"center"}
+                    >
+                        — Robert A. Heinlein.
+                    </Typography>
+                </Stack>
+                <Divider sx={{ margin: "1% 0" }} />
+
+                <Stack id="Introduction">
+                    <Stack gap={1} padding={"2% 0"}>
                         <Typography
-                            variant={"h4"}
+                            variant={"h2"}
                             component={"h1"}
                             color="dark_ocean"
-                            fontFamily={"Petit Formal Script"}
-                            textAlign={"center"}
+                            fontFamily={"Quintessential"}
+                            textAlign={"start"}
+                            gutterBottom
                         >
-                            “Everything is theoretically impossible, until it is
-                            done.”
+                            How Humanity Manage Water
                         </Typography>
-                        <Typography
-                            variant={"h5"}
-                            component={"p"}
-                            color="primary"
-                            fontFamily={"Roboto"}
-                            textAlign={"center"}
-                        >
-                            — Robert A. Heinlein.
+                        <Typography textAlign={"justify"}>
+                            Water is the essence of life, covering 71% of the
+                            Earth’s surface and flowing through every living
+                            organism. Yet, have you ever wondered why, despite
+                            its abundance, water scarcity is one of the most
+                            pressing global challenges of our time?
+                        </Typography>
+                        <Typography textAlign={"justify"}>
+                            Every drop counts, but how often do we let it slip
+                            through our fingers—literally and metaphorically?
+                            Consider this: the average household wastes nearly
+                            10,000 gallons of water annually due to leaks alone.
+                            Meanwhile, in many parts of the world, communities
+                            walk miles daily just to fetch a fraction of that
+                            amount.
+                        </Typography>
+                        <Typography textAlign={"justify"}>
+                            Why does this happen? It’s not just about limited
+                            resources—it’s about how we manage what we have.
+                            Outdated systems, inefficient practices, and a lack
+                            of awareness create a perfect storm where water
+                            waste becomes routine, and conservation feels like
+                            an afterthought.
                         </Typography>
                     </Stack>
                     <Divider sx={{ margin: "1% 0" }} />
 
-                    <Stack id="Introduction">
-                        <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h2"}
-                                component={"h1"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                                gutterBottom
-                            >
-                                How Humanity Manage Water
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                Water is the essence of life, covering 71% of
-                                the Earth’s surface and flowing through every
-                                living organism. Yet, have you ever wondered
-                                why, despite its abundance, water scarcity is
-                                one of the most pressing global challenges of
-                                our time?
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                Every drop counts, but how often do we let it
-                                slip through our fingers—literally and
-                                metaphorically? Consider this: the average
-                                household wastes nearly 10,000 gallons of water
-                                annually due to leaks alone. Meanwhile, in many
-                                parts of the world, communities walk miles daily
-                                just to fetch a fraction of that amount.
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                Why does this happen? It’s not just about
-                                limited resources—it’s about how we manage what
-                                we have. Outdated systems, inefficient
-                                practices, and a lack of awareness create a
-                                perfect storm where water waste becomes routine,
-                                and conservation feels like an afterthought.
-                            </Typography>
+                    <Accordion
+                        title="
+                            What can be done?
+                        "
+                        p="2% 0"
+                    >
+                        <Typography textAlign={"justify"}>
+                            Solving these issues doesn’t require massive
+                            sacrifices—it only demands smarter choices. Imagine
+                            a world where:
+                        </Typography>
+                        <Stack component="ul" spacing={1} paddingLeft={2}>
+                            {prolog.map((item, index) => (
+                                <Typography
+                                    key={index}
+                                    component="li"
+                                    variant="body1"
+                                    color="textSecondary"
+                                >
+                                    {item}
+                                </Typography>
+                            ))}
                         </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
+                        <Typography textAlign={"justify"}>
+                            These aren’t dreams; they’re achievable realities.
+                            The question is, are we ready to act? This page is
+                            your gateway to understanding the key challenges we
+                            face with water usage and the innovative solutions
+                            that can help us change the narrative—from wasting
+                            to conserving, from scarcity to sustainability.
+                        </Typography>
+                        <Typography textAlign={"justify"}>
+                            Let’s dive deeper into the issues, uncover the
+                            facts, and explore the solutions that can lead us
+                            toward a water-secure future. Are you ready to take
+                            the first step?
+                        </Typography>
+                    </Accordion>
+                    <Stack gap={1} padding={"2% 0"}></Stack>
+                    <Divider
+                        sx={{
+                            margin: "1% 0",
+                            borderWidth: ".5vh",
+                            borderColor: "#000",
+                        }}
+                    />
+                </Stack>
 
-                        <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h5"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                                gutterBottom
-                            >
-                                What can be done?
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                But here’s the paradox:
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                Solving these issues doesn’t require massive
-                                sacrifices—it only demands smarter choices.
-                                Imagine a world where:
-                            </Typography>
-                            <Stack component="ul" spacing={1} paddingLeft={2}>
-                                {prolog.map((item, index) => (
-                                    <Typography
-                                        key={index}
-                                        component="li"
-                                        variant="body1"
-                                        color="textSecondary"
-                                    >
-                                        {item}
-                                    </Typography>
-                                ))}
-                            </Stack>
-                            <Typography textAlign={"justify"}>
-                                These aren’t dreams; they’re achievable
-                                realities. The question is, are we ready to act?
-                                This page is your gateway to understanding the
-                                key challenges we face with water usage and the
-                                innovative solutions that can help us change the
-                                narrative—from wasting to conserving, from
-                                scarcity to sustainability.
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                Let’s dive deeper into the issues, uncover the
-                                facts, and explore the solutions that can lead
-                                us toward a water-secure future. Are you ready
-                                to take the first step?
-                            </Typography>
-                        </Stack>
-                        <Divider
-                            sx={{
-                                margin: "1% 0",
-                                borderWidth: ".5vh",
-                                borderColor: "#000",
-                            }}
-                        />
+                <Stack id="Solution">
+                    <Stack gap={1} padding={"2% 0"}>
+                        <Typography
+                            variant={"h3"}
+                            component={"p"}
+                            color="dark_ocean"
+                            fontFamily={"Quintessential"}
+                            textAlign={"start"}
+                        >
+                            Solution
+                        </Typography>
+                        <Typography textAlign={"justify"}>
+                            Here&apos;re the smart solution that we can have for
+                            the better earth&apos;s water distribution and
+                            management in the future
+                        </Typography>
                     </Stack>
+                    <Divider sx={{ margin: "1% 0" }} />
 
-                    <Stack id="Solution">
-                        <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h3"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                            >
-                                Solution
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                Here&apos;re the smart solution that we can have
-                                for the better earth&apos;s water distribution
-                                and management in the future
-                            </Typography>
-                        </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
-
-                        <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                            >
-                                Water-Efficient Fixtures
-                            </Typography>
-                            <Typography
-                                variant="p"
-                                component={"b"}
-                                textAlign={"justify"}
-                            >
-                                Key Problem: Excessive Water Use in Daily
-                                Activities
-                            </Typography>
-                            <DynamicList content={fixture} />
-                        </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
-
-                        <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h2"}
-                                component={"h1"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                                gutterBottom
-                            >
-                                Greywater Recycling
-                            </Typography>
-                            <Typography
-                                variant="p"
-                                component={"b"}
-                                textAlign={"justify"}
-                            >
-                                Key Problem: Wastewater Mismanagement
-                            </Typography>
-                            <DynamicList content={grey} />
-                        </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
-
-                        <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                                gutterBottom
-                            >
-                                Rainwater Harvesting
-                            </Typography>
-                            <Typography
-                                variant="p"
-                                component={"b"}
-                                textAlign={"justify"}
-                            >
-                                Key Problem: Underutilized Rainwater Resources
-                            </Typography>
-                            <DynamicList content={rainHarvest} />
-                        </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
-
-                        <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                            >
-                                Smart Irrigation Systems
-                            </Typography>
-                            <Typography
-                                variant="p"
-                                component={"b"}
-                                textAlign={"justify"}
-                            >
-                                Key Problem: Inefficient Agricultural Water Use
-                            </Typography>
-                            <DynamicList content={irrigation} />
-                        </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
-
-                        <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                            >
-                                Leak Detection and Repair
-                            </Typography>
-                            <Typography
-                                variant="p"
-                                component={"b"}
-                                textAlign={"justify"}
-                            >
-                                Key Problem: Unnoticed and Unaddressed Water
-                                Leaks
-                            </Typography>
-                            <DynamicList content={leak} />
-                        </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
-
-                        <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                            >
-                                Drought-Resistant Landscaping
-                            </Typography>
-                            <Typography
-                                variant="p"
-                                component={"b"}
-                                textAlign={"justify"}
-                            >
-                                Key Problem: High Water Demand for Landscaping
-                            </Typography>
-                            <DynamicList content={drought} />
-                        </Stack>
-                        <Divider sx={{ margin: "1% 0" }} />
-
-                        <Stack gap={1} padding={"2% 0"}>
-                            <Typography
-                                variant={"h4"}
-                                component={"p"}
-                                color="dark_ocean"
-                                fontFamily={"Quintessential"}
-                                textAlign={"start"}
-                            >
-                                Conclusion
-                            </Typography>
-                            <Typography textAlign={"justify"}>
-                                The recurring themes across these issues are
-                                water wastage, inefficient use, and inadequate
-                                reuse of resources. These problems are
-                                compounded by aging infrastructure, lack of
-                                awareness, and resistance to adopting new
-                                technologies. Tackling these issues with the
-                                solutions you&apos;ve outlined will address both
-                                individual and systemic inefficiencies in water
-                                use, contributing to sustainable living and
-                                resource conservation.
-                            </Typography>
-                        </Stack>
-                        <Divider
-                            sx={{
-                                margin: "1% 0",
-                                borderWidth: ".5vh",
-                                borderColor: "#000",
-                            }}
-                        />
+                    <Stack gap={1} padding={"2% 0"}>
+                        <Typography
+                            variant={"h4"}
+                            component={"p"}
+                            color="dark_ocean"
+                            fontFamily={"Quintessential"}
+                            textAlign={"start"}
+                        >
+                            Water-Efficient Fixtures
+                        </Typography>
+                        <Typography
+                            variant="p"
+                            component={"b"}
+                            textAlign={"justify"}
+                        >
+                            Key Problem: Excessive Water Use in Daily Activities
+                        </Typography>
+                        <DynamicList content={fixture} />
                     </Stack>
-                </Container>
+                    <Divider sx={{ margin: "1% 0" }} />
+
+                    <Stack gap={1} padding={"2% 0"}>
+                        <Typography
+                            variant={"h2"}
+                            component={"h1"}
+                            color="dark_ocean"
+                            fontFamily={"Quintessential"}
+                            textAlign={"start"}
+                            gutterBottom
+                        >
+                            Greywater Recycling
+                        </Typography>
+                        <Typography
+                            variant="p"
+                            component={"b"}
+                            textAlign={"justify"}
+                        >
+                            Key Problem: Wastewater Mismanagement
+                        </Typography>
+                        <DynamicList content={grey} />
+                    </Stack>
+                    <Divider sx={{ margin: "1% 0" }} />
+
+                    <Stack gap={1} padding={"2% 0"}>
+                        <Typography
+                            variant={"h4"}
+                            component={"p"}
+                            color="dark_ocean"
+                            fontFamily={"Quintessential"}
+                            textAlign={"start"}
+                            gutterBottom
+                        >
+                            Rainwater Harvesting
+                        </Typography>
+                        <Typography
+                            variant="p"
+                            component={"b"}
+                            textAlign={"justify"}
+                        >
+                            Key Problem: Underutilized Rainwater Resources
+                        </Typography>
+                        <DynamicList content={rainHarvest} />
+                    </Stack>
+                    <Divider sx={{ margin: "1% 0" }} />
+
+                    <Stack gap={1} padding={"2% 0"}>
+                        <Typography
+                            variant={"h4"}
+                            component={"p"}
+                            color="dark_ocean"
+                            fontFamily={"Quintessential"}
+                            textAlign={"start"}
+                        >
+                            Smart Irrigation Systems
+                        </Typography>
+                        <Typography
+                            variant="p"
+                            component={"b"}
+                            textAlign={"justify"}
+                        >
+                            Key Problem: Inefficient Agricultural Water Use
+                        </Typography>
+                        <DynamicList content={irrigation} />
+                    </Stack>
+                    <Divider sx={{ margin: "1% 0" }} />
+
+                    <Stack gap={1} padding={"2% 0"}>
+                        <Typography
+                            variant={"h4"}
+                            component={"p"}
+                            color="dark_ocean"
+                            fontFamily={"Quintessential"}
+                            textAlign={"start"}
+                        >
+                            Leak Detection and Repair
+                        </Typography>
+                        <Typography
+                            variant="p"
+                            component={"b"}
+                            textAlign={"justify"}
+                        >
+                            Key Problem: Unnoticed and Unaddressed Water Leaks
+                        </Typography>
+                        <DynamicList content={leak} />
+                    </Stack>
+                    <Divider sx={{ margin: "1% 0" }} />
+
+                    <Stack gap={1} padding={"2% 0"}>
+                        <Typography
+                            variant={"h4"}
+                            component={"p"}
+                            color="dark_ocean"
+                            fontFamily={"Quintessential"}
+                            textAlign={"start"}
+                        >
+                            Drought-Resistant Landscaping
+                        </Typography>
+                        <Typography
+                            variant="p"
+                            component={"b"}
+                            textAlign={"justify"}
+                        >
+                            Key Problem: High Water Demand for Landscaping
+                        </Typography>
+                        <DynamicList content={drought} />
+                    </Stack>
+                    <Divider sx={{ margin: "1% 0" }} />
+
+                    <Stack gap={1} padding={"2% 0"}>
+                        <Typography
+                            variant={"h4"}
+                            component={"p"}
+                            color="dark_ocean"
+                            fontFamily={"Quintessential"}
+                            textAlign={"start"}
+                        >
+                            Conclusion
+                        </Typography>
+                        <Typography textAlign={"justify"}>
+                            The recurring themes across these issues are water
+                            wastage, inefficient use, and inadequate reuse of
+                            resources. These problems are compounded by aging
+                            infrastructure, lack of awareness, and resistance to
+                            adopting new technologies. Tackling these issues
+                            with the solutions you&apos;ve outlined will address
+                            both individual and systemic inefficiencies in water
+                            use, contributing to sustainable living and resource
+                            conservation.
+                        </Typography>
+                    </Stack>
+                    <Divider
+                        sx={{
+                            margin: "1% 0",
+                            borderWidth: ".5vh",
+                            borderColor: "#000",
+                        }}
+                    />
+                </Stack>
             </div>
         </>
     );
