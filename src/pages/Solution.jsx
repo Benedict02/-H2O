@@ -225,7 +225,7 @@ const Solution = () => {
                         title="
                             What can be done?
                         "
-                        p="2% 0"
+                        p="0% 0"
                     >
                         <Typography textAlign={"justify"}>
                             Solving these issues doesn’t require massive
@@ -259,7 +259,6 @@ const Solution = () => {
                             the first step?
                         </Typography>
                     </Accordion>
-                    <Stack gap={1} padding={"2% 0"}></Stack>
                     <Divider
                         sx={{
                             margin: "1% 0",
@@ -267,6 +266,7 @@ const Solution = () => {
                             borderColor: "#000",
                         }}
                     />
+                    <Stack gap={1} padding={"2% 0"}></Stack>
                 </Stack>
 
                 <Stack id="Solution">
