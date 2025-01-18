@@ -1,8 +1,5 @@
 import React from 'react';
 import { Box, Typography, Link, Grid2, Divider, Stack } from '@mui/material';
-import DiscordIcon from '@mui/icons-material/Chat';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import EmailIcon from '@mui/icons-material/Email';
 
 const Footer = () => {
     return (
@@ -16,9 +13,9 @@ const Footer = () => {
             }}
         >
             <Grid2 container spacing={10} justifyContent="space-evenly" alignItems={'center'}>
-                <Grid2 item xs={12} sm={4} textAlign="center">
+                <Grid2 xs={12} sm={4} textAlign="center">
                     <Stack direction={'row'} alignItems={'baseline'} gap={1}>
-                        <i class="ri-discord-fill" style={{ fontSize: 30 }} />
+                        <i className="ri-discord-fill" style={{ fontSize: 30 }} />
                         <Typography variant="h6" gutterBottom fontSize={25}>
                             Discord
                         </Typography>
@@ -40,9 +37,9 @@ const Footer = () => {
                     </Box>
                 </Grid2>
 
-                <Grid2 item xs={12} sm={4} textAlign="center">
+                <Grid2 xs={12} sm={4} textAlign="center">
                     <Stack direction={'row'} alignItems={'baseline'} gap={1}>
-                        <i class="ri-github-fill" style={{ verticalAlign: 'middle', fontSize: 30 }} />
+                        <i className="ri-github-fill" style={{ verticalAlign: 'middle', fontSize: 30 }} />
                         <Typography variant="h6" gutterBottom fontSize={25}>
                             GitHub Profiles
                         </Typography>
@@ -64,9 +61,9 @@ const Footer = () => {
                     </Typography>
                 </Grid2>
 
-                <Grid2 item xs={12} sm={4} textAlign="center">
+                <Grid2 xs={12} sm={4} textAlign="center">
                     <Stack direction={'row'} alignItems={'baseline'} justifyContent={'center'} gap={1}>
-                        <i class="ri-mail-fill" style={{ verticalAlign: 'middle', fontSize: 30 }}/>
+                        <i className="ri-mail-fill" style={{ verticalAlign: 'middle', fontSize: 30 }}/>
                         <Typography variant="h6" gutterBottom fontSize={25}>
                             Emails
                         </Typography>
